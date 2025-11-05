@@ -1,5 +1,8 @@
 ##Hydrobasin delineation - fish and benthic invertebrate 
 
+##NOTE: delineation of hydrobasins and all spatial data processing is done on Senckenberg laptop. output files saved to repo, but all QGIS/GDAL/GRASS GIS/GNU parallel needed to use Hydrography90m r package is downloaded on Senckenberg PC
+
+
 library(tidyverse)
 library(ggplot2)
 library(data.table)
