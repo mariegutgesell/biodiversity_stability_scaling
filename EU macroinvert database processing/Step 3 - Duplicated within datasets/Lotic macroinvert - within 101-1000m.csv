@@ -1,0 +1,222 @@
+"country","prov","origin","dataset.id","group","org.site","unique.id","river","latitude","longitude","st.yr","ed.yr","yr.ln","yr.num","distance"
+"England","State data","second data call; new data","ENG_052_MZB_LO",1,"165427","ENG_052_MZB_LO_2","SHEAF",53.344,-1.497,2024,2024,1,1,0
+"England","State data","second data call; new data","ENG_052_MZB_LO",1,"222651","ENG_052_MZB_LO_221","SHEAF",53.347,-1.494,2024,2024,1,1,376.084167949306
+"England","State data","second data call; new data","ENG_052_MZB_LO",2,"217551","ENG_052_MZB_LO_75","LONG BECK",54.205,-1.152,2024,2024,1,1,0
+"England","State data","second data call; new data","ENG_052_MZB_LO",2,"217552","ENG_052_MZB_LO_76","LONG BECK",54.206,-1.167,2024,2024,1,1,952.910800938832
+"England","State data","second data call; new data","ENG_052_MZB_LO",4,"218051","ENG_052_MZB_LO_98","PAUL STREAM",50.09,-5.547,2024,2024,1,1,0
+"England","State data","second data call; new data","ENG_052_MZB_LO",4,"218052","ENG_052_MZB_LO_99","PAUL STREAM",50.087,-5.541,2024,2024,1,1,525.152932471919
+"England","State data","second data call; new data","ENG_052_MZB_LO",4,"218053","ENG_052_MZB_LO_100","TUMBLE TYN",50.082,-5.542,2024,2024,1,1,926.208640046824
+"England","State data","second data call; new data","ENG_052_MZB_LO",7,"221035","ENG_052_MZB_LO_212","ANGARRACK STREAM",50.169,-5.358,2024,2024,1,1,0
+"England","State data","second data call; new data","ENG_052_MZB_LO",7,"221036","ENG_052_MZB_LO_213","ANGARRACK STREAM",50.175,-5.35,2024,2024,1,1,848.512930515772
+"England","State data","second data call; new data","ENG_052_MZB_LO",10,"222753","ENG_052_MZB_LO_227","BURTON PIDSEA DRAIN",53.764,-0.116,2024,2024,1,1,0
+"England","State data","second data call; new data","ENG_052_MZB_LO",10,"222754","ENG_052_MZB_LO_228","HUMBLETON BECK",53.764,-0.13,2024,2024,1,1,892.691744622339
+"England","State data","second data call; new data","ENG_052_MZB_LO",12,"222756","ENG_052_MZB_LO_230","WISKE",54.282,-1.433,2024,2024,1,1,0
+"England","State data","second data call; new data","ENG_052_MZB_LO",12,"222852","ENG_052_MZB_LO_231","HOWE BECK",54.284,-1.426,2024,2024,1,1,490.826067934854
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",1,"NRW_100407","GER_070_MZB_LO_6","Rur",50.5485460519601,6.22794219636761,2006,2018,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",1,"NRW_100791","GER_070_MZB_LO_8","Perlenbach",50.5458390239925,6.23174322053103,2006,2019,14,5,390.170492955901
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",3,"NRW_107300","GER_070_MZB_LO_23","Rur",51.0979596975395,6.10758227312822,2006,2018,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",3,"NRW_126809","GER_070_MZB_LO_58","Wurm",51.0942432115242,6.11224235731428,2007,2018,12,5,508.695615545729
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",4,"NRW_114704","GER_070_MZB_LO_39","Saubach",50.7947036357589,6.22484903753172,2006,2017,12,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",4,"NRW_114716","GER_070_MZB_LO_40","Inde",50.7946096308219,6.22845936840582,2007,2017,11,5,246.010333247346
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",6,"NRW_115307","GER_070_MZB_LO_42","Inde",50.8466923345252,6.35481801577134,2007,2017,11,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",6,"NRW_119003","GER_070_MZB_LO_45","Wehebach",50.8469426781497,6.35633826572061,2007,2017,11,5,106.828459484147
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",9,"NRW_132299","GER_070_MZB_LO_67","Ahr",50.4056296976742,6.69157031310124,2007,2019,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",9,"NRW_132305","GER_070_MZB_LO_68","Schaafbach",50.4056015465009,6.68653308429344,2007,2019,13,5,345.812800219946
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",11,"NRW_132500","GER_070_MZB_LO_69","Lampertsbach",50.3908581779912,6.71880972979076,2008,2019,12,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",11,"NRW_132603","GER_070_MZB_LO_70","Ahr",50.3908294910838,6.72744999593031,2008,2019,12,5,593.337207021308
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",13,"NRW_132809","GER_070_MZB_LO_71","Muehlenbach",50.387260435331,6.74139399289679,2007,2019,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",13,"NRW_152201","GER_070_MZB_LO_110","Michelsbach",50.3822330537831,6.7469925074097,2008,2019,12,5,662.91992391551
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",14,"NRW_132901","GER_070_MZB_LO_72","Ahr",50.3702956541145,6.78908819244158,2007,2019,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",14,"NRW_133000","GER_070_MZB_LO_73","Ahbach",50.3690803016689,6.78903218716091,2007,2019,13,5,130.604674662154
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",16,"NRW_133206","GER_070_MZB_LO_76","Kyll",50.3699026535857,6.44846589676705,2008,2019,12,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",16,"NRW_150204","GER_070_MZB_LO_105","Berke",50.3729285961035,6.44821911489655,2008,2019,12,5,325.475725727965
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",17,"NRW_137315","GER_070_MZB_LO_84","Erft",50.8313007215906,6.77612065923067,2006,2018,13,7,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",17,"NRW_137406","GER_070_MZB_LO_85","Liblarer Muehlengraben",50.8384490674457,6.77884883884239,2006,2018,13,5,789.988842729601
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",17,"NRW_144800","GER_070_MZB_LO_98","Rotbach",50.8226204842029,6.77465891106506,2007,2018,12,5,937.725273985647
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",19,"NRW_143029","GER_070_MZB_LO_92","Bergbach",50.654130178174,6.6358144884364,2007,2018,12,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",19,"NRW_143509","GER_070_MZB_LO_94","Vlattener Bach",50.6584773848005,6.62446012026445,2007,2018,12,5,905.090813541718
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",21,"NRW_143704","GER_070_MZB_LO_95","Rotbach",50.7147594355714,6.73623850494729,2007,2018,12,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",21,"NRW_144400","GER_070_MZB_LO_97","Bleibach",50.7066244764749,6.73834432955215,2007,2018,12,5,885.572081292404
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",26,"NRW_201108","GER_070_MZB_LO_116","Doerspe",51.0082408115738,7.62654215911969,2006,2019,14,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",26,"NRW_201509","GER_070_MZB_LO_119","Steinagger",51.0061646232544,7.62894112459582,2006,2019,14,5,276.004984065561
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",27,"NRW_201443","GER_070_MZB_LO_117","Steinagger",50.9796698758788,7.67956765786975,2006,2019,14,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",27,"NRW_201467","GER_070_MZB_LO_118","Steinagger",50.9808996019762,7.67618493349936,2006,2019,14,5,264.71208726162
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",30,"NRW_207202","GER_070_MZB_LO_133","Wiehl",50.9465240147783,7.58310664331772,2007,2019,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",30,"NRW_207305","GER_070_MZB_LO_134","Dreisbach",50.9484160228443,7.58339078488181,2007,2019,13,5,204.157891296729
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",32,"NRW_212234","GER_070_MZB_LO_139","Suelz",50.8723892034374,7.19633577935349,2008,2019,12,7,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",32,"NRW_212260","GER_070_MZB_LO_141","Suelz",50.868848512812,7.20059411035689,2008,2019,12,7,477.959092130142
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",33,"NRW_212246","GER_070_MZB_LO_140","Suelz",50.8615086644642,7.21281339887088,2008,2019,12,7,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",33,"NRW_212271","GER_070_MZB_LO_142","Suelz",50.8632547249736,7.20937865331699,2008,2019,12,7,299.511937642622
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",33,"NRW_212301","GER_070_MZB_LO_143","Suelz",50.8583062548336,7.21570666891367,2008,2019,12,5,396.276456039066
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",34,"NRW_212260","GER_070_MZB_LO_141","Suelz",50.868848512812,7.20059411035689,2008,2019,12,7,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",34,"NRW_212234","GER_070_MZB_LO_139","Suelz",50.8723892034374,7.19633577935349,2008,2019,12,7,477.959092130142
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",34,"NRW_212271","GER_070_MZB_LO_142","Suelz",50.8632547249736,7.20937865331699,2008,2019,12,7,847.160924232933
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",35,"NRW_212271","GER_070_MZB_LO_142","Suelz",50.8632547249736,7.20937865331699,2008,2019,12,7,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",35,"NRW_212246","GER_070_MZB_LO_140","Suelz",50.8615086644642,7.21281339887088,2008,2019,12,7,299.511937642622
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",35,"NRW_212260","GER_070_MZB_LO_141","Suelz",50.868848512812,7.20059411035689,2008,2019,12,7,847.160924232933
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",35,"NRW_212301","GER_070_MZB_LO_143","Suelz",50.8583062548336,7.21570666891367,2008,2019,12,5,683.856622437211
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",37,"NRW_282601","GER_070_MZB_LO_195","Kerspe",51.1152076329921,7.48426924038129,2007,2019,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",37,"NRW_289206","GER_070_MZB_LO_203","Wupper",51.1133119438446,7.48371692769916,2007,2019,13,5,207.044668962292
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",38,"NRW_288202","GER_070_MZB_LO_202","Uelfe",51.2137724470409,7.31109099173721,2007,2019,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",38,"NRW_290701","GER_070_MZB_LO_204","Wupper",51.2215903629116,7.31192186409679,2006,2019,14,7,841.748898294735
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",41,"NRW_300342","GER_070_MZB_LO_214","Wupper",51.1339845601987,7.12119425700592,2006,2019,14,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",41,"NRW_300378","GER_070_MZB_LO_215","Sengbach",51.1323048905901,7.12020472112807,2006,2016,11,5,192.439977283171
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",43,"NRW_300512","GER_070_MZB_LO_216","Morsbach",51.1937515147939,7.21228132021938,2006,2019,14,6,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",43,"NRW_320286","GER_070_MZB_LO_290","Leyerbach",51.1995773454079,7.20219330711238,2007,2019,13,5,924.863665184819
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",44,"NRW_316271","GER_070_MZB_LO_270","Nette",51.3081862833576,6.26023473267501,2006,2019,14,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",44,"NRW_316283","GER_070_MZB_LO_271","Muehlenbach",51.302728183765,6.25645632760356,2006,2019,14,5,639.203808543953
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",47,"NRW_451058","GER_070_MZB_LO_293","Sieg",50.8792611388729,8.02414848540777,2006,2018,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",47,"NRW_455052","GER_070_MZB_LO_302","Weiss",50.8765090685935,8.03493746303412,2008,2018,11,5,790.596994992917
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",47,"NRW_455404","GER_070_MZB_LO_304","Alche",50.8803540056957,8.01082033902667,2008,2018,11,5,913.349738777672
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",50,"NRW_456408","GER_070_MZB_LO_305","Asdorfer Bach",50.8666969997612,7.88734589395029,2006,2018,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",50,"NRW_456706","GER_070_MZB_LO_306","Fischbach",50.8655589437952,7.88966090889971,2009,2019,11,5,199.278076898739
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",52,"NRW_601007","GER_070_MZB_LO_326","Afte",51.5533652798656,8.56207490752293,2008,2019,12,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",52,"NRW_601901","GER_070_MZB_LO_331","Alme",51.5560432005713,8.55685641723482,2008,2019,12,5,452.716372351829
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",54,"NRW_717204","GER_070_MZB_LO_374","Eusternbach",51.8262125936864,8.32623473803849,2008,2018,11,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",54,"NRW_717708","GER_070_MZB_LO_375","Hamelbach",51.8292729092716,8.31280935274546,2008,2018,11,5,952.448911639178
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",56,"NRW_745704","GER_070_MZB_LO_392","Diemel",51.4901328728176,9.10461239453539,2007,2019,13,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",56,"NRW_791325","GER_070_MZB_LO_410","Diemel",51.4868926368137,9.11749517439491,2007,2019,13,5,931.597287835706
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",58,"NRW_800016","GER_070_MZB_LO_417","Vechte",52.2486038467483,7.29358475448922,2007,2019,13,6,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",58,"NRW_800132","GER_070_MZB_LO_418","Steinfurter Aa",52.2501952228426,7.29668806824242,2007,2019,13,7,266.767425019761
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",60,"NRW_803029","GER_070_MZB_LO_438","Ems",52.2684856314486,7.45495882229068,2007,2018,12,5,0
+"Germany","Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)","new data call","GER_070_MZB_LO",60,"NRW_805002","GER_070_MZB_LO_450","Hemelter Bach",52.2713417316668,7.46091269206525,2006,2019,14,5,498.356446122535
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",1,"SH_121534","GER_071_MZB_LO_3","Stoer",54.0334868443,9.8453163554,2009,2020,12,5,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",1,"SH_121535","GER_071_MZB_LO_4","Stoer",54.0311179562,9.8409017888,2009,2020,12,5,378.547434243624
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",1,"SH_121536","GER_071_MZB_LO_5","Stoer",54.0310489159,9.8366254942,2009,2020,12,5,610.097278449853
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",2,"SH_121535","GER_071_MZB_LO_4","Stoer",54.0311179562,9.8409017888,2009,2020,12,5,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",2,"SH_121534","GER_071_MZB_LO_3","Stoer",54.0334868443,9.8453163554,2009,2020,12,5,378.547434243624
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",2,"SH_121536","GER_071_MZB_LO_5","Stoer",54.0310489159,9.8366254942,2009,2020,12,5,271.110621307037
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",2,"SH_121537","GER_071_MZB_LO_6","Stoer",54.0289945222,9.8295768175,2009,2020,12,5,753.254840965269
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",5,"SH_121541","GER_071_MZB_LO_7","Radesforder Au",53.9736931704,10.1358365318,2009,2020,12,5,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",5,"SH_121543","GER_071_MZB_LO_8","Radesforder Au",53.9758997395,10.1219753652,2009,2020,12,5,911.088946300615
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",7,"SH_123224","GER_071_MZB_LO_9","Schafflunder Muehlenstrom",54.7444882564,9.1051194589,2009,2020,12,7,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",7,"SH_123704","GER_071_MZB_LO_12","Schafflunder Muehlenstrom",54.747486892,9.1180991878,2009,2020,12,6,871.19154091648
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",8,"SH_123276","GER_071_MZB_LO_10","Schafflunder Muehlenstrom",54.7529731354,9.1394479883,2009,2020,12,5,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",8,"SH_123702","GER_071_MZB_LO_11","Schafflunder Muehlenstrom",54.749266282,9.1269909393,2009,2020,12,6,873.103577437294
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",9,"SH_123702","GER_071_MZB_LO_11","Schafflunder Muehlenstrom",54.749266282,9.1269909393,2009,2020,12,6,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",9,"SH_123276","GER_071_MZB_LO_10","Schafflunder Muehlenstrom",54.7529731354,9.1394479883,2009,2020,12,5,873.103577437294
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",9,"SH_123704","GER_071_MZB_LO_12","Schafflunder Muehlenstrom",54.747486892,9.1180991878,2009,2020,12,6,586.44279658138
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",10,"SH_123704","GER_071_MZB_LO_12","Schafflunder Muehlenstrom",54.747486892,9.1180991878,2009,2020,12,6,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",10,"SH_123224","GER_071_MZB_LO_9","Schafflunder Muehlenstrom",54.7444882564,9.1051194589,2009,2020,12,7,871.19154091648
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",10,"SH_123702","GER_071_MZB_LO_11","Schafflunder Muehlenstrom",54.749266282,9.1269909393,2009,2020,12,6,586.44279658138
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",11,"SH_126559","GER_071_MZB_LO_13","Schwartau",53.9302620724,10.6979531303,2009,2021,13,12,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",11,"SH_126616","GER_071_MZB_LO_14","Schwartau",53.9351497467,10.7095314323,2010,2020,11,5,904.232034753489
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",11,"SH_127134","GER_071_MZB_LO_16","Schwartau",53.9376329016,10.7049558373,2010,2020,11,6,909.551060040909
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",1,"SN_OBF00080","GER_072_MZB_LO_1","Elbe",50.8633533404438,14.2262837583507,2009,2019,11,11,0
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",1,"SN_OBF00090","GER_072_MZB_LO_2","Elbe",50.8606541995165,14.2282716762327,2009,2019,11,11,319.89613242192
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",3,"SN_OBF00100","GER_072_MZB_LO_3","Elbe-0 (Labe od toku Jílovský potok po tok Kirnitzsch)",50.8904852802073,14.2291699590732,2009,2019,11,11,0
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",3,"SN_OBF00200","GER_072_MZB_LO_4","Elbe-0 (Labe od toku Jílovský potok po tok Kirnitzsch)",50.8913027093774,14.2301471625146,2009,2019,11,11,110.085320039214
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",5,"SN_OBF00250","GER_072_MZB_LO_5","Elbe",50.9066355240453,14.1948491761461,2009,2019,11,11,0
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",5,"SN_OBF00300","GER_072_MZB_LO_6","Elbe",50.9046361490932,14.2074237139258,2009,2019,11,11,880.677565242663
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",7,"SN_OBF01200","GER_072_MZB_LO_9","Elbe-1",51.0958106153903,13.6429752056482,2009,2019,11,11,0
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",7,"SN_OBF01300","GER_072_MZB_LO_10","Elbe-1",51.0969389137351,13.6432864747065,2009,2019,11,11,123.024590287568
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",9,"SN_OBF01800","GER_072_MZB_LO_12","Elbe",51.209331557957,13.4040423209241,2009,2019,11,11,0
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",9,"SN_OBF01900","GER_072_MZB_LO_13","Elbe",51.2095736278104,13.4063394325166,2009,2019,11,11,157.175886577574
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",11,"SN_OBF02600","GER_072_MZB_LO_18","Elbe",51.5577384255562,13.0104521292251,2009,2019,11,11,0
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",11,"SN_OBF02700","GER_072_MZB_LO_19","Elbe",51.5582362374623,13.0121358492304,2009,2019,11,11,124.806340308947
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",13,"SN_OBF50006","GER_072_MZB_LO_76","Kroestaubach",50.4701625274093,12.0723128798177,2010,2020,11,5,0
+"Germany","Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen","new data call","GER_072_MZB_LO",13,"SN_OBF51100","GER_072_MZB_LO_78","Rosenbach",50.4742021157016,12.0809824951363,2010,2020,11,6,735.866873928346
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",1,"ST_410001","GER_073_MZB_LO_55","Elbe",51.9298058696411,11.9524835101686,2008,2019,12,8,0
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",1,"ST_410002","GER_073_MZB_LO_56","Elbe",51.9317717950605,11.9529909147918,2008,2019,12,8,213.931683335862
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",3,"ST_410020","GER_073_MZB_LO_57","Elbe",52.0645570828003,11.6803593278983,2006,2019,14,10,0
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",3,"ST_410021","GER_073_MZB_LO_58","Elbe",52.0649048463425,11.6832546930507,2008,2019,12,8,195.386770747943
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",5,"ST_410060","GER_073_MZB_LO_59","Elbe",52.7835352371614,12.0301862221152,2006,2019,14,8,0
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",5,"ST_410061","GER_073_MZB_LO_60","Elbe",52.7841858153452,12.0346367302095,2006,2019,14,8,298.443917058438
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",7,"ST_410100","GER_073_MZB_LO_62","Bode",51.7175808982985,10.9703942353041,2006,2018,13,9,0
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",7,"ST_411371","GER_073_MZB_LO_89","Luppbode",51.7137059677574,10.9730197195473,2008,2018,11,8,451.73351574308
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",9,"ST_417520","GER_073_MZB_LO_117","Kuhgraben",52.6327657217864,11.8780308367892,2008,2019,12,5,0
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",9,"ST_417540","GER_073_MZB_LO_119","Neuer Flottgraben",52.6237609164849,11.8799961788261,2008,2018,11,5,976.57663133899
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",11,"ST_418022","GER_073_MZB_LO_131","Milde",52.53239696608,11.3833931145495,2006,2018,13,5,0
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",11,"ST_418080","GER_073_MZB_LO_134","Rottgraben (Milde)",52.5238285358924,11.3873518155872,2006,2019,14,6,956.966097130875
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",12,"ST_418025","GER_073_MZB_LO_132","Milde",52.664868904618,11.456428110031,2006,2018,13,5,0
+"Germany","Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU)","new data call","GER_073_MZB_LO",12,"ST_418110","GER_073_MZB_LO_136","Secantsgraben (Milde)",52.6583571885174,11.4547615153713,2008,2018,11,5,708.495949817821
+"Italy","Alberto Scotti","first call; data Ellen used","ITA_024_MZB_LO",1,"Saldur_1","ITA_024_MZB_LO_1","Rio Saldura / Saldurbach",46.7435,10.7013,2010,2017,8,8,0
+"Italy","Alberto Scotti","first call; data Ellen used","ITA_024_MZB_LO",1,"Saldur_2","ITA_024_MZB_LO_2","Rio Saldura / Saldurbach",46.7424,10.6996,2010,2017,8,8,172.705928607005
+"Spain","Jose Barquin Ortiz","first call; data Ellen used","ESP_036_MZB_LO",1,"1","ESP_036_MZB_LO_1","Cares",43.150987,-4.92174,2012,2024,13,13,0
+"Spain","Jose Barquin Ortiz","first call; data Ellen used","ESP_036_MZB_LO",1,"2","ESP_036_MZB_LO_2","Arenal",43.146195,-4.911432,2012,2024,13,13,967.327561105965
+"Sweden","Lenka Kuglerová","first call; data Ellen used","SWE_039_MZB_LO",1,"79","SWE_039_MZB_LO_33","Kvarnån",63.4333137471389,16.529157409833,2011,2019,9,9,0
+"Sweden","Lenka Kuglerová","first call; data Ellen used","SWE_039_MZB_LO",1,"80","SWE_039_MZB_LO_34","Kvarnån",63.436325555002,16.5186132715029,1997,2019,23,23,619.411897405751
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",1,"CH_014_LU","CHE_075_MZB_LO_6","Reuss",47.0642675964268,8.28528298624094,2012,2019,8,3,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",1,"CH_093_LU","CHE_075_MZB_LO_64","Kleine Emme",47.0670003917782,8.28431240942808,2012,2019,8,2,302.518722574007
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",1,"CH_093b_LU","CHE_075_MZB_LO_65","Kleine Emme",47.0702262152678,8.27743795213001,2015,2015,1,1,862.210832653634
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",2,"CH_015_VS","CHE_075_MZB_LO_7","Rhône",46.309343306077,7.95302829607667,2012,2019,8,3,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",2,"CH_910_VS","CHE_075_MZB_LO_119","Canal de Brig",46.3070579994666,7.95311053024735,2022,2022,1,1,246.115805424365
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",3,"CH_033_AG","CHE_075_MZB_LO_20","Wyna",47.3712628943842,8.08832343305998,2012,2019,8,3,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",3,"CH_039_AG","CHE_075_MZB_LO_24","Suhre",47.3771634790066,8.08348271846708,2012,2019,8,3,726.482182914462
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",7,"CH_115_AI","CHE_075_MZB_LO_76","Sitter",47.323333683911,9.42326458445377,2011,2019,9,6,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",7,"Spez_008_AI","CHE_075_MZB_LO_148","Rödelbach",47.3258242288607,9.42284117181263,2018,2018,1,1,269.64707928091
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",8,"CH_116_LU","CHE_075_MZB_LO_77","Ron",47.1714166334764,8.28098929266335,2012,2019,8,3,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",8,"CH_154_LU","CHE_075_MZB_LO_110","Ron Hochdorf",47.1648505281963,8.28337874690521,2019,2022,4,2,727.720831069688
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",8,"CH_SPEZ_510_LU","CHE_075_MZB_LO_125","Ron",47.1772271116771,8.27736050340264,2023,2023,1,1,679.325471733032
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",9,"CH_119_NE","CHE_075_MZB_LO_78","Seyon",47.0138655613571,6.90644747535213,2012,2019,8,3,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",9,"CH_903_NE","CHE_075_MZB_LO_113","Sorge",47.0158862648525,6.90769005532861,2020,2022,3,3,235.835480190353
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",9,"Spez_053_NE","CHE_075_MZB_LO_199","Sorge",47.0187987028113,6.89571836661761,2018,2019,2,2,951.238896613906
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",10,"CH_126_VD","CHE_075_MZB_LO_80","Mentue",46.7770327821065,6.72358263899724,2012,2019,8,3,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",10,"CH_150_VD","CHE_075_MZB_LO_106","Ruisseau Gi",46.780359311285,6.72040880593092,2019,2022,4,4,427.996950258327
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",11,"CH_136_AG","CHE_075_MZB_LO_90","Küntenerbach",47.3851836453148,8.32552875141737,2019,2022,4,4,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",11,"Spez_005_AG","CHE_075_MZB_LO_144","Küntenerbach",47.3860846861222,8.32649731773342,2018,2018,1,1,119.979762604814
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",12,"CH_138_BE","CHE_075_MZB_LO_92","Chrümmlisbach",47.1173623188208,7.51945071980183,2019,2020,2,2,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",12,"CH_138_BE_","CHE_075_MZB_LO_93","Chrümlisbach",47.1233863566541,7.50968149618398,2022,2022,1,1,966.681255968768
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",12,"CH_138_BE_bis","CHE_075_MZB_LO_94","Chrümlisbach",47.1182718582464,7.51793672988991,2021,2021,1,1,148.095246700895
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",12,"Spez_015_BE","CHE_075_MZB_LO_156","Chrümmelisbach",47.1215143241455,7.51143166853998,2017,2017,1,1,739.05175011768
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",15,"CH_140_FR","CHE_075_MZB_LO_96","Bainoz",46.8061186339931,6.81791835695448,2019,2022,4,4,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",15,"Spez_027_FR","CHE_075_MZB_LO_168","Bainoz",46.8016305833865,6.81147242797084,2017,2017,1,1,678.277421530779
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",16,"CH_141_JU","CHE_075_MZB_LO_97","Erveratte",47.4152123359452,7.17793363522413,2019,2022,4,2,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",16,"CH_141_JU_bis","CHE_075_MZB_LO_98","Erveratte",47.4151636939521,7.18030571972539,2019,2021,3,3,173.235164371289
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",16,"Spez_044_JU_ER_03_","CHE_075_MZB_LO_188","Ervaratte",47.4151636939521,7.18030571972539,2018,2018,1,1,173.235164371289
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",18,"CH_143_SG","CHE_075_MZB_LO_99","Zapfenbach",47.3882016123391,9.62141847175342,2019,2022,4,4,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",18,"CH_144_SG","CHE_075_MZB_LO_100","Mittlerer Seegraben",47.3892658287731,9.61890491975775,2019,2022,4,4,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",18,"Spez_058_SG","CHE_075_MZB_LO_206","Mittlerer Seegraben",47.3892658287731,9.61890491975775,2018,2018,1,1,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",19,"CH_144_SG","CHE_075_MZB_LO_100","Mittlerer Seegraben",47.3892658287731,9.61890491975775,2019,2022,4,4,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",19,"CH_143_SG","CHE_075_MZB_LO_99","Zapfenbach",47.3882016123391,9.62141847175342,2019,2022,4,4,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",19,"Spez_057_SG","CHE_075_MZB_LO_205","Zapfenbach",47.3882016123391,9.62141847175342,2018,2018,1,1,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",20,"CH_147_TG","CHE_075_MZB_LO_103","Eschelisbach",47.6059720236965,9.30454785670808,2019,2022,4,4,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",20,"Spez_070_TG","CHE_075_MZB_LO_219","Eschelisbach",47.6048097803627,9.3029772871437,2015,2015,1,1,169.3010683473
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",22,"CH_152_VS","CHE_075_MZB_LO_108","Canal D'Uvrier",46.2463860950232,7.4062350499045,2019,2022,4,4,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",22,"Spez_088_VS","CHE_075_MZB_LO_240","Canal D'Uvrier",46.2477246417156,7.40047718300419,2018,2018,1,1,453.607729345518
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",26,"CH_SPEZ_506_TI","CHE_075_MZB_LO_121","Scairolo",45.9562825917767,8.91698680128894,2023,2023,1,1,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",26,"CH_SPEZ_507_TI","CHE_075_MZB_LO_122","Scairolo",45.9521431614116,8.90881347886563,2023,2023,1,1,758.816058583109
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",29,"SO_VER_01","CHE_075_MZB_LO_135","Verenabach",47.2286098909697,7.53131781055971,2019,2019,1,1,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",29,"SO_VER_02","CHE_075_MZB_LO_136","Verenabach",47.2260817430173,7.53211885035921,2019,2019,1,1,278.192616707092
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",29,"SO_VER_03","CHE_075_MZB_LO_137","Verenabach",47.2249921803405,7.53359572185252,2019,2019,1,1,423.410435141102
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",38,"Spez_056_OW","CHE_075_MZB_LO_202","Rütibach",46.850735053533,8.18191775700963,2019,2019,1,1,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",38,"Spez_056_OW_010","CHE_075_MZB_LO_203","Ruetibach",46.851993527045,8.17789648806516,2017,2017,1,1,326.26957145059
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",39,"Spez_056_OW_010","CHE_075_MZB_LO_203","Ruetibach",46.851993527045,8.17789648806516,2017,2017,1,1,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",39,"Spez_056_OW","CHE_075_MZB_LO_202","Rütibach",46.850735053533,8.18191775700963,2019,2019,1,1,326.26957145059
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",39,"Spez_056_OW_311","CHE_075_MZB_LO_204","Rütibach",46.850735053533,8.18191775700963,2018,2018,1,1,326.26957145059
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",41,"Spez_057_SG","CHE_075_MZB_LO_205","Zapfenbach",47.3882016123391,9.62141847175342,2018,2018,1,1,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",41,"CH_144_SG","CHE_075_MZB_LO_100","Mittlerer Seegraben",47.3892658287731,9.61890491975775,2019,2022,4,4,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",41,"Spez_058_SG","CHE_075_MZB_LO_206","Mittlerer Seegraben",47.3892658287731,9.61890491975775,2018,2018,1,1,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",42,"Spez_058_SG","CHE_075_MZB_LO_206","Mittlerer Seegraben",47.3892658287731,9.61890491975775,2018,2018,1,1,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",42,"CH_143_SG","CHE_075_MZB_LO_99","Zapfenbach",47.3882016123391,9.62141847175342,2019,2022,4,4,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",42,"Spez_057_SG","CHE_075_MZB_LO_205","Zapfenbach",47.3882016123391,9.62141847175342,2018,2018,1,1,216.335124319421
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",45,"VD_CAR_BRE_0736","CHE_075_MZB_LO_254","Carrouge",46.5713672678029,6.77842551560494,2019,2019,1,1,0
+"Switzerland","Maxime Chevre","new data call","CHE_075_MZB_LO",45,"VD_PAR_BRO_0711","CHE_075_MZB_LO_257","Parimbot",46.5654973196825,6.78698806767636,2019,2019,1,1,896.181219947904
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"1","CHE_076_MZB_LO_1","Grond",46.7292538603,10.126757835,2001,2022,22,22,0
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"3","CHE_076_MZB_LO_3","Mezza-Gluna",46.7292682892,10.1307247637,2001,2022,22,22,293.541219581152
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"4","CHE_076_MZB_LO_4","Immez",46.7279272478,10.1311028504,2001,2022,22,22,351.78744939354
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"5","CHE_076_MZB_LO_5","Sura",46.7251800148,10.1262275256,2001,2022,22,22,440.14974309088
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"6","CHE_076_MZB_LO_6","Sura",46.7263927124,10.1282382454,2001,2022,22,22,326.802926314975
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"7","CHE_076_MZB_LO_7","Sura",46.7262966296,10.1311654076,2001,2022,22,22,455.685170800876
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"8","CHE_076_MZB_LO_8","Immez",46.7269669852,10.1325078081,2001,2022,22,22,491.529096573962
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"9","CHE_076_MZB_LO_9","Immez",46.7279061578,10.1346621394,2001,2022,22,22,602.607682695608
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",1,"10","CHE_076_MZB_LO_10","Zeznina",46.7316567139,10.1366823439,2001,2022,22,22,778.551493499555
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"2","CHE_076_MZB_LO_2","Mezza-Gluna",46.7299353673,10.1276295696,2001,2022,22,22,0
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"3","CHE_076_MZB_LO_3","Mezza-Gluna",46.7292682892,10.1307247637,2001,2022,22,22,240.017161915725
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"4","CHE_076_MZB_LO_4","Immez",46.7279272478,10.1311028504,2001,2022,22,22,335.787269962952
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"5","CHE_076_MZB_LO_5","Sura",46.7251800148,10.1262275256,2001,2022,22,22,522.146562627823
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"6","CHE_076_MZB_LO_6","Sura",46.7263927124,10.1282382454,2001,2022,22,22,383.88516865835
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"7","CHE_076_MZB_LO_7","Sura",46.7262966296,10.1311654076,2001,2022,22,22,470.943054999072
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"8","CHE_076_MZB_LO_8","Immez",46.7269669852,10.1325078081,2001,2022,22,22,482.019068114586
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"9","CHE_076_MZB_LO_9","Immez",46.7279061578,10.1346621394,2001,2022,22,22,564.345776605492
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",2,"10","CHE_076_MZB_LO_10","Zeznina",46.7316567139,10.1366823439,2001,2022,22,22,694.990153984346
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"3","CHE_076_MZB_LO_3","Mezza-Gluna",46.7292682892,10.1307247637,2001,2022,22,22,0
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"1","CHE_076_MZB_LO_1","Grond",46.7292538603,10.126757835,2001,2022,22,22,293.541219581152
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"2","CHE_076_MZB_LO_2","Mezza-Gluna",46.7299353673,10.1276295696,2001,2022,22,22,240.017161915725
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"4","CHE_076_MZB_LO_4","Immez",46.7279272478,10.1311028504,2001,2022,22,22,146.999582707639
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"5","CHE_076_MZB_LO_5","Sura",46.7251800148,10.1262275256,2001,2022,22,22,551.639092230117
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"6","CHE_076_MZB_LO_6","Sura",46.7263927124,10.1282382454,2001,2022,22,22,360.018338242242
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"7","CHE_076_MZB_LO_7","Sura",46.7262966296,10.1311654076,2001,2022,22,22,321.445737695122
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"8","CHE_076_MZB_LO_8","Immez",46.7269669852,10.1325078081,2001,2022,22,22,280.603804637706
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"9","CHE_076_MZB_LO_9","Immez",46.7279061578,10.1346621394,2001,2022,22,22,326.149660440335
+"Switzerland","Christopher Robinson","new data call","CHE_076_MZB_LO",3,"10","CHE_076_MZB_LO_10","Zeznina",46.7316567139,10.1366823439,2001,2022,22,22,510.283880021457

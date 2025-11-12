@@ -1,0 +1,990 @@
+"country","prov","origin","dataset","group","org.site","unique.id","river","latitude","longitude","yr.st","yr.ed","yr.ln","yr.num","distance"
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",1,"50766","ENG_041_MZB_LO_3449","Afon Tanat - conf Afon Rhaeadr to conf Afon Vyrnwy",52.798314,-3.1256779,1995,2004,10,9,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",1,"50766","ENG_062_MZB_LO_1786","TANAT",52.7982258573,-3.1250661494,2002,2024,23,22,40.978434577727
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",2,"33515","ENG_041_MZB_LO_3459","Lower Roding (Cripsey Bk to Loughton)",51.659411,0.23073615,1996,2015,20,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",2,"33515","ENG_062_MZB_LO_855","BOISHALL BROOK",51.6594142871,0.2307630128,2002,2015,14,13,1.82954806083055
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",3,"33731","ENG_041_MZB_LO_3460","Mimram (Whitwell to Codicote Bottom)",51.876986,-0.28126937,1994,2019,26,24,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",3,"33731","ENG_042_MZB_LO_12","MIMRAM",51.876986,-0.281269,2002,2017,16,16,0.0246085553400317
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",3,"33731","ENG_062_MZB_LO_865","MIMRAM",51.876992611,-0.2812459343,2002,2024,23,23,1.71295510265894
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",4,"33750","ENG_041_MZB_LO_3461","Ver",51.793264,-0.39265934,1994,2019,26,25,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",4,"33750","ENG_042_MZB_LO_21","VER",51.793264,-0.392659,2005,2017,13,13,0.0226546615520057
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",4,"33750","ENG_062_MZB_LO_866","VER",51.7932710798,-0.3926359025,2002,2023,22,22,1.73711222496606
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",5,"34011","ENG_041_MZB_LO_3462","Misbourne",51.578141,-0.51633675,1994,2018,25,21,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",5,"34011","ENG_042_MZB_LO_17","MISBOURNE",51.578141,-0.516337,2005,2017,13,13,0.0167360415932417
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",5,"34011","ENG_062_MZB_LO_890","MISBOURNE",51.578142969,-0.5163164643,2002,2023,22,22,1.37438900301673
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",6,"34017","ENG_041_MZB_LO_3463","Beane (from confluence with Stevenage Brook to Lee)",51.861611,-0.11687346,1994,2019,26,26,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",6,"34017","ENG_042_MZB_LO_2","BEANE",51.861611,-0.116873,1999,2017,19,19,0.030604705279438
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",6,"34017","ENG_062_MZB_LO_893","BEANE",51.8616176493,-0.1168469497,2002,2023,22,22,1.90301260863818
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",7,"34213","ENG_041_MZB_LO_3465","Rib (from confluence with Quin to Lee Navigation)",51.808157,-0.070028209,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",7,"34213","ENG_062_MZB_LO_939","RIB",51.808163549,-0.069999727,2002,2024,23,22,2.02348705486585
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",8,"34294","ENG_041_MZB_LO_3466","Misbourne",51.584912,-0.53929734,1994,2019,26,24,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",8,"34294","ENG_042_MZB_LO_19","MISBOURNE",51.584912,-0.539297,2005,2017,13,13,0.0227576694375975
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",8,"34294","ENG_062_MZB_LO_954","MISBOURNE",51.5849142789,-0.5392775151,2002,2023,22,22,1.34936745780826
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",9,"34295","ENG_041_MZB_LO_3467","Misbourne",51.566538,-0.48928627,1994,2019,26,21,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",9,"34295","ENG_042_MZB_LO_20","MISBOURNE",51.566538,-0.489286,2007,2017,11,11,0.0180794800266521
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",9,"34295","ENG_062_MZB_LO_955","MISBOURNE",51.5665397989,-0.4892654411,2002,2023,22,21,1.40805322871491
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",10,"34306","ENG_041_MZB_LO_3468","Chess",51.690211,-0.58738592,1995,2019,25,22,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",10,"34306","ENG_042_MZB_LO_5","CHESS",51.690211,-0.587386,2004,2017,14,14,0.00534249674579405
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",10,"34306","ENG_062_MZB_LO_961","CHESS",51.6902157165,-0.5873633528,2002,2023,22,21,1.58999088118097
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",11,"34310","ENG_041_MZB_LO_3469","Chess",51.680088,-0.51673913,1996,2019,24,22,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",11,"34310","ENG_042_MZB_LO_6","CHESS",51.680088,-0.516739,2004,2017,14,14,0.00868347047954803
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",11,"34310","ENG_062_MZB_LO_963","CHESS",51.6800922197,-0.5167174948,2002,2024,23,23,1.51459859604648
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",12,"34312","ENG_041_MZB_LO_3470","Gade (Upper stretch Great Gaddesden to confluence with Bulbourne / GUC)",51.779573,-0.49202491,1995,2019,25,25,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",12,"34312","ENG_042_MZB_LO_9","GADE",51.779573,-0.492025,2005,2017,13,13,0.00599861372289421
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",12,"34312","ENG_062_MZB_LO_964","GADE",51.7795809561,-0.4920020486,2002,2023,22,22,1.74718314511593
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",13,"34343","ENG_041_MZB_LO_3471","Mimram (Codicote Bottom to Lee)",51.80465,-0.14658986,1994,2019,26,23,0
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",13,"34343","ENG_042_MZB_LO_15","MIMRAM",51.80465,-0.14659,2006,2017,12,12,0.00932607213241888
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",13,"34343","ENG_062_MZB_LO_971","MIMRAM",51.8046566885,-0.146563657,2002,2023,22,20,1.88767967696469
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",14,"34359","ENG_041_MZB_LO_3472","Ash (from confluence with Bury Green Brook to Lee)",51.832652,0.065506766,1995,2019,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",14,"34359","ENG_062_MZB_LO_978","ASH (LEE)",51.8326585065,0.0655330421,2002,2023,22,21,1.8838518661588
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",15,"34360","ENG_041_MZB_LO_3473","Ash (from confluence with Bury Green Brook to Lee)",51.801396,-0.004381763,1995,2018,24,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",15,"34360","ENG_062_MZB_LO_979","ASH (LEE)",51.8014025417,-0.0043543937,2002,2023,22,22,1.95413487326426
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",16,"34362","ENG_041_MZB_LO_3474","Stevenage Brook",51.86734,-0.13219049,1994,2018,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",16,"34362","ENG_062_MZB_LO_981","STEVENAGE BROOK",51.8673470957,-0.1321645716,2002,2023,22,22,1.88525847234297
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",17,"35491","ENG_041_MZB_LO_3476","Middle Kennet (Marlborough to Hungerford)",51.424723,-1.6744609,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",17,"35491","ENG_062_MZB_LO_1039","KENNET",51.4247222469,-1.6744490792,2002,2024,23,22,0.79808249273597
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",18,"35792","ENG_041_MZB_LO_3477","Whitewater",51.3353,-0.94172563,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",18,"35792","ENG_062_MZB_LO_1059","WHITEWATER (LODDON)",51.3353002308,-0.9417078632,2002,2024,23,22,1.19591382950553
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",19,"35812","ENG_041_MZB_LO_3478","South Wey (Bordon to River Slea confluence)",51.123802,-0.84653907,1995,2019,25,14,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",19,"35812","ENG_062_MZB_LO_1065","WEY (SOUTH)",51.1237978333,-0.8465216138,2002,2024,23,13,1.26216058853315
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",20,"36034","ENG_041_MZB_LO_3479","Loddon (Basingstoke to River Lyde confluence at Hartley Wespall)",51.2926,-1.0164091,1995,2019,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",20,"36034","ENG_062_MZB_LO_1111","LODDON",51.2926000584,-1.0163912069,2002,2023,22,22,1.20528354591477
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",21,"36072","ENG_041_MZB_LO_3480","Lambourn (Source to Newbury)",51.420765,-1.3514552,1994,2019,26,25,0
+"England","Don Monteith","first call; data Ellen used","ENG_043_MZB_LO",21,"Lambourn","ENG_043_MZB_LO_6","Lambourn",51.42071533,-1.3514558,1998,2012,15,14,5.33655463933021
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",21,"36072","ENG_062_MZB_LO_1117","LAMBOURN",51.4207644278,-1.3514370174,2003,2024,22,22,1.22292573599495
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",22,"36177","ENG_041_MZB_LO_3481","Cranleigh Waters",51.116347,-0.46818106,1998,2019,22,17,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",22,"36177","ENG_062_MZB_LO_1145","CRANLEIGH WATERS",51.1163426006,-0.4681572052,2002,2024,23,19,1.68077141792102
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",23,"36183","ENG_041_MZB_LO_3483","Cranleigh Waters",51.122393,-0.49123005,1998,2019,22,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",23,"36183","ENG_062_MZB_LO_1148","CRANLEIGH WATERS",51.122388619,-0.4912067459,2002,2024,23,23,1.64430837775849
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",24,"36186","ENG_041_MZB_LO_3484","Coln (from Coln Rogers) and Thames (Coln to Leach)",51.688249,-1.7072215,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",24,"36186","ENG_062_MZB_LO_1149","COLN",51.6882522527,-1.7072084118,2003,2023,21,21,0.941365852617968
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",25,"42176","ENG_041_MZB_LO_3485","Lower Eden",51.172958,0.1737991,1994,2019,26,25,0
+"England","Don Monteith","first call; data Ellen used","ENG_043_MZB_LO",25,"Eden (Kent)","ENG_043_MZB_LO_5","Eden (Kent)",51.17290115,0.17382586,1998,2012,15,15,6.3690987211874
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",25,"42176","ENG_062_MZB_LO_1226","EDEN (KENT)",51.1729272144,0.1738812834,2002,2023,22,17,6.46078653976907
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",26,"44031","ENG_041_MZB_LO_3488","Upper Cray",51.421369,0.12371707,1995,2015,21,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",26,"44031","ENG_062_MZB_LO_1416","CRAY",51.421368413,0.123742976,2002,2015,14,14,1.74130312317825
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",27,"44230","ENG_041_MZB_LO_3489","Shuttle",51.447374,0.14751876,1994,2014,21,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",27,"44230","ENG_062_MZB_LO_1421","SHUTTLE",51.4473743349,0.1475450388,2002,2024,23,13,1.76457573404268
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",28,"82078","ENG_041_MZB_LO_3490","South Wey (River Slea confluence to Tilford)",51.170506,-0.78758671,2002,2019,18,12,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",28,"82078","ENG_062_MZB_LO_3189","WEY (SOUTH)",51.1705025411,-0.7875685887,2002,2020,19,13,1.27902210254911
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",29,"47084","ENG_041_MZB_LO_3495","Lonco Bk - source to conf R Meese",52.811142,-2.3782698,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",29,"47084","ENG_062_MZB_LO_1503","LONCO BROOK",52.8115174958,-2.377767799,2003,2024,22,18,51.9587035173655
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",30,"47438","ENG_041_MZB_LO_3496","Blakedown Bk - source to conf R Stour",52.402566,-2.1851546,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",30,"47438","ENG_062_MZB_LO_1549","BLAKEDOWN BROOK",52.4025361999,-2.1842531175,2002,2021,20,19,59.3546561523205
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",31,"48109","ENG_041_MZB_LO_3497","Burlington Bk - source to conf Neachley Bk",52.671972,-2.3208691,1994,2018,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",31,"48109","ENG_062_MZB_LO_1598","BURLINGTON BROOK",52.6725473122,-2.3197316895,2002,2021,20,19,96.7008445753314
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",32,"48184","ENG_041_MZB_LO_3498","Roden - conf Sleap Bk to conf R Tern",52.848451,-2.6800212,1995,2019,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",32,"48184","ENG_062_MZB_LO_1605","RODEN",52.84872324,-2.6789680425,2003,2023,21,19,74.5445679518297
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",33,"48210","ENG_041_MZB_LO_3499","Teme - conf R Onny to conf R Severn",52.313237,-2.5890237,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",33,"48210","ENG_062_MZB_LO_1609","TEME",52.3132501006,-2.58902106,2002,2024,23,21,1.41880157820769
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",34,"49168","ENG_041_MZB_LO_3502","Roden - conf Sleap Bk to conf R Tern",52.724782,-2.6085038,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",34,"49168","ENG_062_MZB_LO_1687","RODEN",52.7248314021,-2.6089468017,2002,2021,20,18,29.4012945657829
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",35,"50139","ENG_041_MZB_LO_3503","Perry - conf Tetchill Bk to conf R Severn",52.747693,-2.8325218,1994,2019,26,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",35,"50139","ENG_062_MZB_LO_1743","PERRY",52.7476939071,-2.8320160696,2003,2023,21,19,32.9955576503248
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",36,"50257","ENG_041_MZB_LO_3504","Severn - conf Bele Bk to conf Sundorne Bk",52.732339,-2.8425958,1994,2011,18,17,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",36,"50257","ENG_062_MZB_LO_1746","SEVERN",52.732354474,-2.8425941892,2002,2011,10,9,1.66700494926772
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",37,"50989","ENG_041_MZB_LO_3508","Sherbourne - source to conf R Sowe",52.418748,-1.5476693,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",37,"50989","ENG_062_MZB_LO_1806","SHERBOURNE",52.418764429,-1.5476597646,2003,2021,19,18,1.87386917453775
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",38,"51368","ENG_041_MZB_LO_3511","Salwarpe - conf Elmbridge Bk to conf R Severn",52.254653,-2.1999191,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",38,"51368","ENG_062_MZB_LO_1856","SALWARPE",52.2551590651,-2.201014603,2002,2024,23,21,90.442734517541
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",39,"52041","ENG_041_MZB_LO_3513","Blakedown Bk - source to conf R Stour",52.400295,-2.1991078,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",39,"52041","ENG_062_MZB_LO_1916","BLAKEDOWN BROOK",52.4001822024,-2.1999257129,2002,2021,20,19,55.1264855456048
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",40,"52577","ENG_041_MZB_LO_3515","Cound Bk - Condover Br to conf R Severn",52.647224,-2.6547236,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",40,"52577","ENG_062_MZB_LO_1965","COUND BROOK",52.6464737745,-2.6549164931,2002,2024,23,22,81.6356446899376
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",41,"52585","ENG_041_MZB_LO_3516","Worfe - conf Wesley Bk to conf R Severn",52.636897,-2.3265229,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",41,"52585","ENG_062_MZB_LO_1966","WORFE",52.6369115372,-2.3265197217,2002,2020,19,16,1.57661994682324
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",42,"53158","ENG_041_MZB_LO_3517","Tern - conf Loggerheads Bk to conf Bailey Bk",52.894252,-2.5097986,1994,2018,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",42,"53158","ENG_062_MZB_LO_2034","TERN",52.8943121124,-2.5096498002,2004,2024,21,20,11.6367449714894
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",43,"53695","ENG_041_MZB_LO_3520","Rea Bk - conf Pontesford Bk to conf R Severn",52.703386,-2.7354812,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",43,"53695","ENG_062_MZB_LO_2086","REA BROOK (SHROPS)",52.7033624967,-2.7357597134,2002,2024,23,22,18.3637195614368
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",44,"54017","ENG_041_MZB_LO_3521","Worfe - conf Wesley Bk to conf R Severn",52.560274,-2.3952832,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",44,"54017","ENG_062_MZB_LO_2144","WORFE",52.5594052634,-2.3958188135,2002,2024,23,21,99.7656427249632
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",45,"7633","ENG_041_MZB_LO_3523","Lower Axe",50.754868,-3.0440368,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",45,"7633","ENG_062_MZB_LO_463","AXE (DEVON)",50.7548574727,-3.0440440306,2002,2023,22,19,1.2335092668902
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",46,"9040","ENG_041_MZB_LO_3524","Bere Stream",50.727122,-2.2012444,1994,2015,22,15,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",46,"9040","ENG_062_MZB_LO_573","BERE STREAM",50.7271124202,-2.2012403549,2003,2024,22,11,1.06537077179019
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",47,"10753","ENG_041_MZB_LO_3525","Walkham",50.557825,-4.046998,1994,2018,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",47,"10753","ENG_062_MZB_LO_787","WALKHAM",50.5578145864,-4.0470230351,2002,2018,17,16,2.04595600484806
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",48,"9068","ENG_041_MZB_LO_3526","Frome Dorset (Lower) d/s Louds Mill Dorchester",50.679593,-2.1558628,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",48,"9068","ENG_062_MZB_LO_581","DORSET FROME",50.6795826766,-2.1558581529,2002,2024,23,21,1.15338782059569
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",49,"9190","ENG_041_MZB_LO_3527","Bourne (Hampshire Avon)",51.071156,-1.7796658,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",49,"9190","ENG_062_MZB_LO_611","BOURNE",51.0711501223,-1.7796561968,2002,2024,23,23,0.906163617928964
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",50,"42117","ENG_041_MZB_LO_3528","Dour from Kearsney to Dover",51.137183,1.2955338,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",50,"42117","ENG_062_MZB_LO_1210","DOUR",51.1371892016,1.295565466,2002,2021,20,20,2.24145488598729
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",51,"42215","ENG_041_MZB_LO_3529","Great Stour between Wye and A2",51.220611,0.95393664,1994,2018,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",51,"42215","ENG_062_MZB_LO_1232","GREAT STOUR",51.2206127997,0.9539664629,2002,2018,17,14,2.02124019373909
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",52,"43418","ENG_041_MZB_LO_3531","Dour from Kearsney to Dover",51.145341,1.2740926,1994,2014,21,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",52,"43418","ENG_062_MZB_LO_1360","DOUR",51.1453474725,1.2741240873,2002,2014,13,13,2.2384385918508
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",53,"43668","ENG_041_MZB_LO_3532","Dour from Kearsney to Dover",51.127387,1.3142771,1994,2014,21,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",53,"43668","ENG_062_MZB_LO_1384","DOUR",51.1273940182,1.3143086155,2002,2014,13,13,2.25990723486302
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",54,"43702","ENG_041_MZB_LO_3533","Upper Great Stour",51.146507,0.84102295,1995,2016,22,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",54,"43702","ENG_062_MZB_LO_1387","GREAT STOUR",51.1465060908,0.8410532228,2002,2019,18,14,2.04791594343123
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",55,"43751","ENG_041_MZB_LO_3534","Great Stour between Wye and A2",51.258478,1.0312639,1994,2018,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",55,"43751","ENG_062_MZB_LO_1394","GREAT STOUR",51.2587069462,1.0316384224,2002,2018,17,14,35.2467018194183
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",56,"43796","ENG_041_MZB_LO_3535","Tributary of Newmill Channel upstream of Rolvenden",51.072393,0.61776515,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",56,"43796","ENG_062_MZB_LO_1398","NEWMILL CHANNEL",51.0723898786,0.617795711,2002,2023,22,21,2.09535707330306
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",57,"43797","ENG_041_MZB_LO_3536","Upper Great Stour",51.160329,0.80124963,1994,2018,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",57,"43797","ENG_062_MZB_LO_1399","GREAT STOUR",51.1603276417,0.8012798034,2002,2019,18,18,2.04347900825035
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",58,"63842","ENG_041_MZB_LO_3537","Haweswater Beck",54.551339,-2.7467013,1995,2018,24,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",58,"63842","ENG_062_MZB_LO_2715","HAWESWATER BECK",54.5515202736,-2.7463374914,2004,2018,15,10,30.0040504740967
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",59,"65126","ENG_041_MZB_LO_3538","Gelt",54.925157,-2.7520505,1995,2018,24,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",59,"65126","ENG_062_MZB_LO_2796","GELT",54.9249230624,-2.751738505,2002,2019,18,18,31.7921701157041
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",60,"65489","ENG_041_MZB_LO_3539","Eden Lyvennet to Eamont",54.647341,-2.6151867,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",60,"65489","ENG_062_MZB_LO_2830","EDEN (NW NORTH)",54.6468722752,-2.6153250651,2002,2022,21,21,51.2323278671242
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",61,"1660","ENG_041_MZB_LO_3541","Coquet from Forest Burn to Tidal Limit",55.338476,-1.6279117,1994,2019,26,24,0
+"England","Don Monteith","first call; data Ellen used","ENG_043_MZB_LO",61,"Coquet","ENG_043_MZB_LO_3","Coquet",55.3382225,-1.62942111,1996,2012,17,18,96.7252657265325
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",62,"63565","ENG_041_MZB_LO_3542","Ehen (lower)",54.440572,-3.5326192,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",62,"63565","ENG_062_MZB_LO_2702","EHEN",54.4403822192,-3.5320563484,2002,2019,18,18,40.8209261601569
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",63,"64188","ENG_041_MZB_LO_3543","Ehen (upper including Liza)",54.515602,-3.4983516,1997,2019,23,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",63,"64188","ENG_062_MZB_LO_2730","EHEN",54.5158461865,-3.497482237,2002,2023,22,20,60.4985211061133
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",64,"64924","ENG_041_MZB_LO_3544","Calder - Pendle Water to conf Ribble",53.793774,-2.3458458,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",64,"64924","ENG_062_MZB_LO_2776","CALDER (CALDER)",53.7937881081,-2.3458467038,2002,2023,22,18,1.51941571547812
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",65,"64960","ENG_041_MZB_LO_3545","Hodder - conf Easington Bk to conf Ribble",53.926229,-2.5222957,1997,2019,23,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",65,"64960","ENG_062_MZB_LO_2779","HODDER",53.92624214,-2.5222965035,2002,2019,18,15,1.41526656101534
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",66,"65058","ENG_041_MZB_LO_3546","Wyre - Upper",53.919653,-2.7704155,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",66,"65058","ENG_062_MZB_LO_2787","WYRE",53.9196668266,-2.7704119367,2002,2019,18,16,1.50536033448956
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",67,"65135","ENG_041_MZB_LO_3548","Hodder - conf Easington Bk to conf Ribble",53.847937,-2.4509289,1994,2014,21,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",67,"65135","ENG_062_MZB_LO_2799","HODDER",53.8479511763,-2.4509285952,2002,2014,13,12,1.52587829487913
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",68,"65488","ENG_041_MZB_LO_3549","Tarnbrook Wyre",53.994074,-2.6265619,1997,2013,17,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",68,"65488","ENG_062_MZB_LO_2829","TARNBROOK WYRE",53.9940856229,-2.6265619195,2002,2013,12,12,1.25114846920074
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",69,"65497","ENG_041_MZB_LO_3550","Calder - headwaters to conf Brun",53.78184,-2.2242181,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",69,"65497","ENG_062_MZB_LO_2832","CALDER (CALDER)",53.7818539277,-2.2242187097,2002,2019,18,15,1.49939321304067
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",70,"65603","ENG_041_MZB_LO_3551","Bradshaw Brook",53.604892,-2.4048858,1995,2019,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",70,"65603","ENG_062_MZB_LO_2843","BRADSHAW BK (CROAL)",53.6049075973,-2.4048840319,2002,2023,22,20,1.68206471314277
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",71,"65605","ENG_041_MZB_LO_3552","Whitendale river",53.97493,-2.5294455,1994,2017,24,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",71,"65605","ENG_062_MZB_LO_2844","WHITENDALE RIVER",53.9749423173,-2.5294465745,2002,2017,16,13,1.32761923581303
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",72,"65928","ENG_041_MZB_LO_3555","Brock",53.882281,-2.68761,1995,2015,21,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",72,"65928","ENG_062_MZB_LO_2864","BROCK",53.8822946308,-2.6876083976,2004,2015,12,6,1.47063528359989
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",73,"66155","ENG_041_MZB_LO_3556","Lune - conf Wenning to tidal",54.076001,-2.7456762,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",73,"66155","ENG_062_MZB_LO_2871","LUNE (NW CENTRAL)",54.0760114461,-2.7456736711,2002,2023,22,22,1.13591889539041
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",74,"66178","ENG_041_MZB_LO_3557","Tarnbrook Wyre",53.990902,-2.6632415,1994,2014,21,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",74,"66178","ENG_062_MZB_LO_2872","GRIZEDALE",53.9909139753,-2.6632402683,2003,2014,12,10,1.29144280182322
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",75,"66426","ENG_041_MZB_LO_3558","Conder",53.991983,-2.7906791,1994,2015,22,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",75,"66426","ENG_062_MZB_LO_2878","CONDER",53.9919941481,-2.7906749038,2002,2024,23,9,1.22919956013009
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",76,"66507","ENG_041_MZB_LO_3559","Keer - Lower",54.14094,-2.7231624,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",76,"66507","ENG_062_MZB_LO_2879","KEER",54.140950364,-2.7231616967,2002,2019,18,15,1.11671315870464
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",77,"66563","ENG_041_MZB_LO_3560","Poolstock Brook",53.53322,-2.6390622,1994,2017,24,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",77,"66563","ENG_062_MZB_LO_2882","POOLSTOCK BROOK",53.5332352414,-2.6390622744,2002,2017,16,13,1.63984672850734
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",78,"66624","ENG_041_MZB_LO_3561","Wyre - conf R Brock to tidal",53.863289,-2.8205926,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",78,"66624","ENG_062_MZB_LO_2885","WYRE",53.8633034935,-2.8205886291,2002,2019,18,16,1.58024464553693
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",79,"66723","ENG_041_MZB_LO_3562","Calder (Wyre)",53.921618,-2.7067268,1997,2018,22,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",79,"66723","ENG_062_MZB_LO_2889","CALDER (WYRE)",53.9216310737,-2.7067239876,2006,2021,16,12,1.41850109598469
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",80,"66797","ENG_041_MZB_LO_3563","Eagley Brook",53.61749,-2.4389745,1999,2013,15,15,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",80,"66797","ENG_062_MZB_LO_2894","EAGLEY BK",53.6175058007,-2.4389727516,2002,2013,12,12,1.7038382395304
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",81,"66799","ENG_041_MZB_LO_3564","Lostock DS Farington Weir",53.699981,-2.7140945,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",81,"66799","ENG_062_MZB_LO_2895","LOSTOCK",53.699506662,-2.714885481,2002,2020,19,17,71.8100156846462
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",82,"66809","ENG_041_MZB_LO_3565","Croal (including Blackshaw Brook)",53.558279,-2.3883028,1997,2014,18,13,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",82,"66809","ENG_062_MZB_LO_2897","CROAL",53.5582948598,-2.3883009765,2002,2014,13,8,1.71041161854081
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",83,"67130","ENG_041_MZB_LO_3566","Bollin (Source to Dean)",53.242047,-2.0903006,2000,2018,19,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",83,"67130","ENG_062_MZB_LO_2904","BOLLIN",53.2420648846,-2.0902976907,2002,2023,22,20,1.9328210608015
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",84,"67229","ENG_041_MZB_LO_3567","New Draught Brook",53.854854,-2.7931384,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",84,"67229","ENG_062_MZB_LO_2911","NEW DRAUGHT",53.854868762,-2.7931349718,2002,2021,20,17,1.60370982008706
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",85,"67332","ENG_041_MZB_LO_3568","Marshaw Wyre",53.982074,-2.665297,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",85,"67332","ENG_062_MZB_LO_2917","MARSHAW WYRE",53.9820856717,-2.6652956758,2003,2024,22,16,1.25918939729393
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",86,"67369","ENG_041_MZB_LO_3569","Yarrow US Big Lodge Water",53.640843,-2.6178187,1994,2014,21,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",86,"67369","ENG_062_MZB_LO_2923","YARROW",53.6409557526,-2.6181958541,2002,2014,13,10,26.9962338134692
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",86,"68310","ENG_062_MZB_LO_3007","BLACK BROOK (YARROW)",53.641270251,-2.618215572,2002,2013,12,12,52.5124938972933
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",87,"67542","ENG_041_MZB_LO_3570","Etherow (Glossop Brook to Goyt)",53.454428,-1.9864684,1995,2018,24,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",87,"67542","ENG_062_MZB_LO_2935","ETHEROW",53.4544447855,-1.9864660335,2002,2023,22,19,1.81221173524933
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",87,"67777","ENG_062_MZB_LO_2952","GLOSSOP BK",53.4538784673,-1.9861349151,2002,2016,15,8,62.8791299533179
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",88,"67601","ENG_041_MZB_LO_3572","Tame (Source to Chew Brook)",53.567707,-2.0256304,1995,2019,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",88,"67601","ENG_062_MZB_LO_2940","TAME (NORTH WEST)",53.5682088298,-2.0248742256,2002,2019,18,16,72.5333225028981
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",89,"67707","ENG_041_MZB_LO_3575","Colne Water - Trawden Bk to Wanless Water",53.851134,-2.1891551,1994,2017,24,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",89,"67707","ENG_062_MZB_LO_2946","COLNE WATER",53.8511485478,-2.1891573864,2002,2017,16,9,1.57248989558194
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",90,"67757","ENG_041_MZB_LO_3576","Birkin Brook - Mobberley Brook to River Bollin (including Rostherne Brook)",53.363841,-2.3765385,1995,2018,24,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",90,"67757","ENG_062_MZB_LO_2950","BIRKIN BK",53.363857597,-2.3765370814,2002,2018,17,16,1.78772432498678
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",91,"67788","ENG_041_MZB_LO_3577","Tame (Swineshaw Brook to Mersey)",53.418504,-2.1516878,1995,2017,23,15,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",91,"67788","ENG_062_MZB_LO_2954","TAME (NORTH WEST)",53.4185206406,-2.1516863846,2002,2017,16,9,1.79248671240139
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",92,"67808","ENG_041_MZB_LO_3578","Sett",53.379991,-1.9263457,1999,2019,21,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",92,"67808","ENG_062_MZB_LO_2961","SETT",53.3798447659,-1.9262990794,2002,2024,23,23,16.0143858633445
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",93,"67852","ENG_041_MZB_LO_3579","River Goyt (Sett to Etherow)",53.36191,-1.997842,1995,2018,24,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",93,"67852","ENG_062_MZB_LO_2965","GOYT",53.3619259263,-1.9978411901,2002,2019,18,17,1.71403235849749
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",94,"67864","ENG_041_MZB_LO_3580","Mersey (upstream of Manchester Ship Canal)",53.41422,-2.1557948,1995,2014,20,14,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",94,"67864","ENG_062_MZB_LO_2968","GOYT",53.4142368542,-2.1557934238,2002,2014,13,8,1.81530469722051
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",95,"67886","ENG_041_MZB_LO_3581","Wyre - Upper",53.911928,-2.7640164,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",95,"67886","ENG_062_MZB_LO_2972","GRIZEDALE BROOK",53.9119422553,-2.7640131117,2002,2019,18,18,1.54853211188392
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",96,"68002","ENG_041_MZB_LO_3582","Langden Brook",53.939679,-2.5212451,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",96,"68002","ENG_062_MZB_LO_2982","LANGDEN BROOK",53.9396924086,-2.5212460408,2003,2019,17,14,1.44451531536262
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",97,"68004","ENG_041_MZB_LO_3583","Dunsop",53.945652,-2.5179983,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",97,"68004","ENG_062_MZB_LO_2983","DUNSOP",53.9456653656,-2.5179992545,2002,2019,18,15,1.43993668772836
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",98,"68052","ENG_041_MZB_LO_3584","Bradshaw Brook",53.573929,-2.4042273,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",98,"68052","ENG_062_MZB_LO_2991","BRADSHAW BK (CROAL)",53.5739448673,-2.4042254726,2002,2024,23,23,1.71125818869858
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",99,"68108","ENG_041_MZB_LO_3585","Bollin (Source to Dean)",53.241716,-2.1095995,1997,2018,22,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",99,"67753","ENG_062_MZB_LO_2949","ROSSENDALE BK",53.2412304548,-2.1097753584,2002,2023,22,9,53.4441485412679
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",99,"68108","ENG_062_MZB_LO_2995","BOLLIN",53.2411947777,-2.1094755835,2002,2022,21,18,56.6304043871157
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",100,"68289","ENG_041_MZB_LO_3586","Brennand",53.974779,-2.5311359,1994,2017,24,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",100,"68289","ENG_062_MZB_LO_3004","BRENNAND RIVER",53.9747910389,-2.5311369676,2002,2017,16,14,1.29766882975553
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",101,"68310","ENG_041_MZB_LO_3587","Yarrow US Big Lodge Water",53.641254,-2.618218,1994,2013,20,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",101,"67369","ENG_062_MZB_LO_2923","YARROW",53.6409557526,-2.6181958541,2002,2014,13,10,32.1235737324543
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",101,"68310","ENG_062_MZB_LO_3007","BLACK BROOK (YARROW)",53.641270251,-2.618215572,2002,2013,12,12,1.7555367898179
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",102,"68570","ENG_041_MZB_LO_3589","Duddon - Lower",54.283133,-3.2318357,1995,2018,24,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",102,"68570","ENG_062_MZB_LO_3025","DUDDON",54.2829702978,-3.231862806,2002,2019,18,18,17.6032559225138
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",103,"68710","ENG_041_MZB_LO_3590","Borrow Beck",54.407541,-2.6078775,1994,2016,23,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",103,"68710","ENG_062_MZB_LO_3030","BORROW BECK",54.4075505324,-2.6078811095,2002,2016,15,8,1.05138472195224
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",104,"68750","ENG_041_MZB_LO_3591","Calder (Wyre)",53.883626,-2.7638196,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",104,"68750","ENG_062_MZB_LO_3032","CALDER (WYRE)",53.8836406867,-2.7638166194,2002,2023,22,22,1.59207330714081
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",105,"68779","ENG_041_MZB_LO_3592","Eagley Brook",53.637832,-2.4893986,1995,2019,25,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",105,"68779","ENG_062_MZB_LO_3035","EAGLEY BK",53.6378483602,-2.4893969466,2002,2020,19,16,1.76357460611472
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",106,"68894","ENG_041_MZB_LO_3593","Eagley Brook",53.635347,-2.4681214,1995,2014,20,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",106,"68894","ENG_062_MZB_LO_3037","EAGLEY BK",53.6353628969,-2.4681196837,2002,2014,13,13,1.71406334549666
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",107,"68910","ENG_041_MZB_LO_3594","Wyre - Upper",53.947631,-2.7579345,1997,2019,23,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",107,"68910","ENG_062_MZB_LO_3038","WYRE",53.9476441262,-2.7579305945,2005,2019,15,15,1.43449239341406
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",108,"68927","ENG_041_MZB_LO_3595","Peover Eye",53.267395,-2.4872403,1995,2018,24,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",108,"68927","ENG_062_MZB_LO_3040","WINCHAM BK",53.2675741183,-2.4869408969,2002,2018,17,16,27.2760044566081
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",109,"69403","ENG_041_MZB_LO_3596","Bollin (Source to Dean)",53.245687,-2.1215382,1995,2014,20,17,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",109,"69403","ENG_062_MZB_LO_3057","BOLLIN",53.2457043363,-2.1215356138,2002,2024,23,16,1.87216473214625
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",110,"69430","ENG_041_MZB_LO_3597","Douglas - Upper",53.607785,-2.5513192,1994,2019,26,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",110,"69430","ENG_062_MZB_LO_3059","DOUGLAS",53.6078002961,-2.5513181096,2002,2023,22,15,1.64732918029378
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",111,"69444","ENG_041_MZB_LO_3598","Brock",53.862618,-2.7920993,1994,2014,21,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",111,"69444","ENG_062_MZB_LO_3061","BROCK",53.8626322331,-2.7920958374,2003,2021,19,7,1.54765151455701
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",112,"69655","ENG_041_MZB_LO_3599","Yarrow US Big Lodge Water",53.665882,-2.6059715,1997,2013,17,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",112,"69655","ENG_062_MZB_LO_3065","BLACK BROOK (YARROW)",53.6653923587,-2.6064457896,2002,2013,12,12,60.7846653437285
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",113,"69675","ENG_041_MZB_LO_3600","Irwell (Croal to Irk)",53.490035,-2.268688,1995,2018,24,15,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",113,"69675","ENG_062_MZB_LO_3068","IRWELL",53.4900516374,-2.2686859845,2002,2018,17,9,1.7946247336318
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",114,"77580","ENG_041_MZB_LO_3602","Goyt (Source to Randall Carr Brook)",53.299761,-1.982075,2000,2018,19,17,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",114,"77580","ENG_062_MZB_LO_3135","GOYT",53.2997772706,-1.9820745391,2002,2023,22,19,1.75042615849012
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",115,"54599","ENG_041_MZB_LO_3603","Brett",52.007383,0.95849648,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",115,"54599","ENG_062_MZB_LO_2163","BRETT",52.0073960972,0.9585270439,2002,2023,22,20,2.46773988657963
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",116,"54601","ENG_041_MZB_LO_3604","Brett",52.040267,0.95264746,1995,2015,21,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",116,"54601","ENG_062_MZB_LO_2164","BRETT",52.0402801253,0.9526783234,2002,2023,22,16,2.48459211220172
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",117,"54607","ENG_041_MZB_LO_3605","Can",51.737838,0.44660626,1994,2017,24,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",117,"54607","ENG_062_MZB_LO_2166","CAN",51.7378438346,0.4466319599,2002,2024,23,20,1.82551938808077
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",118,"54613","ENG_041_MZB_LO_3606","Chad Brook",52.080503,0.7195677,1994,2014,21,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",118,"54613","ENG_062_MZB_LO_2167","CHAD BROOK",52.0805173665,0.7195982933,2002,2014,13,13,2.54700404220716
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",119,"54629","ENG_041_MZB_LO_3607","Chelmer (Gt. Easton - R. Can)",51.844625,0.42292034,1994,2017,24,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",119,"54629","ENG_062_MZB_LO_2171","CHELMER",51.8446323341,0.4229490671,2002,2022,21,17,2.06803240973138
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",120,"54637","ENG_041_MZB_LO_3608","Colne (d/s Doe's Corner)",51.894475,0.86559585,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",120,"54637","ENG_062_MZB_LO_2175","COLNE",51.8944864156,0.8656251939,2002,2024,23,23,2.30452461365658
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",121,"54718","ENG_041_MZB_LO_3609","Stour (Lamarsh - R. Brett)",51.9718,0.9284837,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",121,"54718","ENG_062_MZB_LO_2202","STOUR (ANG)",51.9718120084,0.9285147055,2002,2019,18,18,2.42902914934104
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",122,"54725","ENG_041_MZB_LO_3610","Stour (Wixoe - Lamarsh)",51.998428,0.75305201,1994,2014,21,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",122,"54725","ENG_062_MZB_LO_2203","STOUR (ANG)",51.9984392508,0.75308378,2002,2022,21,14,2.42960009318246
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",123,"54728","ENG_041_MZB_LO_3611","Stour (Wixoe - Lamarsh)",52.072234,0.70768192,1994,2014,21,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",123,"54728","ENG_062_MZB_LO_2204","STOUR (ANG)",52.0722475926,0.7077126498,2002,2014,13,12,2.50509638028181
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",124,"54790","ENG_041_MZB_LO_3612","Blyth (d/s Halesworth)",52.337364,1.530645,1995,2018,24,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",124,"54790","ENG_062_MZB_LO_2226","BLYTH",52.3373854695,1.5306751589,2002,2023,22,21,3.0443630788244
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",125,"54794","ENG_041_MZB_LO_3613","Burn",52.950053,0.74032702,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",125,"54794","ENG_062_MZB_LO_2228","BURN",52.9500790544,0.7403398475,2002,2023,22,21,2.92296810981918
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",126,"54801","ENG_041_MZB_LO_3614","Bure (Scarrow Beck to Horstead Mill)",52.815279,1.2522193,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",126,"54801","ENG_062_MZB_LO_2231","BURE",52.8153058029,1.2522395417,2002,2023,22,22,3.16924953637397
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",127,"54809","ENG_041_MZB_LO_3615","Bure (Horstead Mill to St Benet's Abbey)",52.723947,1.3561832,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",127,"54809","ENG_062_MZB_LO_2233","BURE",52.7239733118,1.3562047672,2002,2023,22,19,3.15985775915254
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",128,"54830","ENG_041_MZB_LO_3616","Deben (Brandeston Bridge - Melton)",52.124624,1.3778859,1994,2016,23,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",128,"54830","ENG_062_MZB_LO_2240","DEBEN",52.124639879,1.3779162063,2002,2016,15,14,2.63273535837043
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",129,"54857","ENG_041_MZB_LO_3617","Gipping (d/s Stowmarket)",52.177204,1.0143771,1995,2016,22,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",129,"54857","ENG_062_MZB_LO_2254","GIPPING",52.1772196479,1.0144083563,2002,2022,21,17,2.66333404766026
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",130,"54869","ENG_041_MZB_LO_3618","Glaven",52.884621,1.0974417,1994,2018,25,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",130,"54869","ENG_062_MZB_LO_2257","GLAVEN",52.884647997,1.0974597699,2003,2022,20,16,3.13183629825352
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",131,"54887","ENG_041_MZB_LO_3619","Mun",52.871849,1.4309481,1994,2018,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",131,"54887","ENG_062_MZB_LO_2264","MUN",52.8718775621,1.4309685362,2003,2024,22,16,3.34665543731938
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",132,"54902","ENG_041_MZB_LO_3620","Stiffkey",52.919145,0.88729792,1994,2016,23,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",132,"54902","ENG_062_MZB_LO_2268","STIFFKEY",52.9191703717,0.8873134612,2002,2024,23,22,2.90921700862399
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",133,"54909","ENG_041_MZB_LO_3621","Tas (Tasburgh to R. Yare)",52.546911,1.2816014,1994,2018,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",133,"54909","ENG_062_MZB_LO_2270","TAS",52.5469345111,1.2816261097,2002,2019,18,17,3.00172190764971
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",134,"54922","ENG_041_MZB_LO_3622","Tud",52.65569,1.2067363,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",134,"54922","ENG_062_MZB_LO_2273","TUD",52.6557142898,1.206757759,2002,2019,18,18,2.96436123353415
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",135,"54927","ENG_041_MZB_LO_3623","Waveney (Frenze Beck to Dove)",52.359855,1.1825106,1994,2018,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",135,"54927","ENG_062_MZB_LO_2276","WAVENEY",52.3598741998,1.1825384128,2002,2024,23,20,2.75842742587011
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",136,"54952","ENG_041_MZB_LO_3624","Wensum US Norwich",52.837845,0.80898689,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",136,"54952","ENG_062_MZB_LO_2283","WENSUM",52.8378697116,0.8090035192,2002,2022,21,19,2.86922658073376
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",137,"54962","ENG_041_MZB_LO_3625","Wensum US Norwich",52.725099,1.1192223,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",137,"54962","ENG_062_MZB_LO_2288","WENSUM",52.7251236844,1.1192440566,2002,2024,23,23,3.01002536686115
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",138,"55020","ENG_041_MZB_LO_3626","Bain - Middle",53.251269,-0.15088622,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",138,"55020","ENG_062_MZB_LO_2309","BAIN",53.2512931146,-0.1508843576,2002,2024,23,23,2.59659114862686
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",139,"55022","ENG_041_MZB_LO_3627","Bain - Lower",53.19504,-0.11390558,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",139,"55022","ENG_062_MZB_LO_2310","BAIN",53.1950647419,-0.113903254,2002,2020,19,18,2.66538476940409
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",140,"55028","ENG_041_MZB_LO_3628","Barlings Eau",53.276595,-0.40428482,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",140,"55028","ENG_062_MZB_LO_2314","BARLINGS EAU",53.2766189961,-0.4042850856,2002,2023,22,22,2.58118141085691
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",141,"55047","ENG_041_MZB_LO_3629","Brant - Lower",53.151193,-0.58240583,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",141,"55047","ENG_062_MZB_LO_2317","BRANT",53.1512150667,-0.5824028668,2002,2020,19,18,2.38103959899756
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",142,"55117","ENG_041_MZB_LO_3631","Foston Beck",52.965502,-0.6956934,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",142,"55117","ENG_062_MZB_LO_2325","FOSTON BECK",52.9655235112,-0.6956882098,2002,2021,20,18,2.33762041721796
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",143,"55123","ENG_041_MZB_LO_3632","Great Eau (upstream of South Thoresby)",53.260151,0.079371889,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",143,"55123","ENG_062_MZB_LO_2327","GREAT EAU",53.2601759193,0.0793738771,2002,2024,23,23,2.68345249800746
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",144,"55127","ENG_041_MZB_LO_3633","Great Eau (downstream of South Thoresby)",53.390934,0.20605875,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",144,"55127","ENG_062_MZB_LO_2329","GREAT EAU",53.390960554,0.2060564775,2002,2021,20,19,2.86030883026628
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",145,"55168","ENG_041_MZB_LO_3634","Great Eau (upstream of South Thoresby)",53.2705,0.05287946,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",145,"55168","ENG_062_MZB_LO_2334","KETSBY BECK",53.2705243784,0.0528807811,2002,2023,22,21,2.62361496405635
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",146,"55186","ENG_041_MZB_LO_3635","Long Eau",53.371072,0.16143725,1994,2017,24,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",146,"55186","ENG_062_MZB_LO_2342","LONG EAU",53.3710988205,0.1614355007,2002,2017,16,15,2.88738113138304
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",147,"55206","ENG_041_MZB_LO_3636","Lymn / Steeping",53.186124,0.096742959,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",147,"55206","ENG_062_MZB_LO_2350","LYMN",53.1861501968,0.096746619,2002,2024,23,23,2.82751226833975
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",148,"55233","ENG_041_MZB_LO_3637","Nettleham Beck",53.275749,-0.40824574,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",148,"55233","ENG_062_MZB_LO_2355","NETTLEHAM BECK",53.2757729358,-0.4082460365,2002,2020,19,19,2.57470741999728
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",149,"55299","ENG_041_MZB_LO_3639","Sandhill Beck",53.192995,-0.47325342,1994,2019,26,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",149,"55299","ENG_062_MZB_LO_2369","SANDHILL/BRANSTON BECK",53.1930171118,-0.4732517793,2002,2023,22,22,2.38061905471105
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",150,"55311","ENG_041_MZB_LO_3640","Black Sluice IDB draining to the South Forty Foot Drain",52.905042,-0.25738078,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",150,"55311","ENG_062_MZB_LO_2371","SOUTH FORTY FOOT DRAIN",52.9050647153,-0.2573721575,2002,2021,20,17,2.50606900776292
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",151,"55312","ENG_041_MZB_LO_3641","Black Sluice IDB draining to the South Forty Foot Drain",52.969631,-0.18777025,1994,2019,26,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",151,"55312","ENG_062_MZB_LO_2372","SOUTH FORTY FOOT DRAIN",52.9696539753,-0.1877631474,2002,2021,20,13,2.51331428577677
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",152,"55339","ENG_041_MZB_LO_3642","Slea",53.010244,-0.38580631,1994,2018,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",152,"55339","ENG_062_MZB_LO_2378","SLEA",53.010267025,-0.3858006155,2002,2023,22,20,2.5034794296343
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",153,"55350","ENG_041_MZB_LO_3643","Lymn / Steeping",53.109406,0.21253731,1994,2013,20,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",153,"55350","ENG_062_MZB_LO_2380","LYMN/STEEPING",53.1094326907,0.2125411754,2002,2013,12,12,2.88141330251741
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",154,"55376","ENG_041_MZB_LO_3644","Lower Till",53.280479,-0.64562685,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",154,"55376","ENG_062_MZB_LO_2382","TILL",53.2805003451,-0.6456272367,2002,2020,19,19,2.29611518324584
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",155,"55384","ENG_041_MZB_LO_3645","Black Sluice IDB draining to the South Forty Foot Drain",52.945961,-0.05042783,1995,2017,23,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",155,"55384","ENG_062_MZB_LO_2384","FRAMPTON TOWNS DRAIN",52.945984318,-0.0504196362,2002,2017,16,15,2.56331959946484
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",156,"55413","ENG_041_MZB_LO_3646","Willoughby High Drain",53.217283,0.30796789,1995,2016,22,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",156,"55413","ENG_062_MZB_LO_2393","WILLOUGHBY HIGH DRAIN",53.2173099813,0.3079685321,2002,2016,15,15,2.90236324517257
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",157,"55417","ENG_041_MZB_LO_3647","Witham - headwaters to conf Cringle Bk",52.832197,-0.62469775,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",157,"55417","ENG_062_MZB_LO_2396","UPPER WITHAM",52.8322178664,-0.624689242,2002,2024,23,23,2.31101906326131
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",158,"55420","ENG_041_MZB_LO_3648","Witham - conf Cringle Bk to conf Brant",52.877456,-0.62106722,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",158,"55420","ENG_062_MZB_LO_2397","UPPER WITHAM",52.8774775016,-0.6210604824,2002,2023,22,21,2.3531861812646
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",159,"55422","ENG_041_MZB_LO_3649","Witham - conf Cringle Bk to conf Brant",52.961948,-0.61986939,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",159,"55422","ENG_062_MZB_LO_2398","UPPER WITHAM",52.9619704661,-0.6198643176,2002,2021,20,20,2.43822950769612
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",160,"55423","ENG_041_MZB_LO_3650","Witham - conf Cringle Bk to conf Brant",52.985009,-0.67127186,1994,2019,26,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",160,"55423","ENG_062_MZB_LO_2399","UPPER WITHAM",52.985030842,-0.6712664579,2002,2023,22,15,2.37483498096189
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",161,"55425","ENG_041_MZB_LO_3651","Witham - conf Cringle Bk to conf Brant",53.030768,-0.7459173,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",161,"55425","ENG_062_MZB_LO_2400","UPPER WITHAM",53.0307894596,-0.7459125375,2002,2023,22,22,2.32834497380819
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",162,"55429","ENG_041_MZB_LO_3652","Witham - conf Cringle Bk to conf Brant",53.154432,-0.62865977,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",162,"55429","ENG_062_MZB_LO_2401","UPPER WITHAM",53.1544531186,-0.6286571422,2002,2024,23,22,2.27770030338264
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",163,"55431","ENG_041_MZB_LO_3653","Witham - conf Brant to conf Catchwater Drain",53.202932,-0.5549773,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",163,"55431","ENG_062_MZB_LO_2403","UPPER WITHAM",53.2029540409,-0.5549763427,2002,2020,19,17,2.37146041723729
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",164,"55433","ENG_041_MZB_LO_3654","Witham 1st and 3rd IDBs draining to the River Witham",53.208265,-0.33794317,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",164,"55433","ENG_062_MZB_LO_2404","LOWER WITHAM",53.2091865941,-0.3379057175,2002,2019,18,18,99.1539701064471
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",165,"55436","ENG_041_MZB_LO_3655","Black Sluice IDB draining to the South Forty Foot Drain",53.009849,-0.11453744,1994,2019,26,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",165,"55436","ENG_062_MZB_LO_2406","LOWER WITHAM",53.0098959125,-0.1160209181,2002,2023,22,18,96.352890518212
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",166,"55439","ENG_041_MZB_LO_3656","Woldgrift Drain",53.291143,0.21359168,1995,2018,24,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",166,"55439","ENG_062_MZB_LO_2407","WOLDGRIFT DRAIN",53.2911692404,0.2135919651,2002,2020,19,19,2.82262935591531
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",167,"55467","ENG_041_MZB_LO_3657","Brampton Branch - Upper",52.339352,-0.92115494,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",167,"55467","ENG_062_MZB_LO_2414","BRAMPTON BRANCH (NENE)",52.3393670475,-0.9211408416,2002,2023,22,20,1.8648058477604
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",168,"55471","ENG_041_MZB_LO_3658","Brampton Branch - Lower",52.280953,-0.92550524,1994,2019,26,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",168,"55471","ENG_062_MZB_LO_2416","BRAMPTON BRANCH (NENE)",52.2809682361,-0.9254910849,2002,2019,18,15,1.88480166051212
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",169,"55472","ENG_041_MZB_LO_3659","Brampton Branch - Lower",52.258334,-0.90993554,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",169,"55472","ENG_062_MZB_LO_2417","BRAMPTON BRANCH (NENE)",52.2583490564,-0.9099214492,2002,2021,20,19,1.86614249516604
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",170,"55493","ENG_041_MZB_LO_3660","North Level Pumped Areas 2 and 3",52.577523,-0.12281081,1994,2017,24,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",170,"55493","ENG_062_MZB_LO_2418","COUNTER DRAIN (PETERBOROUGH)",52.5775420741,-0.1227940822,2002,2024,23,18,2.32481810842751
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",171,"55499","ENG_041_MZB_LO_3661","Chater - Upper",52.614301,-0.61629237,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",171,"55499","ENG_062_MZB_LO_2420","CHATER",52.6143191704,-0.6162798505,2002,2024,23,23,2.11825483701612
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",172,"55501","ENG_041_MZB_LO_3662","Chater - Lower",52.627568,-0.54915114,1994,2019,26,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",172,"55501","ENG_062_MZB_LO_2421","CHATER",52.6275860552,-0.5491396948,2002,2024,23,17,2.08044985946859
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",173,"55517","ENG_041_MZB_LO_3663","Vernatt's Drain",52.707624,-0.28301984,1995,2018,24,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",173,"55517","ENG_062_MZB_LO_2423","CROSS DRAIN",52.7076435416,-0.2830071688,2002,2023,22,19,2.25804472513757
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",174,"55521","ENG_041_MZB_LO_3664","Brampton Branch - Lower",52.242168,-0.91179623,1994,2018,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",174,"55521","ENG_062_MZB_LO_2424","DALLINGTON BROOK",52.2421827695,-0.911782132,2002,2020,19,18,1.83986057949711
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",175,"55538","ENG_041_MZB_LO_3665","Eye Brook",52.575172,-0.76485801,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",175,"55538","ENG_062_MZB_LO_2426","EYE BROOK",52.5751897446,-0.7648458603,2002,2024,23,22,2.06690432155405
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",176,"55539","ENG_041_MZB_LO_3666","Eye Brook",52.531578,-0.72332883,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",176,"55539","ENG_062_MZB_LO_2427","EYE BROOK",52.5315948369,-0.7233156437,2002,2020,19,19,2.00579918052933
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",177,"55555","ENG_041_MZB_LO_3667","West Glen - conf West Glen trib to conf East Glen River",52.747325,-0.4918412,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",177,"55555","ENG_062_MZB_LO_2432","WEST GLEN",52.7473446032,-0.4918310268,2002,2023,22,22,2.20970195485235
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",178,"55556","ENG_041_MZB_LO_3668","West Glen - conf West Glen trib to conf East Glen River",52.68797,-0.42138975,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",178,"55556","ENG_062_MZB_LO_2433","WEST GLEN",52.6879890796,-0.4213786076,2002,2024,23,23,2.17660572703975
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",179,"55563","ENG_041_MZB_LO_3669","East Glen River",52.70836,-0.39993062,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",179,"55563","ENG_062_MZB_LO_2436","EAST GLEN",52.7083799509,-0.3999197213,2002,2023,22,19,2.2599661121564
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",180,"55564","ENG_041_MZB_LO_3670","Glen",52.720456,-0.36395234,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",180,"55564","ENG_062_MZB_LO_2437","GLEN",52.7204759009,-0.3639412576,2002,2024,23,22,2.25863533904913
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",181,"55565","ENG_041_MZB_LO_3671","Glen",52.750947,-0.29465228,1994,2018,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",181,"55565","ENG_062_MZB_LO_2438","GLEN",52.7509671631,-0.2946409585,2002,2018,17,16,2.2902327060262
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",182,"55576","ENG_041_MZB_LO_3672","Welton Village Trib, Whilton branch of R. Nene",52.319975,-1.1536258,1995,2017,23,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",182,"55576","ENG_062_MZB_LO_2441","GROVE FARM FEEDER STREAM",52.3199907306,-1.1536112877,2002,2023,22,16,1.94227743242309
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",183,"55577","ENG_041_MZB_LO_3673","North Gwash",52.667615,-0.70632505,1994,2017,24,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",183,"55577","ENG_062_MZB_LO_2442","GWASH (NORTH)",52.667634167,-0.7063144686,2002,2020,19,15,2.17360102555458
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",184,"55582","ENG_041_MZB_LO_3674","South Gwash",52.636716,-0.71879277,1994,2018,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",184,"55582","ENG_062_MZB_LO_2443","GWASH (SOUTH)",52.6367348019,-0.7187817242,2002,2020,19,18,2.14656752830992
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",185,"55583","ENG_041_MZB_LO_3675","Gwash",52.663187,-0.59528967,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",185,"55583","ENG_062_MZB_LO_2444","GWASH",52.6632051115,-0.5952777498,2002,2024,23,22,2.09726858264019
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",186,"55584","ENG_041_MZB_LO_3676","Gwash",52.673292,-0.53876278,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",186,"55584","ENG_062_MZB_LO_2445","GWASH",52.6733108693,-0.5387518606,2002,2024,23,21,2.15049113229208
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",187,"55588","ENG_041_MZB_LO_3677","Gwash",52.681286,-0.4600929,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",187,"55588","ENG_062_MZB_LO_2446","GWASH",52.6813057012,-0.4600820452,2002,2024,23,22,2.23368581221707
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",188,"55596","ENG_041_MZB_LO_3678","Harpers Brook",52.45567,-0.60926076,1994,2013,20,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",188,"55596","ENG_062_MZB_LO_2447","HARPERS BROOK",52.4556864607,-0.6092441945,2002,2013,12,12,2.07706819144935
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",189,"55598","ENG_041_MZB_LO_3679","Harpers Brook",52.407368,-0.55491631,1994,2019,26,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",189,"55598","ENG_062_MZB_LO_2448","HARPERS BROOK",52.4073835363,-0.5549001943,2002,2021,20,14,1.97769309911031
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",190,"55599","ENG_041_MZB_LO_3680","Harrowden Brook (Nene)",52.316206,-0.67818757,1994,2016,23,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",190,"55599","ENG_062_MZB_LO_2449","HARROWDEN BROOK",52.3162194894,-0.678170729,2002,2016,15,13,1.82559830351319
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",191,"55666","ENG_041_MZB_LO_3681","Nene - headwaters to conf Whilton Branch",52.228387,-1.1535379,1994,2018,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",191,"55666","ENG_062_MZB_LO_2456","NENE",52.2284025275,-1.1535224734,2002,2021,20,19,1.95492119370686
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",192,"55669","ENG_041_MZB_LO_3682","Nene - conf Whilton Branch to conf Brampton Branch",52.231729,-1.0570112,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",192,"55669","ENG_062_MZB_LO_2457","NENE",52.2317438,-1.0569954908,2002,2019,18,17,1.89869165685012
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",193,"55673","ENG_041_MZB_LO_3683","Nene - conf Whilton Branch to conf Brampton Branch",52.230271,-0.93330332,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",193,"55673","ENG_062_MZB_LO_2459","NENE",52.2302864078,-0.9332893606,2002,2024,23,22,1.89501356394184
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",194,"55676","ENG_041_MZB_LO_3684","Nene - conf Brampton Branch to conf Ise",52.244505,-0.78284753,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",194,"55676","ENG_062_MZB_LO_2460","NENE",52.2445187136,-0.782831062,2002,2023,22,17,1.83109197190348
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",195,"55677","ENG_041_MZB_LO_3685","Nene - conf Brampton Branch to conf Ise",52.249499,-0.74462472,1995,2018,24,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",195,"55677","ENG_062_MZB_LO_2461","NENE",52.2495126942,-0.7446077207,2002,2018,17,12,1.8503751165416
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",196,"55678","ENG_041_MZB_LO_3686","Nene - conf Brampton Branch to conf Ise",52.264496,-0.71782495,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",196,"55678","ENG_062_MZB_LO_2462","NENE",52.2645092686,-0.7178079815,2002,2020,19,17,1.81272774520285
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",197,"55694","ENG_041_MZB_LO_3687","Nene - Islip to tidal",52.579097,-0.41497249,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",197,"55694","ENG_062_MZB_LO_2468","NENE",52.5791154295,-0.4149593438,2002,2024,23,23,2.16019436882973
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",198,"55714","ENG_041_MZB_LO_3688","North Brook (Welland)",52.669372,-0.58621801,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",198,"55714","ENG_062_MZB_LO_2471","NORTH BROOK",52.6693907102,-0.5862062462,2002,2023,22,22,2.15345921692381
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",199,"55740","ENG_041_MZB_LO_3690","Ise - Upper",52.434931,-0.76584036,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",199,"55740","ENG_062_MZB_LO_2472","ISE",52.4349465459,-0.7658264522,2002,2023,22,22,1.90455549903609
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",200,"55741","ENG_041_MZB_LO_3691","Ise - Upper",52.439099,-0.73483008,1994,2015,22,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",200,"55741","ENG_062_MZB_LO_2473","ISE",52.4391141192,-0.7348160816,2002,2015,14,13,1.86732790731398
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",201,"55743","ENG_041_MZB_LO_3692","Ise - Upper",52.412571,-0.69295179,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",201,"55743","ENG_062_MZB_LO_2475","ISE",52.4125855866,-0.692936471,2002,2024,23,22,1.86340734692933
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",202,"55745","ENG_041_MZB_LO_3693","Ise - Lower",52.364053,-0.69585261,1994,2013,20,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",202,"55745","ENG_062_MZB_LO_2476","ISE",52.3640672924,-0.6958368429,2002,2023,22,15,1.85376975476148
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",203,"55760","ENG_041_MZB_LO_3694","South Holland Main Drain",52.750104,0.043144862,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",203,"55760","ENG_062_MZB_LO_2478","SOUTH HOLLAND MAIN DRAIN",52.7501241543,0.043158206,2002,2022,21,17,2.3352523916807
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",204,"55765","ENG_041_MZB_LO_3695","Slade Brook",52.378693,-0.72086674,1994,2014,21,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",204,"55765","ENG_062_MZB_LO_2480","SLADE BROOK",52.3787079084,-0.7208513095,2002,2014,13,13,1.89689138481306
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",205,"55784","ENG_041_MZB_LO_3696","Swanspool Brook",52.299721,-0.67618533,1994,2016,23,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",205,"55784","ENG_062_MZB_LO_2485","SWANSPOOL BROOK",52.2997348417,-0.6761685191,2002,2016,15,13,1.85485866291425
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",206,"55792","ENG_041_MZB_LO_3697","Glen",52.751867,-0.2960981,1995,2016,22,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",206,"55792","ENG_062_MZB_LO_2488","THURLBY MAIN DRAIN",52.7518870211,-0.2960868427,2002,2016,15,15,2.2744271478256
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",207,"55814","ENG_041_MZB_LO_3698","Welland - headwaters to conf Jordan",52.444564,-1.0274623,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",207,"55814","ENG_062_MZB_LO_2491","WELLAND",52.444580515,-1.0274498044,2002,2020,19,17,1.95579879671566
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",208,"55816","ENG_041_MZB_LO_3699","Welland - conf Jordan to conf Langton Bk",52.487472,-0.89691687,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",208,"55816","ENG_062_MZB_LO_2492","WELLAND",52.4874885213,-0.8969041735,2002,2019,18,17,1.96169580154476
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",209,"55824","ENG_041_MZB_LO_3700","Welland - conf Langton Bk to conf Gwash",52.5974,-0.54653063,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",209,"55824","ENG_062_MZB_LO_2496","WELLAND",52.5974178073,-0.5465190009,2002,2024,23,23,2.06016928815887
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",210,"55825","ENG_041_MZB_LO_3701","Welland - conf Langton Bk to conf Gwash",52.620252,-0.5390524,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",210,"55825","ENG_062_MZB_LO_2497","WELLAND",52.6202695627,-0.5390411003,2002,2023,22,22,2.02768504507942
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",211,"55826","ENG_041_MZB_LO_3702","Welland - conf Langton Bk to conf Gwash",52.644185,-0.51165019,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",211,"55826","ENG_062_MZB_LO_2498","WELLAND",52.6442034414,-0.5116393064,2002,2024,23,23,2.10647406389113
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",212,"55832","ENG_041_MZB_LO_3703","Maxey Cut",52.65709,-0.27021539,1994,2018,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",212,"55832","ENG_062_MZB_LO_2501","WELLAND",52.6571088867,-0.2702023322,2002,2024,23,20,2.20263670352585
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",213,"55834","ENG_041_MZB_LO_3704","Welland - conf Greatford Cut to tidal",52.778514,-0.15420539,1995,2019,25,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",213,"55834","ENG_062_MZB_LO_2503","WELLAND (CORONATION CUT)",52.7785343588,-0.1541938196,2002,2020,19,16,2.31529456938882
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",214,"55842","ENG_041_MZB_LO_3705","Whilton Branch - Upper",52.304794,-1.0877261,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",214,"55842","ENG_062_MZB_LO_2507","WHILTON BRANCH",52.304809694,-1.0877111624,2002,2023,22,18,1.95296851035457
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",215,"55849","ENG_041_MZB_LO_3706","Willow Brook (Nene)",52.538454,-0.58332012,1995,2014,20,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",215,"55849","ENG_062_MZB_LO_2511","WILLOW BROOK",52.5384712988,-0.5833060247,2002,2013,12,12,2.07648544895364
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",216,"55854","ENG_041_MZB_LO_3707","Willow Brook (Nene)",52.528995,-0.43548445,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",216,"55854","ENG_062_MZB_LO_2514","WILLOW BROOK",52.5290129835,-0.4354691709,2002,2023,22,22,2.17732394111088
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",217,"55858","ENG_041_MZB_LO_3708","Southern Stream",52.488004,-0.67534119,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",217,"55858","ENG_062_MZB_LO_2518","WILLOW BROOK (SOUTH)",52.4880200125,-0.675326677,2002,2020,19,17,1.96717842833047
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",218,"55869","ENG_041_MZB_LO_3709","Wootton Brook",52.207205,-0.92289453,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",218,"55869","ENG_062_MZB_LO_2522","WOOTTON BROOK",52.2072199606,-0.9228800417,2002,2019,18,17,1.87098575968857
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",219,"55938","ENG_041_MZB_LO_3710","Little Ouse (Hopton Common to Sapiston Confl)",52.386935,0.77831911,1994,2017,24,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",219,"55938","ENG_062_MZB_LO_2538","LITTLE OUSE RIVER",52.3869536399,0.7783460676,2003,2022,20,13,2.67538314170581
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",220,"55963","ENG_041_MZB_LO_3711","Wissey - Lower",52.518041,0.66293879,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",220,"55963","ENG_062_MZB_LO_2548","WISSEY",52.5180602404,0.6629611469,2002,2023,22,20,2.53522488790993
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",221,"55971","ENG_041_MZB_LO_3712","Cavenham Stream",52.313293,0.59983027,1994,2018,25,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",221,"55971","ENG_062_MZB_LO_2550","CAVENHAM STREAM",52.3133104073,0.5998575392,2004,2020,17,16,2.593754253085
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",222,"56034","ENG_041_MZB_LO_3713","Burwell Lode",52.286672,0.28073778,1994,2015,22,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",222,"56034","ENG_062_MZB_LO_2569","REACH LODE",52.2866864368,0.2807646959,2002,2015,14,12,2.35696717004801
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",223,"56065","ENG_041_MZB_LO_3714","Cam (Audley End to Stapleford)",52.062132,0.19238021,1994,2019,26,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",223,"56065","ENG_062_MZB_LO_2581","CAM",52.0621433187,0.1924081159,2004,2024,21,20,2.21281802530588
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",224,"56226","ENG_041_MZB_LO_3715","Ivel (US Henlow)",52.031481,-0.266488,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",224,"56226","ENG_062_MZB_LO_2624","IVEL",52.0314909209,-0.2664626632,2002,2024,23,22,1.98928272251782
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",225,"56275","ENG_041_MZB_LO_3716","Kym",52.26879,-0.35357724,1994,2019,26,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",225,"56275","ENG_062_MZB_LO_2633","KYM",52.2688034496,-0.3535570954,2002,2024,23,21,1.96319838001321
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",226,"56336","ENG_041_MZB_LO_3717","Nar upstream of Abbey Farm",52.688168,0.5824517,1994,2019,26,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",226,"56336","ENG_062_MZB_LO_2650","NAR",52.6881898172,0.5824701966,2002,2020,19,17,2.63856105580589
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",227,"56404","ENG_041_MZB_LO_3718","Ouzel Brook",51.897649,-0.59196483,1994,2018,25,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",227,"56404","ENG_062_MZB_LO_2667","OUZEL BROOK",51.8976581426,-0.5919393973,2003,2018,16,10,1.95547035810392
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",228,"56478","ENG_041_MZB_LO_3719","Tove (DS Greens Norton)",52.132572,-0.95787412,1994,2019,26,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",228,"56478","ENG_062_MZB_LO_2681","TOVE",52.1325847988,-0.9578572821,2004,2024,21,20,1.76980227117254
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",229,"56491","ENG_041_MZB_LO_3720","Ouse (Brackley to Buckingham)",52.00123,-1.0512566,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",229,"56491","ENG_062_MZB_LO_2687","OUSE (UPPER)",52.0012401892,-1.0512386261,2003,2024,22,20,1.61873112042693
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",230,"56698","ENG_041_MZB_LO_3721","Welland - headwaters to conf Jordan",52.471095,-0.97535173,1994,2017,24,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",230,"56698","ENG_062_MZB_LO_2694","WELLAND",52.4711119575,-0.9753393707,2002,2017,16,16,1.995249567065
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",231,"40","ENG_041_MZB_LO_3722","Black Brook from Source to River Calder",53.662048,-1.9046251,1994,2015,22,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",231,"40","ENG_062_MZB_LO_13","BLACK BROOK",53.6622160547,-1.9050792549,2002,2015,14,11,34.1983002663503
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",232,"110","ENG_041_MZB_LO_3723","Barben Beck/River Dibb Catchment (trib of Wharfe)",54.044056,-1.9404062,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",232,"110","ENG_062_MZB_LO_31","DIBB",54.0437737369,-1.9407170856,2002,2023,22,20,36.2113189728434
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",233,"118","ENG_041_MZB_LO_3724","Don from Source to Scout Dyke",53.518202,-1.7632107,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",233,"118","ENG_062_MZB_LO_33","DON",53.5181908251,-1.7633014266,2002,2023,22,20,5.94047773114309
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",234,"147","ENG_041_MZB_LO_3725","Esk from Sleddale Beck to Ruswarp",54.461457,-0.66177335,1994,2019,26,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",234,"147","ENG_062_MZB_LO_39","ESK",54.4615077679,-0.6618345171,2003,2024,22,20,6.68062504294463
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",235,"198","ENG_041_MZB_LO_3726","Little Don from Source to River Don",53.478952,-1.56565,1994,2015,22,15,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",235,"198","ENG_062_MZB_LO_52","LITTLE DON",53.4785006596,-1.5653394361,2002,2015,14,7,52.4891555213463
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",236,"213","ENG_041_MZB_LO_3727","Mill Beck 2 (Ellerker Area)",53.755813,-0.6304588,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",236,"213","ENG_062_MZB_LO_56","MILL (MIRES) BECK",53.7562664818,-0.6305720214,2002,2022,21,19,49.333325344829
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",237,"314","ENG_041_MZB_LO_3729","Ure from Mill Beck to Thornton Steward Beck",54.300131,-1.8601358,1994,2019,26,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",237,"314","ENG_062_MZB_LO_87","URE",54.3002402099,-1.8602947418,2002,2019,18,13,15.4439402913473
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",238,"323","ENG_041_MZB_LO_3730","Ure from River Tutt to River Swale",54.097373,-1.3944419,1994,2016,23,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",238,"323","ENG_062_MZB_LO_89","URE",54.0973171231,-1.394693981,2002,2016,15,12,17.0478363854767
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",239,"339","ENG_041_MZB_LO_3732","Wharfe from Hundwith Beck to River Washburn",53.905324,-1.7153368,1995,2018,24,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",239,"339","ENG_062_MZB_LO_94","WHARFE",53.9052581197,-1.7155242332,2002,2021,20,13,13.8635525244028
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",240,"341","ENG_041_MZB_LO_3733","Wharfe from Park Gill Bk to Barben Beck/River Dibb",54.071033,-2.006077,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",240,"341","ENG_062_MZB_LO_95","WHARFE",54.0712268483,-2.0056077738,2002,2024,23,23,36.3065781245181
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",241,"347","ENG_041_MZB_LO_3735","Wharfe from Collingham Beck to Tadcaster Weir",53.906566,-1.343929,1994,2019,26,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",241,"347","ENG_062_MZB_LO_98","WHARFE",53.9068302477,-1.3447828735,2002,2021,20,13,61.2702314725226
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",242,"418","ENG_041_MZB_LO_3736","Ewden Beck from Source to River Don",53.467651,-1.6376044,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",242,"418","ENG_062_MZB_LO_111","EWDEN BECK",53.4676212281,-1.6372139734,2002,2023,22,21,25.2673650177612
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",243,"439","ENG_041_MZB_LO_3737","Hebden Water from Widdop Beck to R Calder",53.741927,-2.0133504,1995,2018,24,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",243,"439","ENG_062_MZB_LO_115","HEBDEN WATER",53.7419417341,-2.0133518259,2002,2020,19,12,1.58821223272966
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",244,"473","ENG_041_MZB_LO_3738","Loxley from Source to Strines Dyke",53.441954,-1.6352486,1997,2019,23,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",244,"473","ENG_062_MZB_LO_120","AGDEN DIKE",53.4420255809,-1.6353843298,2002,2023,22,21,11.6322913304699
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",245,"1052","ENG_041_MZB_LO_3739","Aire from Malham Tarn to Malham Beck",54.055659,-2.1511926,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",245,"1052","ENG_062_MZB_LO_167","MALHAM BECK",54.0565170681,-2.1515352841,2002,2023,22,21,94.8892669867626
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",246,"1151","ENG_041_MZB_LO_3740","Graining Water from Widdop Resr to Hebden Wat",53.778464,-2.0646073,1995,2018,24,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",246,"1151","ENG_062_MZB_LO_183","GRAINING WATER",53.7784789055,-2.0646090601,2002,2018,17,11,1.6080324601093
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",247,"1153","ENG_041_MZB_LO_3741","Crimsworth Dean Beck from Source to Hebden Water",53.759776,-2.0181037,1995,2019,25,23,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",247,"1153","ENG_062_MZB_LO_185","CRIMSWORTH DEAN BECK",53.7597911965,-2.0181054406,2002,2023,22,19,1.63916010965925
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",248,"1169","ENG_041_MZB_LO_3742","Cragg Brook from Source to River Calder",53.704995,-2.0034466,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",248,"1169","ENG_062_MZB_LO_187","WITHENS CLOUGH",53.705010241,-2.0034473105,2002,2023,22,20,1.6407170875471
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",249,"1182","ENG_041_MZB_LO_3743","Colne from Wessenden Brook to R Holme",53.61606,-1.855192,1995,2010,16,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",249,"1182","ENG_062_MZB_LO_191","HOYLE HOUSE BROOK",53.6160749569,-1.8551921686,2002,2021,20,10,1.60940303028595
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",250,"1239","ENG_041_MZB_LO_3744","Don from Scout Dyke to the Little Don",53.51475,-1.5900615,1995,2017,23,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",250,"1239","ENG_062_MZB_LO_197","DON",53.5147667249,-1.5900628334,2002,2017,16,11,1.80144816055967
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",251,"1240","ENG_041_MZB_LO_3745","Little Don from Source to River Don",53.501888,-1.7027118,1995,2019,25,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",251,"1240","ENG_062_MZB_LO_198","LITTLE DON",53.5018425352,-1.7031798828,2002,2023,22,18,30.4211898819978
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",252,"968","ENG_041_MZB_LO_3746","Wharfe from Barben Beck/River Dibb to Hundwith Beck",53.972121,-1.8917245,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",252,"968","ENG_062_MZB_LO_152","WHARFE",53.9717845119,-1.8914091813,2002,2023,22,20,41.3803022508021
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",253,"969","ENG_041_MZB_LO_3747","Wharfe from R Washburn to Collingham Beck",53.908341,-1.5311317,1995,2019,25,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",253,"969","ENG_062_MZB_LO_153","WHARFE",53.9089316534,-1.5310705032,2002,2023,22,14,63.6935420304085
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",254,"1245","ENG_041_MZB_LO_3748","Loxley from Strines Dyke to River Don",53.401672,-1.5520883,1995,2019,25,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",254,"1245","ENG_062_MZB_LO_199","LOXLEY",53.4016898164,-1.5520892417,2002,2023,22,19,1.9175930217651
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",255,"1413","ENG_041_MZB_LO_3749","Holme from Source to New Mill Dike",53.562767,-1.8034083,1995,2017,23,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",255,"1413","ENG_062_MZB_LO_253","HOLME",53.5627822433,-1.8034084218,2002,2017,16,13,1.64011207287242
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",256,"1482","ENG_041_MZB_LO_3751","Ryburn from Booth Dean Clough to R Calder",53.674655,-1.9409265,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",256,"1482","ENG_062_MZB_LO_273","RYBURN",53.6744266398,-1.9402007128,2002,2023,22,19,52.4817478192353
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",257,"1486","ENG_041_MZB_LO_3752","Colne from Source to Wessenden Brook",53.601674,-1.9305105,1995,2014,20,17,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",257,"1486","ENG_062_MZB_LO_275","COLNE",53.6016888422,-1.9305095876,2002,2014,13,10,1.59806851523049
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",258,"1573","ENG_041_MZB_LO_3753","Hebble Brook from Source to River Calder",53.765907,-1.9058014,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",258,"1573","ENG_062_MZB_LO_278","HEBBLE BROOK",53.765921405,-1.905803619,2002,2023,22,20,1.55667242039676
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",259,"1576","ENG_041_MZB_LO_3754","Hebden Water from Widdop Beck to R Calder",53.772263,-2.0424307,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",259,"1576","ENG_062_MZB_LO_279","HEBDEN WATER",53.7722782021,-2.0424324803,2002,2023,22,20,1.63995462474519
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",260,"1580","ENG_041_MZB_LO_3755","Rivelin from Source to River Loxley",53.380384,-1.5659315,1996,2019,24,22,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",260,"1580","ENG_062_MZB_LO_280","RIVELIN",53.380212766,-1.5658278518,2002,2023,22,19,19.5898355024448
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",261,"1584","ENG_041_MZB_LO_3756","Holme from Source to New Mill Dike",53.55589,-1.8203314,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",261,"1584","ENG_062_MZB_LO_282","HOLME/RAMSDEN CLOUGH",53.5557082849,-1.8205585052,2002,2023,22,19,24.371231142169
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",262,"1594","ENG_041_MZB_LO_3759","Worth from Source to Bridgehouse Beck",53.832517,-1.9911961,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",262,"1594","ENG_062_MZB_LO_287","WORTH",53.8325309684,-1.9911990445,2002,2023,22,20,1.51499586235165
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",263,"1597","ENG_041_MZB_LO_3760","Walsden Water from Source to River Calder",53.708552,-2.1248707,1995,2019,25,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",263,"1590","ENG_062_MZB_LO_285","MIDGELDEN BROOK",53.7086934175,-2.1245086587,2002,2019,18,11,27.6741650464286
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",264,"47078","ENG_041_MZB_LO_3762","Sence from Countesthorpe Brook to Soar",52.573939,-1.132322,1994,2014,21,15,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",264,"47078","ENG_062_MZB_LO_1501","SENCE (SOAR)",52.5736582008,-1.1331898877,2002,2014,13,7,64.3613781611639
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",265,"47138","ENG_041_MZB_LO_3763","Derwent from Wye to Amber",53.084898,-1.5072779,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",265,"47138","ENG_062_MZB_LO_1508","DERWENT (LT)",53.085221019,-1.5069284687,2002,2024,23,23,41.4581342260189
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",266,"47255","ENG_041_MZB_LO_3764","Tame - R Rea to R Blythe",52.520221,-1.7523655,1994,2018,25,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",266,"47255","ENG_062_MZB_LO_1527","TAME (UT)",52.5208114482,-1.7521340619,2002,2018,17,13,65.2613933522536
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",267,"47257","ENG_041_MZB_LO_3765","Hamps from Source to R Manifold",53.048998,-1.8761457,1994,2015,22,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",267,"47257","ENG_062_MZB_LO_1528","HAMPS",53.0493300327,-1.8762310027,2002,2015,14,11,36.1329852142577
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",268,"47310","ENG_041_MZB_LO_3766","Churnet from Meerbrook to Leekbrook",53.094899,-2.0402788,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",268,"47310","ENG_062_MZB_LO_1533","CHURNET",53.0950247468,-2.0403066811,2002,2021,20,20,13.6435768374789
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",269,"48036","ENG_041_MZB_LO_3767","Trent from Fowlea Brook to Tittensor",52.963497,-2.1994557,1994,2016,23,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",269,"48036","ENG_062_MZB_LO_1589","RIVER TRENT",52.9641345756,-2.1992198535,2003,2015,13,11,70.2508026552021
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",270,"48310","ENG_041_MZB_LO_3768","Mease from Gilwiskaw Bk to Hooborough Brook",52.70816,-1.5547487,1994,2018,25,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",270,"48310","ENG_062_MZB_LO_1616","MEASE",52.708177092,-1.5547427262,2002,2023,22,16,1.87856106423004
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",271,"48406","ENG_041_MZB_LO_3769","Trent from Tittensor to River Sow",52.897952,-2.1471254,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",271,"48406","ENG_062_MZB_LO_1625","SCOTCH BROOK",52.8984620244,-2.1473036577,2002,2019,18,18,56.053896330056
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",272,"48459","ENG_041_MZB_LO_3770","Erewash from Gilt Brook to Trent",52.939919,-1.281262,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",272,"48459","ENG_062_MZB_LO_1634","EREWASH",52.9402597787,-1.280910407,2002,2024,23,22,43.1802662736811
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",273,"49039","ENG_041_MZB_LO_3771","Trent from Derwent to Soar",52.875316,-1.3016454,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",273,"49039","ENG_062_MZB_LO_1675","TRENT",52.8756950587,-1.3016783781,2002,2024,23,23,40.8154616290172
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",274,"49170","ENG_041_MZB_LO_3772","Rainworth Water from Source to Gallow Hole Dyke",53.151277,-1.0414789,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",274,"49170","ENG_062_MZB_LO_1688","RAINWORTH WATER",53.1520091238,-1.0417298586,2002,2024,23,23,80.3958517904101
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",275,"49171","ENG_041_MZB_LO_3773","Churnet from Consall to River Dove",52.950978,-1.8436814,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",275,"49171","ENG_062_MZB_LO_1689","CHURNET",52.951022326,-1.8437083377,2002,2020,19,17,5.07746954077841
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",276,"50020","ENG_041_MZB_LO_3777","Quorn Brook Catchment (trib of Soar)",52.683837,-1.2292589,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",276,"50020","ENG_062_MZB_LO_1733","BRADGATE BROOK",52.6835009508,-1.2286071066,2002,2024,23,23,55.8466592456163
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",277,"50031","ENG_041_MZB_LO_3778","Blithe from Source to Tad Brook",52.830603,-1.9301989,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",277,"50031","ENG_062_MZB_LO_1735","BLITHE",52.8307627793,-1.9289037481,2002,2023,22,21,86.0752360523094
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",278,"50916","ENG_041_MZB_LO_3782","Trent from Soar to The Beck",52.94341,-1.1309028,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",278,"50916","ENG_062_MZB_LO_1798","TRENT",52.9426565801,-1.1308704674,2002,2023,22,17,81.0446291786428
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",279,"51097","ENG_041_MZB_LO_3783","Manifold - source to conf R Dove",53.054285,-1.7985511,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",279,"51097","ENG_062_MZB_LO_1823","MANIFOLD (DOVE (UPPER))",53.0545918782,-1.7992025105,2002,2024,23,23,53.5797788738171
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",280,"51262","ENG_041_MZB_LO_3784","Hilton Bk (trib of R Dove)",52.872334,-1.6419135,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",280,"51262","ENG_062_MZB_LO_1837","HILTON BROOK",52.8723824951,-1.6430532672,2002,2019,18,16,74.3382955726249
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",281,"51342","ENG_041_MZB_LO_3785","Derwent from Westend to Wye",53.321816,-1.6516757,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",281,"51342","ENG_062_MZB_LO_1853","DERWENT (LT)",53.3219374275,-1.6503676905,2002,2024,23,22,85.2521229894284
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",282,"51392","ENG_041_MZB_LO_3786","Blithe - Tad Bk to R Trent",52.768488,-1.8398883,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",282,"51392","ENG_062_MZB_LO_1859","BLITHE",52.7685495035,-1.8394831252,2002,2023,22,21,27.2374894338298
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",283,"51715","ENG_041_MZB_LO_3788","Churnet from Meerbrook to Leekbrook",53.120075,-2.011913,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",283,"51715","ENG_062_MZB_LO_1886","CHURNET",53.1202633806,-2.0120599506,2003,2023,21,20,22.3802071531598
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",284,"51838","ENG_041_MZB_LO_3789","Dover Beck Catchment (trib of Trent)",53.025316,-1.0278723,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",284,"51838","ENG_062_MZB_LO_1897","DOVER BECK",53.0248233027,-1.0279849504,2002,2020,19,19,53.4858841965226
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",285,"51896","ENG_041_MZB_LO_3790","Poulter from Millwood Brook to Maun",53.269194,-0.95337584,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",285,"51896","ENG_062_MZB_LO_1903","POULTER",53.2696104011,-0.9523900306,2002,2024,23,23,77.7630861391624
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",286,"52314","ENG_041_MZB_LO_3791","Dove - R Churnet to R Trent",52.932108,-1.8497001,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",286,"52314","ENG_062_MZB_LO_1938","DOVE",52.9320526929,-1.8489390172,2002,2019,18,16,49.8075334740223
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",287,"52480","ENG_041_MZB_LO_3792","Poulter from Source to Millwood Brook",53.23398,-1.1609874,1994,2019,26,21,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",287,"52480","ENG_062_MZB_LO_1954","POULTER",53.234275246,-1.1604711214,2002,2022,21,16,46.0280962643941
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",288,"52491","ENG_041_MZB_LO_3793","Mease from Hooborough Brook to Trent",52.722412,-1.7171701,1994,2014,21,20,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",288,"52491","ENG_062_MZB_LO_1956","MEASE",52.722778774,-1.7166282743,2002,2023,22,15,52.9720896071266
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",289,"52850","ENG_041_MZB_LO_3794","Dove - R Churnet to R Trent",52.841767,-1.6039505,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",289,"52850","ENG_062_MZB_LO_2006","DOVE",52.8417843102,-1.6039463586,2002,2021,20,19,1.88069192023399
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",290,"52926","ENG_041_MZB_LO_3796","Churnet from Endon Brook to Consall",53.066138,-2.0283133,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",290,"52926","ENG_062_MZB_LO_2018","CHURNET",53.0661912908,-2.0283107078,2002,2021,20,20,5.73356774873142
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",291,"52988","ENG_041_MZB_LO_3797","Dover Beck Catchment (trib of Trent)",53.00332,-0.97769907,1994,2018,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",291,"52988","ENG_062_MZB_LO_2022","DOVER BECK",53.0034196499,-0.9775295143,2002,2024,23,23,15.3564350785898
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",292,"53423","ENG_041_MZB_LO_3798","Blythe from Patrick Bridge to R Tame",52.505692,-1.6905696,1994,2014,21,19,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",292,"53423","ENG_062_MZB_LO_2065","BLYTHE",52.5057542949,-1.6910624245,2003,2014,12,11,33.0131973006936
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",293,"53594","ENG_041_MZB_LO_3799","Idle from Ryton to Trent",53.42702,-1.0142188,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",293,"53594","ENG_062_MZB_LO_2079","IDLE",53.4273996907,-1.0141814755,2002,2024,23,20,40.9173925175872
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",294,"53757","ENG_041_MZB_LO_3800","Torne/Three Rivers from Mother Drain to Trent",53.503534,-1.0275219,1994,2019,26,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",294,"53757","ENG_062_MZB_LO_2098","TORNE",53.5042763711,-1.026708859,2002,2024,23,22,95.3882432413277
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",295,"53973","ENG_041_MZB_LO_3803","Churnet from Meerbrook to Leekbrook",53.11288,-2.0328261,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",295,"53973","ENG_062_MZB_LO_2132","CHURNET",53.1121333754,-2.0324498438,2002,2023,22,21,83.9086107726132
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",296,"54999","ENG_041_MZB_LO_3804","Rase from Market Rasen to Bishopbridge",53.406636,-0.4490667,1995,2019,25,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",296,"54999","ENG_062_MZB_LO_2301","ANCHOLME",53.4066591834,-0.4490687794,2002,2023,22,20,2.49759513849025
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",296,"55279","ENG_062_MZB_LO_2365","RASE",53.4066396479,-0.44756512,2002,2022,21,18,96.5284470277097
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",297,"55002","ENG_041_MZB_LO_3805","Ancholme from Bishopbridge to the Humber",53.51326,-0.49192841,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",297,"55002","ENG_062_MZB_LO_2303","ANCHOLME",53.5132811579,-0.4919314261,2002,2024,23,22,2.28455948250374
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",298,"55006","ENG_041_MZB_LO_3806","Ancholme from Bishopbridge to the Humber",53.658448,-0.52912359,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",298,"55006","ENG_062_MZB_LO_2305","ANCHOLME",53.6584686126,-0.5291285629,2002,2024,23,20,2.24067968634839
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",299,"55067","ENG_041_MZB_LO_3807","Caistor Canal Catchment (trib of Ancholme)",53.477853,-0.46455345,1995,2018,24,24,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",299,"55067","ENG_062_MZB_LO_2321","CAISTOR CANAL",53.4778748198,-0.464556402,2002,2020,19,19,2.35512004165159
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",300,"55172","ENG_041_MZB_LO_3808","Laceby Beck / River Freshney Catchment (to N Sea)",53.527436,-0.15649897,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",300,"55172","ENG_062_MZB_LO_2336","LACEBY BECK",53.527460081,-0.1565034094,2002,2023,22,22,2.606471884852
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",301,"55173","ENG_041_MZB_LO_3809","Laceby Beck / River Freshney Catchment (to N Sea)",53.541051,-0.16496261,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",301,"55173","ENG_062_MZB_LO_2337","LACEBY BECK",53.5410745712,-0.1649671409,2002,2023,22,22,2.55264258066931
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",302,"55174","ENG_041_MZB_LO_3810","Laceby Beck / River Freshney Catchment (to N Sea)",53.549849,-0.15250588,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",302,"55174","ENG_062_MZB_LO_2338","LACEBY BECK",53.54987241,-0.1525104124,2002,2023,22,22,2.53543883823747
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",303,"55250","ENG_041_MZB_LO_3811","Caistor Canal Catchment (trib of Ancholme)",53.48653,-0.3299782,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",303,"55250","ENG_062_MZB_LO_2358","NETTLETON BECK",53.4865524266,-0.3299816727,2002,2020,19,19,2.42305874543205
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",304,"55274","ENG_041_MZB_LO_3812","Rase from source to Market Rasen",53.410094,-0.24432726,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",304,"55274","ENG_062_MZB_LO_2363","RASE",53.4101178082,-0.2443289164,2002,2024,23,22,2.56345068415374
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",305,"55277","ENG_041_MZB_LO_3813","Rase from Market Rasen to Bishopbridge",53.390341,-0.37296525,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",305,"55277","ENG_062_MZB_LO_2364","RASE",53.3903643929,-0.3729667937,2002,2020,19,19,2.51847053644092
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",306,"55287","ENG_041_MZB_LO_3814","Louth Canal",53.365168,-0.016219338,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",306,"55287","ENG_062_MZB_LO_2367","LUD",53.3651922211,-0.0162198385,2002,2024,23,22,2.60574352650781
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",307,"55336","ENG_041_MZB_LO_3815","Skitter Beck / East Halton Beck",53.60522,-0.31030553,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",307,"55336","ENG_062_MZB_LO_2377","SKITTER BECK",53.6052418059,-0.3103103164,2002,2023,22,22,2.36620429958333
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",308,"142369","ENG_041_MZB_LO_3816","Loxley from Strines Dyke to River Don",53.408739,-1.5697348,2002,2019,18,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",308,"142369","ENG_062_MZB_LO_3274","LOXLEY",53.4087611928,-1.5684871274,2002,2023,22,19,80.2371427930442
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",309,"55395","ENG_041_MZB_LO_3817","Waithe Beck lower catchment (to Tetney Lock)",53.49672,-0.11340197,1994,2019,26,26,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",309,"55395","ENG_062_MZB_LO_2388","WAITHE BECK",53.4967444619,-0.1134060157,2002,2024,23,23,2.64455426649925
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",310,"55397","ENG_041_MZB_LO_3818","Waithe Beck lower catchment (to Tetney Lock)",53.494449,-0.005666519,1994,2019,26,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",310,"55397","ENG_062_MZB_LO_2389","WAITHE BECK",53.4944748135,-0.0056712886,2002,2019,18,17,2.79400296072295
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",311,"55415","ENG_041_MZB_LO_3819","Winterton Beck from Source to the Humber",53.671262,-0.62404403,1995,2019,25,25,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",311,"55415","ENG_062_MZB_LO_2394","WINTERTON BECK",53.6712829393,-0.6240498226,2002,2020,19,19,2.28340480269269
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",312,"33490","ENG_042_MZB_LO_1","BEANE",51.922181,-0.121974,2007,2017,11,11,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",312,"33490","ENG_062_MZB_LO_849","BEANE",51.9221894682,-0.1219494236,2004,2023,20,20,1.86938990170643
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",314,"34019","ENG_042_MZB_LO_3","BEANE",51.868307,-0.128563,2008,2017,10,10,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",314,"34019","ENG_062_MZB_LO_894","BEANE",51.8683145431,-0.1285366367,2002,2023,22,19,1.93200194309518
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",315,"34242","ENG_042_MZB_LO_4","BEANE",51.802604,-0.07685,2009,2018,10,10,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",315,"34242","ENG_062_MZB_LO_943","BEANE",51.8026101563,-0.0768218716,2002,2023,22,20,1.98719026926695
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",318,"33500","ENG_042_MZB_LO_7","GADE",51.76307,-0.477765,1999,2016,18,18,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",318,"33500","ENG_062_MZB_LO_852","GADE",51.7630768181,-0.4777429172,2002,2023,22,22,1.64457328469987
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",319,"33502","ENG_042_MZB_LO_8","GADE",51.79054,-0.507304,2002,2017,16,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",319,"33502","ENG_062_MZB_LO_853","GADE",51.7905482801,-0.5072810058,2002,2023,22,22,1.77181377723103
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",321,"33389","ENG_042_MZB_LO_10","MIMRAM",51.867746,-0.268012,2002,2017,16,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",321,"33389","ENG_062_MZB_LO_844","MIMRAM",51.8677523576,-0.2679883037,2002,2023,22,22,1.71802223005039
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",322,"33408","ENG_042_MZB_LO_11","MIMRAM",51.837514,-0.220967,2001,2016,16,16,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",322,"33408","ENG_062_MZB_LO_846","MIMRAM",51.8375206902,-0.2209434156,2002,2020,19,18,1.72671291023749
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",324,"34111","ENG_042_MZB_LO_13","MIMRAM",51.856771,-0.264048,2006,2017,12,12,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",324,"34111","ENG_062_MZB_LO_916","MIMRAM",51.8567779025,-0.2640241226,2002,2023,22,21,1.75338654625727
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",327,"34292","ENG_042_MZB_LO_18","MISBOURNE",51.672075,-0.631509,2005,2017,13,13,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",327,"34292","ENG_062_MZB_LO_953","MISBOURNE",51.6720793623,-0.6314867709,2002,2023,22,21,1.55728515579156
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",331,"33860","ENG_042_MZB_LO_23","VER",51.745895,-0.33579,2008,2017,10,10,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",331,"33860","ENG_062_MZB_LO_876","VER",51.7459004401,-0.3357672426,2008,2022,15,15,1.62658706254484
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",332,"33911","ENG_042_MZB_LO_24","VER",51.723056,-0.337773,2008,2017,10,10,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",332,"33911","ENG_062_MZB_LO_882","VER",51.7230613357,-0.3377496208,2002,2024,23,21,1.66217976174407
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",333,"34044","ENG_042_MZB_LO_25","VER",51.699893,-0.348607,2008,2017,10,10,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",333,"34044","ENG_062_MZB_LO_903","VER",51.6998978264,-0.3485846343,2002,2024,23,19,1.58077911479462
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",334,"34116","ENG_042_MZB_LO_26","VER",51.783943,-0.378507,2006,2017,12,12,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",334,"34116","ENG_062_MZB_LO_918","VER",51.7839497657,-0.3784840042,2006,2023,18,18,1.69624271257098
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",335,"34117","ENG_042_MZB_LO_27","VER",51.735753,-0.328256,2008,2017,10,10,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",335,"34117","ENG_062_MZB_LO_919","VER",51.7360480307,-0.32838102,2005,2024,20,18,32.7800952720988
+"England","Judy England","first call; data Ellen used","ENG_042_MZB_LO",336,"34298","ENG_042_MZB_LO_28","VER",51.754202,-0.352306,2008,2017,10,10,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",336,"34298","ENG_062_MZB_LO_958","VER",51.7542082513,-0.3522828868,2005,2023,19,17,1.68137987776863
+"England","Don Monteith","first call; data Ellen used","ENG_043_MZB_LO",337,"Coquet","ENG_043_MZB_LO_3","Coquet",55.3382225,-1.62942111,1996,2012,17,18,0
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",337,"1660","ENG_041_MZB_LO_3541","Coquet from Forest Burn to Tidal Limit",55.338476,-1.6279117,1994,2019,26,24,96.7252657265325
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",337,"1660","ENG_062_MZB_LO_310","COQUET",55.3381780631,-1.6294584572,2002,2023,22,20,5.31380185971031
+"England","Don Monteith","first call; data Ellen used","ENG_043_MZB_LO",340,"Lathkill","ENG_043_MZB_LO_7","Lathkill",53.177742,-1.67164516,1997,2012,16,13,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",340,"53858","ENG_062_MZB_LO_2120","LATHKILL",53.1777281639,-1.6716792752,2002,2024,23,23,2.65971154350509
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",341,"ST9509329728","ENG_044_MZB_LO_1","Fonthill Brook",51.066863,-2.071406,2008,2019,12,12,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",341,"9157","ENG_062_MZB_LO_603","FONTHILL STREAM",51.0667844478,-2.0713995424,2002,2016,15,9,8.44985449218458
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",342,"SU1709534465","ENG_044_MZB_LO_3","River Bourne",51.109229,-1.757187,2006,2019,14,14,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",342,"81180","ENG_062_MZB_LO_3180","BOURNE",51.1092948893,-1.7569902478,2002,2012,11,6,15.0711514387041
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",343,"SU0403525455","ENG_044_MZB_LO_4","River Ebble",51.028448,-1.943838,2006,2019,14,14,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",343,"9165","ENG_062_MZB_LO_606","EBBLE",51.0285131313,-1.943773491,2003,2015,13,10,8.24933589351752
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",344,"ST9877229657","ENG_044_MZB_LO_6","River Nadder",51.066245,-2.018901,2009,2019,11,9,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",344,"9153","ENG_062_MZB_LO_599","NADDER",51.066543942,-2.0189519261,2002,2013,12,7,32.2985873890042
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",345,"ST9459929149","ENG_044_MZB_LO_7","River Nadder",51.061652,-2.078447,2009,2019,11,9,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",345,"9154","ENG_062_MZB_LO_600","NADDER",51.0621040075,-2.078427409,2002,2015,14,7,48.5753672288245
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",346,"ST8468137167","ENG_044_MZB_LO_8","River Wylye",51.133569,-2.220316,2006,2019,14,14,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",346,"9183","ENG_062_MZB_LO_610","WYLYE",51.1335899939,-2.2203251848,2003,2024,22,6,2.33920880079743
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",347,"SU0629960699","ENG_044_MZB_LO_11","Western Avon",51.34534,-1.910948,2006,2019,14,13,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",347,"9120","ENG_062_MZB_LO_591","HAMPSHIRE AVON (WESTERN)",51.3450116694,-1.9096484332,2004,2013,10,6,94.2855526812395
+"England","Rachel Stubbington","first call; data Ellen used","ENG_044_MZB_LO",348,"SU1252356291","ENG_044_MZB_LO_12","Western Avon",51.305603,-1.82174,2007,2019,13,11,0
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",348,"9119","ENG_062_MZB_LO_590","HAMPSHIRE AVON (WESTERN)",51.3055810353,-1.8217450444,2002,2023,22,15,2.38405887694868
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",653,"67369","ENG_062_MZB_LO_2923","YARROW",53.6409557526,-2.6181958541,2002,2014,13,10,0
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",653,"67369","ENG_041_MZB_LO_3569","Yarrow US Big Lodge Water",53.640843,-2.6178187,1994,2014,21,18,26.9962338134692
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",653,"68310","ENG_041_MZB_LO_3587","Yarrow US Big Lodge Water",53.641254,-2.618218,1994,2013,20,19,32.1235737324543
+"England","James Sinclair","second data call; new data","ENG_062_MZB_LO",670,"68310","ENG_062_MZB_LO_3007","BLACK BROOK (YARROW)",53.641270251,-2.618215572,2002,2013,12,12,0
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",670,"67369","ENG_041_MZB_LO_3569","Yarrow US Big Lodge Water",53.640843,-2.6178187,1994,2014,21,18,52.5124938972933
+"England","John Francis Murphy","first call; data Ellen used","ENG_041_MZB_LO",670,"68310","ENG_041_MZB_LO_3587","Yarrow US Big Lodge Water",53.641254,-2.618218,1994,2013,20,19,1.7555367898179
+"France","Maxence Forcellini","first call; data Ellen used","FRA_014_MZB_LO",1,"svg","FRA_014_MZB_LO_1","Rhone",45.829523,5.294382,1980,2014,35,35,0
+"France","Anthony Maire","first call; data Ellen used","FRA_015_MZB_LO",1,"2","FRA_015_MZB_LO_2","Rhone",45.8291388888888,5.29397222222222,2000,2019,20,20,51.6180480094877
+"France","Anthony Maire","first call; data Ellen used","FRA_015_MZB_LO",1,"2","FRA_015_MZB_LO_2","Rhone",45.8291388888888,5.29397222222222,2000,2019,20,20,0
+"France","Maxence Forcellini","first call; data Ellen used","FRA_014_MZB_LO",1,"svg","FRA_014_MZB_LO_1","Rhone",45.829523,5.294382,1980,2014,35,35,51.6180480094877
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",1,"4000100","FRA_016_MZB_LO_83","LOIRE",44.823889409306,4.19433152973777,1994,2016,23,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",1,"4000100","FRA_046_MZB_LO_1","LOIRE à SAINTE-EULALIE",44.8238647620592,4.19433186148525,2005,2017,13,12,2.65899234851259
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",2,"4002010","FRA_016_MZB_LO_85","LOIRE",45.0785622698448,3.91142143030469,1997,2014,18,8,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",2,"4002010","FRA_046_MZB_LO_5","LOIRE À CHASPINHAC - LE PUY-EN-VELAY",45.0785595598625,3.91141968844566,2005,2017,13,5,0.321107840820917
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",3,"4003500","FRA_016_MZB_LO_86","LIGNON DU VELAY",45.2566834913587,4.1506929779042,1997,2015,19,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",3,"4003500","FRA_046_MZB_LO_10","LIGNON-DU-VELAY à SAINT-MAURICE-DE-LIGNON",45.2566454174921,4.1507003359411,2005,2017,13,12,4.14270059779265
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",4,"4003900","FRA_016_MZB_LO_87","ANCE DU NORD",45.28559964487,4.11411195854666,1997,2016,20,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",4,"4003900","FRA_046_MZB_LO_12","ANCE DU NORD à BEAUZAC",45.2855626139317,4.11411130980365,2005,2017,13,13,3.99234601868029
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",5,"4015000","FRA_016_MZB_LO_89","LOIRE",46.1466644442756,4.09742992311753,1994,2014,21,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",5,"4015000","FRA_046_MZB_LO_36","LOIRE à BRIENNON",46.1466673878631,4.09744100006586,2006,2016,11,9,0.88757923790643
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",6,"4015300","FRA_016_MZB_LO_90","SORNIN",46.1501288363951,4.15153646260149,1997,2014,18,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",6,"4015300","FRA_046_MZB_LO_39","SORNIN à CHARLIEU",46.1499032841858,4.15262769474442,2006,2017,12,11,85.2027377302397
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",7,"4023000","FRA_016_MZB_LO_91","BESBRE",46.5017206541259,3.67864676574739,1996,2015,20,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",7,"4023000","FRA_046_MZB_LO_52","BESBRE à DOMPIERRE-SUR-BESBRE",46.5016779767443,3.67865706878747,2005,2017,13,12,4.65710992868168
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",8,"4026900","FRA_016_MZB_LO_93","ALLIER",44.7258247995227,3.86572470803898,1995,2014,20,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",8,"4026900","FRA_046_MZB_LO_65","ALLIER à LANGOGNE",44.7258044305269,3.86572482284896,2005,2017,13,12,2.19770065743573
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",9,"4027730","FRA_016_MZB_LO_94","ALLIER",45.1156270823553,3.4906687515064,1997,2016,20,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",9,"4027730","FRA_046_MZB_LO_72","ALLIER à LANGEAC",45.1156200589147,3.49067703778603,2005,2017,13,13,0.986808476248865
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",10,"4028400","FRA_016_MZB_LO_95","ALAGNON",45.1121771532718,2.79230112191729,1997,2015,19,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",10,"4028400","FRA_046_MZB_LO_75","ALAGNON à LAVEISSIERE",45.1121841479568,2.79229667105887,2005,2017,13,12,0.827261927213094
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",11,"4028500","FRA_016_MZB_LO_96","ALAGNON",45.1418742990145,3.01413123322021,1995,2015,21,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",11,"4028500","FRA_046_MZB_LO_77","ALAGNON à JOURSAC",45.1419099487374,3.01412345022904,2005,2017,13,13,3.88955188702002
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",12,"4030000","FRA_016_MZB_LO_98","ALLIER",45.5664319237702,3.25248437570466,1996,2015,20,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",12,"4030000","FRA_046_MZB_LO_83","ALLIER à ORBEIL",45.5664572456275,3.25248023907674,2005,2017,13,12,2.74661028098411
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",13,"4031000","FRA_016_MZB_LO_99","ALLIER",45.7389612000881,3.22335924169444,1995,2015,21,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",13,"4031000","FRA_046_MZB_LO_87","ALLIER à COURNON-D'AUVERGNE",45.7389617759373,3.22335787810925,2005,2017,13,12,0.12012776118275
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",14,"4036500","FRA_016_MZB_LO_100","ALLIER",45.96861188985,3.44765339315621,1997,2015,19,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",14,"4036500","FRA_046_MZB_LO_93","ALLIER à LIMONS",45.9686438537472,3.44764085140547,2005,2017,13,12,3.56920319649954
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",15,"4037400","FRA_016_MZB_LO_101","DORE",45.6390593313526,3.70518109292103,1996,2014,19,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",15,"4037400","FRA_046_MZB_LO_94","DORE à VERTOLAYE",45.6390558470184,3.70517814534967,2005,2018,14,9,0.436566152298618
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",16,"4040000","FRA_016_MZB_LO_103","ALLIER",46.0951102080144,3.44420839770158,1996,2016,21,8,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",16,"4040000","FRA_046_MZB_LO_99","ALLIER à HAUTERIVE",46.0950845677649,3.44287500402007,2005,2016,12,5,99.9359037086451
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",17,"4041700","FRA_016_MZB_LO_104","SIOULE",45.8796600688736,2.80903361152976,1997,2015,19,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",17,"4041700","FRA_046_MZB_LO_104","SIOULE à MONTFERMY",45.8796782794353,2.80903170562578,2005,2017,13,12,1.96681817596347
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",18,"4041900","FRA_016_MZB_LO_105","SIOULE",46.1648873420224,3.18986871653014,1997,2016,20,11,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",18,"4041900","FRA_046_MZB_LO_110","SIOULE à JENZAT",46.1648822770689,3.18986265349135,2005,2016,12,9,0.709385293952399
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",19,"4042100","FRA_016_MZB_LO_106","BOUBLE",46.2631750602808,3.22630267109504,1995,2015,21,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",19,"4042100","FRA_046_MZB_LO_111","BOUBLE à CHAREIL-CINTRAT",46.2631327877961,3.22629798821557,2005,2017,13,13,4.5647647136393
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",20,"4043100","FRA_016_MZB_LO_107","SIOULE",46.3404949984294,3.3102548433648,1997,2015,19,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",20,"4043100","FRA_046_MZB_LO_112","SIOULE à CONTIGNY",46.3404664533651,3.31024291096717,2005,2017,13,13,3.19928979380487
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",21,"4043200","FRA_016_MZB_LO_108","ALLIER",46.4029968054298,3.31917714767707,1995,2016,22,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",21,"4043200","FRA_046_MZB_LO_113","ALLIER à CHATEL-DE-NEUVRE",46.4030247703529,3.31917738737734,2005,2017,13,11,3.01047365274935
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",22,"4044000","FRA_016_MZB_LO_109","ALLIER",46.6595419783227,3.22837175935904,1996,2015,20,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",22,"4044000","FRA_046_MZB_LO_115","ALLIER à VILLENEUVE-SUR-ALLIER",46.6595100695459,3.22836501843348,2005,2017,13,11,3.4701606730483
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",23,"4057000","FRA_016_MZB_LO_111","CHER",46.14425166022,2.56629241901787,1997,2016,20,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",23,"4057000","FRA_046_MZB_LO_163","CHER à CHAMBONCHARD",46.1442063086626,2.56628828609168,2005,2017,13,12,4.89333260824131
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",24,"4059000","FRA_016_MZB_LO_113","CHER",46.3124166172277,2.60263995887235,1996,2017,22,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",24,"4059000","FRA_046_MZB_LO_171","CHER à LAVAULT-SAINTE-ANNE",46.3124126389139,2.60263031385188,2005,2017,13,11,0.837377188364537
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",25,"4061400","FRA_016_MZB_LO_114","OEIL",46.4207760384391,2.82322769980525,1995,2015,21,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",25,"4061400","FRA_046_MZB_LO_178","OEIL à VILLEFRANCHE-D'ALLIER",46.4207850987799,2.823195235664,2005,2017,13,13,2.60618645940599
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",26,"4068800","FRA_016_MZB_LO_116","SAULDRE",47.4326266111501,2.06735540379539,1996,2017,22,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",26,"4068800","FRA_046_MZB_LO_205","SAULDRE à SALBRIS",47.4326234752979,2.06735236896851,2006,2018,13,11,0.403450394597034
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",27,"4070000","FRA_016_MZB_LO_117","SAULDRE",47.3206042802516,1.67079331519567,1997,2017,21,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",27,"4070000","FRA_046_MZB_LO_211","SAULDRE à PRUNIERS-EN-SOLOGNE",47.3206025171087,1.67079543905478,2006,2018,13,11,0.245125873617663
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",28,"4075700","FRA_016_MZB_LO_119","VIENNE",45.6936637863369,2.07638916612567,1997,2017,21,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",28,"4075700","FRA_046_MZB_LO_234","VIENNE à SAINT-SETIERS",45.6936599008095,2.07637174536887,2005,2017,13,13,1.38036885114472
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",29,"4089000","FRA_016_MZB_LO_122","GRANDE CREUSE",46.3781631068244,1.67922024226536,1992,2017,26,21,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",29,"4089000","FRA_046_MZB_LO_263","CREUSE à FRESSELINES",46.3781767110932,1.67919596374445,2005,2017,13,12,2.32746738825291
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",30,"4090000","FRA_016_MZB_LO_123","PETITE CREUSE",46.3857793203097,1.68939936349424,1992,2017,26,19,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",30,"4090000","FRA_046_MZB_LO_267","PETITE CREUSE à FRESSELINES",46.3857692371509,1.68939507208461,2005,2017,13,11,1.13157128107168
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",31,"4093500","FRA_016_MZB_LO_124","GARTEMPE",46.1176677740876,1.33839678198584,1992,2016,25,19,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",31,"4093500","FRA_046_MZB_LO_278","GARTEMPE à BESSINES-SUR-GARTEMPE",46.1174875779482,1.33778357532204,2005,2017,13,12,49.8527901971764
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",32,"4110700","FRA_016_MZB_LO_125","SARTHE",48.6314330429144,0.468259829669555,1997,2017,21,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",32,"4110700","FRA_046_MZB_LO_337","SARTHE à MOULINS-LA-MARCHE",48.6314523877874,0.468303341625689,2007,2017,11,11,3.73185720365193
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",33,"4123100","FRA_016_MZB_LO_128","MAYENNE",48.4726044096353,-0.146203666263368,1997,2017,21,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",33,"4123100","FRA_046_MZB_LO_366","MAYENNE à LALACELLE",48.4726118518696,-0.1461876215046,2007,2017,11,11,1.39793814063388
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",34,"4123750","FRA_016_MZB_LO_129","MAYENNE",48.445321030004,-0.586042567822973,1997,2017,21,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",34,"4123750","FRA_046_MZB_LO_368","MAYENNE à AMBRIERES-LES-VALLEES",48.445347915149,-0.5860288176552,2007,2018,12,9,3.05197888315615
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",35,"4134000","FRA_016_MZB_LO_131","LAYON",47.3162409662466,-0.631689848449556,1992,2017,26,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",35,"4134000","FRA_046_MZB_LO_397","LAYON à SAINT-LAMBERT-DU-LATTAY",47.316248188156,-0.6316729813013,2005,2018,14,12,1.45784326276227
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",36,"4146500","FRA_016_MZB_LO_133","ERDRE",47.4651927243327,-1.48207653171215,1992,2017,26,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",36,"4146500","FRA_046_MZB_LO_418","ERDRE à NORT-SUR-ERDRE",47.4652091134859,-1.4821106756578,2007,2018,12,12,3.05059369482721
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",37,"4148590","FRA_016_MZB_LO_134","BOULOGNE",47.0367161041047,-1.60237880001684,1992,2017,26,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",37,"4148590","FRA_046_MZB_LO_422","BOULOGNE à SAINT-PHILBERT-DE-GRAND-LIEU",47.0367247346983,-1.6024124995533,2005,2018,14,12,2.64674572652322
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",38,"4152500","FRA_016_MZB_LO_136","JAUNAY",46.690361563492,-1.6634629819136,1997,2017,21,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",38,"4152500","FRA_046_MZB_LO_427","JAUNAY à MARTINET",46.6903597477533,-1.6634772816983,2007,2018,12,12,1.07681572038161
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",39,"4153100","FRA_016_MZB_LO_137","CIBOULE",46.5793248987074,-1.72072656958459,1997,2017,21,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",39,"4153100","FRA_046_MZB_LO_428","CIBOULE à SAINT-MATHURIN",46.5792043432376,-1.7209166701334,2007,2018,12,10,19.1676813392914
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",40,"4168140","FRA_016_MZB_LO_140","GOUESSANT",48.484644419901,-2.56849619250752,1993,2016,24,22,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",40,"4168140","FRA_046_MZB_LO_465","GOUESSANT à COETMIEUX",48.4846653171048,-2.5684609585692,2005,2017,13,11,3.37334855143799
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",41,"4171450","FRA_016_MZB_LO_141","LEFF",48.7061177255591,-3.06909562119406,1993,2016,24,21,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",41,"4171450","FRA_046_MZB_LO_475","LEFF à YVIAS",48.7061562059496,-3.069055313521,2005,2017,13,11,5.03140216779686
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",42,"4173100","FRA_016_MZB_LO_144","LEGUER",48.6950805132749,-3.42300615711311,1993,2016,24,21,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",42,"4173100","FRA_046_MZB_LO_493","LEGUER à PLOUBEZRE",48.6951020500016,-3.4229792236555,2005,2017,13,11,3.00439924185261
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",43,"4174250","FRA_016_MZB_LO_145","QUEFFLEUTH",48.5663614980752,-3.83696845022199,1993,2016,24,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",43,"4174250","FRA_046_MZB_LO_500","QUEFFLEUTH À SAINT-MARTIN-DES-CHAMPS",48.5661696482791,-3.8364630318869,2005,2017,13,12,41.5269789823752
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",44,"4175100","FRA_016_MZB_LO_146","ABER WRACH EST",48.5499561056345,-4.38951366255946,1993,2016,24,22,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",44,"4175100","FRA_046_MZB_LO_502","ABER WRAC'H À LANARVILY",48.5499727745841,-4.3894935245302,2007,2017,11,11,2.29630998722006
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",45,"4177320","FRA_016_MZB_LO_147","ELORN",48.3845236914972,-4.00032664946528,1997,2016,20,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",45,"4177320","FRA_046_MZB_LO_504","ELORN à COMMANA",48.3845644195764,-4.0003125283824,2005,2017,13,13,4.49233489938038
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",46,"4178000","FRA_016_MZB_LO_148","ELORN",48.4693003956126,-4.21568751011924,1993,2016,24,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",46,"4178000","FRA_046_MZB_LO_505","ELORN à PLOUEDERN",48.4693462517885,-4.2156717169609,2005,2017,13,13,5.05561143186849
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",47,"4178650","FRA_016_MZB_LO_149","AULNE",48.2542409882597,-3.71043933184949,1994,2016,23,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",47,"4178650","FRA_046_MZB_LO_509","AULNE à LANDELEAU",48.2542562370713,-3.7104290188477,2005,2017,13,11,1.798351136187
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",48,"4182000","FRA_016_MZB_LO_151","ODET",48.0058559226742,-4.06366317313709,1997,2016,20,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",48,"4182000","FRA_046_MZB_LO_516","ODET à QUIMPER",48.0058664076004,-4.0636345711211,2005,2018,14,12,2.35106662393517
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",49,"4186700","FRA_016_MZB_LO_152","ISOLE",47.928086221965,-3.61793603841105,1994,2016,23,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",49,"4186700","FRA_046_MZB_LO_520","ISOLE à SAINT-THURIEN",47.9281271600777,-3.617907792828,2005,2017,13,11,4.85108109861115
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",50,"4188000","FRA_016_MZB_LO_153","ELLE",47.9041604711572,-3.46904329687195,1994,2016,23,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",50,"4188000","FRA_046_MZB_LO_525","ELLE à ARZANO",47.9042363211296,-3.4690394842113,2005,2017,13,11,8.15882420918395
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",51,"4190000","FRA_016_MZB_LO_154","SCORFF",47.9055394896991,-3.41937255305167,1994,2016,23,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",51,"4190000","FRA_046_MZB_LO_526","SCORFF à ARZANO",47.9055231756179,-3.4193711208463,2005,2017,13,12,1.75687859187966
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",52,"4195000","FRA_016_MZB_LO_155","LOC H",47.7217016771919,-2.9901819538426,1992,2016,25,21,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",52,"4195000","FRA_046_MZB_LO_546","RAU D'AURAY OU LOC'H À BRECH",47.7217259358952,-2.9901860013145,2005,2017,13,11,2.62472472456239
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",53,"4212700","FRA_016_MZB_LO_157","SEMNON",47.8986460970618,-1.71413695461879,1992,2016,25,21,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",53,"4212700","FRA_046_MZB_LO_572","SEMNON à PLECHATEL",47.8986999886495,-1.7141155325392,2005,2017,13,11,5.99699739186995
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",54,"4214000","FRA_016_MZB_LO_158","CHERE",47.7181958740878,-1.41264320366361,1992,2017,26,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",54,"4214000","FRA_046_MZB_LO_574","CHERE à CHATEAUBRIANT",47.7182176193045,-1.4126697366154,2005,2018,14,12,3.0286032435594
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",55,"4214495","FRA_016_MZB_LO_159","CHERE",47.699620991212,-1.7857359357336,1992,2015,24,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",55,"4214495","FRA_046_MZB_LO_575","CHERE à PIERRIC",47.6996241457385,-1.7856782746909,2005,2018,14,12,4.19896428781788
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",56,"5021500","FRA_016_MZB_LO_160","TARDOIRE",45.7181723641159,0.840509618840023,1992,2017,26,22,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",56,"5021500","FRA_046_MZB_LO_586","La Tardoire à l'aval de Champagnac",45.7181392191554,0.840502066057482,2008,2020,13,7,3.61621689500307
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",57,"5030000","FRA_016_MZB_LO_162","DRONNE",45.0404321239961,-0.131520297486323,1992,2017,26,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",57,"5030000","FRA_046_MZB_LO_589","La Dronne à Coutras",45.0403567703483,-0.1314891210756,2009,2020,12,7,8.46863712815975
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",58,"5053000","FRA_016_MZB_LO_175","CORREZE",45.1669742033332,1.46102597137648,1992,2017,26,19,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",58,"5053000","FRA_046_MZB_LO_592","La Corrèze à l'aval de Brive",45.1669569359793,1.46092592750023,2008,2020,13,7,7.8545233097477
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",59,"5060000","FRA_016_MZB_LO_182","CUZE",44.8277702137976,1.22333367755551,1992,2017,26,23,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",59,"5060000","FRA_046_MZB_LO_594","La Cuze à Vitrac",44.8278639456435,1.22334027607492,2008,2020,13,6,10.1241266015171
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",60,"5074000","FRA_016_MZB_LO_191","JALLE DE BLANQUEFORT",44.8884930646868,-0.710485129795158,1992,2017,26,22,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",60,"5074000","FRA_046_MZB_LO_596","La Jalle de Blanquefort à Corbiac",44.8885295832308,-0.7103852617786,2008,2020,13,7,8.61158175539565
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",61,"5100000","FRA_016_MZB_LO_199","LOT",44.4426139450413,3.19856879786362,1992,2017,26,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",61,"5100000","FRA_046_MZB_LO_604","Le Lot à La Mothe",44.443359732196,3.19896382166614,2007,2020,14,7,86.1033029018065
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",62,"5102000","FRA_016_MZB_LO_200","LOT",44.4807929100022,3.45655180501429,1992,2017,26,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",62,"5102000","FRA_046_MZB_LO_608","Le Lot à l'aval de Mende",44.4807639589236,3.45629707976462,2007,2020,14,7,19.9304165564001
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",63,"5103000","FRA_016_MZB_LO_201","LOT",44.5190126525704,3.634402820847,1992,2017,26,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",63,"5103000","FRA_046_MZB_LO_609","Le Lot à Chadenet",44.5190474782807,3.63378373271172,2007,2020,14,7,47.9530468220226
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",64,"5150000","FRA_016_MZB_LO_202","TARN",44.3329316808421,3.49621839229588,1994,2017,24,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",64,"5150000","FRA_046_MZB_LO_615","Le Tarn à Montbrun",44.3331389554539,3.49631956689546,2007,2020,14,7,23.7115849040623
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",65,"6000990","FRA_016_MZB_LO_213","SAONE",48.0901430167278,6.10196798486411,1994,2016,23,19,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",65,"6000990","FRA_046_MZB_LO_637","SAONE A BELRUPT ",48.0902733280027,6.10194089081598,2008,2021,14,12,14.1424856213055
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",66,"6000997","FRA_016_MZB_LO_214","CONEY",47.9170813406816,5.99619928292383,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",66,"6000997","FRA_046_MZB_LO_638","CONEY A CORRE 1",47.917059706407,5.99619504034702,2008,2021,14,12,2.34587046138619
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",67,"6001000","FRA_016_MZB_LO_215","SAONE",47.8408107097926,5.91718422803796,1994,2016,23,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",67,"6001000","FRA_046_MZB_LO_640","SAONE A CENDRECOURT ",47.8402608374286,5.9173780952854,2009,2021,13,11,60.7585432093244
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",68,"6002000","FRA_016_MZB_LO_216","LANTERNE",47.7459467730041,6.07591516267107,1993,2016,24,22,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",68,"6002000","FRA_046_MZB_LO_645","LANTERNE A AMONCOURT ",47.7458331594084,6.07584415099531,2008,2021,14,10,13.2563387710137
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",69,"6003500","FRA_016_MZB_LO_217","DRUGEON",47.6359221515628,6.03291635527785,1994,2016,23,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",69,"6003500","FRA_046_MZB_LO_647","DURGEON A PONTCEY ",47.6355512332817,6.03323598900758,2008,2021,14,11,46.1549334391038
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",70,"6006900","FRA_016_MZB_LO_219","OGNON",47.8306793336535,6.70845725446951,1994,2016,23,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",70,"6006900","FRA_046_MZB_LO_664","OGNON A SERVANCE 1",47.8302809436975,6.70749495169189,2008,2021,14,10,81.7775019066836
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",71,"6010000","FRA_016_MZB_LO_220","OGNON",47.2880716619943,5.54973380038303,1994,2016,23,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",71,"6010000","FRA_046_MZB_LO_667","OGNON A PESMES 1",47.287898466479,5.55003488466431,2008,2021,14,11,28.8532539586297
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",72,"6013800","FRA_016_MZB_LO_221","TILLE",47.1784907378237,5.29995058712629,1997,2016,20,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",72,"6013800","FRA_046_MZB_LO_674","TILLE A CHAMPDOTRE 1",47.1783701270675,5.30016869407014,2008,2021,14,12,20.5961095910157
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",73,"6017000","FRA_016_MZB_LO_222","VOUGE",47.1340844508122,5.1795644023029,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",73,"6017000","FRA_046_MZB_LO_682","VOUGE A AUBIGNY-EN-PLAINE ",47.1340356795429,5.17987391576191,2008,2021,14,12,23.3181993466728
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",74,"6018200","FRA_016_MZB_LO_223","DOUBS",46.9464428166963,6.38471164195451,1993,2016,24,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",74,"6018200","FRA_046_MZB_LO_690","DOUBS A ARCON ",46.9464319863496,6.38470403203628,2008,2021,14,11,1.29311109818428
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",75,"6018500","FRA_016_MZB_LO_224","DOUBS",47.0473659560554,6.64036700418797,1997,2016,20,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",75,"6018500","FRA_046_MZB_LO_691","DOUBS A MORTEAU 1",47.0474928403109,6.64049033861747,2008,2021,14,12,16.3881981153435
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",76,"6020100","FRA_016_MZB_LO_225","DOUBS",47.2621033564897,6.95148066564472,1993,2016,24,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",76,"6020100","FRA_046_MZB_LO_692","DOUBS A GOUMOIS ",47.2617928528213,6.95142358269393,2008,2021,14,12,33.6576587318323
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",77,"6020500","FRA_016_MZB_LO_226","DESSOUBRE",47.3175539500564,6.81098756491897,1993,2016,24,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",77,"6020500","FRA_046_MZB_LO_693","DESSOUBRE A ST-HIPPOLYTE 1",47.3173681700021,6.81087528738313,2008,2021,14,12,21.6028418281942
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",78,"6021000","FRA_016_MZB_LO_227","DOUBS",47.4521101701873,6.79170101226412,1993,2016,24,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",78,"6021000","FRA_046_MZB_LO_694","DOUBS A MATHAY ",47.4519180236193,6.7915308192566,2008,2021,14,12,24.1060896939082
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",79,"6022000","FRA_016_MZB_LO_229","ALLAINE",47.5488470410912,6.93378580154279,1992,2016,25,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",79,"6022000","FRA_046_MZB_LO_696","ALLAINE A MORVILLARS 1",47.5479820821235,6.9341084512408,2008,2021,14,12,95.93137874655
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",80,"6024000","FRA_016_MZB_LO_230","SAVOUREUSE",47.5216741039003,6.84358557758951,1992,2016,25,22,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",80,"6024000","FRA_046_MZB_LO_697","SAVOUREUSE A VIEUX-CHARMONT ",47.5217560147486,6.84366160271485,2008,2021,14,12,10.4044729091677
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",81,"6026000","FRA_016_MZB_LO_231","ALLAINE",47.4806708496728,6.76535934187641,1993,2016,24,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",81,"6026000","FRA_046_MZB_LO_698","ALLAN A BART ",47.4806606362843,6.76534586086409,2009,2021,13,12,1.4738425562501
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",82,"6027000","FRA_016_MZB_LO_232","DOUBS",47.4543540955357,6.68241413118849,1993,2016,24,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",82,"6027000","FRA_046_MZB_LO_699","DOUBS A COLOMBIER-FONTAINE 1",47.4542058145195,6.68215728030171,2008,2021,14,12,24.6023594371702
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",83,"6027700","FRA_016_MZB_LO_233","DOUBS",47.2856707000164,6.14948703262292,1993,2016,24,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",83,"6027700","FRA_046_MZB_LO_700","DOUBS A VAIRE-ARCIER ",47.2855136532106,6.14912353857117,2008,2021,14,12,31.5122128462972
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",84,"6031200","FRA_016_MZB_LO_235","DOUBS",47.0355236057638,5.45350601019759,1992,2016,25,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",84,"6031200","FRA_046_MZB_LO_702","DOUBS A GEVRY 1",47.0355169183313,5.45350901146824,2008,2021,14,11,0.752537766728125
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",85,"6033000","FRA_016_MZB_LO_236","LOUE",47.0151401222585,5.49472447123641,1992,2016,25,20,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",85,"6033000","FRA_046_MZB_LO_704","LOUE A PARCEY ",47.0148138449993,5.49401510323859,2008,2021,14,11,62.9004986541098
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",86,"6049000","FRA_016_MZB_LO_238","VEYLE",46.2732491767499,4.85904874637436,1993,2016,24,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",86,"6049000","FRA_046_MZB_LO_745","VEYLE A GRIEGES ",46.2740543673957,4.8590160506851,2008,2021,14,11,86.7257504492078
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",87,"6071900","FRA_016_MZB_LO_244","FIER",45.9334441004582,5.84852077532788,1992,2016,25,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",87,"6071900","FRA_046_MZB_LO_776","FIER A MOTZ ",45.9334991670521,5.84827593613237,2008,2021,14,11,19.3332950049578
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",88,"6079000","FRA_016_MZB_LO_246","GUIERS",45.5927044440126,5.63732964414872,1992,2016,25,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",88,"6079000","FRA_046_MZB_LO_785","GUIERS A ST-GENIX-SUR-GUIERS 1",45.5926967024599,5.6373269651594,2008,2021,14,11,0.858473801715755
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",89,"6082000","FRA_016_MZB_LO_248","BOURBRE",45.6123311331512,5.22156817743748,1997,2016,20,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",89,"6082000","FRA_046_MZB_LO_793","BOURBRE A L'ISLE-D'ABEAU ",45.6123368185254,5.22154161997279,2008,2021,14,11,2.09973111792322
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",90,"6083000","FRA_016_MZB_LO_249","BOURBRE",45.7724947731447,5.18642378376624,1997,2016,20,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",90,"6083000","FRA_046_MZB_LO_796","BOURBRE A CHAVANOZ ",45.7724897028187,5.18642830867205,2008,2021,14,11,0.644006097681323
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",91,"6085500","FRA_016_MZB_LO_250","BIENNE",46.3668775501529,5.71124175348853,1992,2016,25,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",91,"6085500","FRA_046_MZB_LO_800","BIENNE A JEURRE 1",46.3668672156542,5.71123967165205,2008,2021,14,11,1.12331822576017
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",92,"6092000","FRA_016_MZB_LO_252","AIN",45.8165312896476,5.21239780944008,1992,2016,25,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",92,"6092000","FRA_046_MZB_LO_807","AIN A ST-MAURICE-DE-GOURDANS ",45.8165299253927,5.21240590757576,2009,2021,13,10,0.627454001701519
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",93,"6097000","FRA_016_MZB_LO_253","GIER",45.5875027803444,4.76119629086599,1994,2016,23,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",93,"6097000","FRA_046_MZB_LO_816","GIER A GIVORS ",45.5875021350739,4.76118980174763,2009,2021,13,10,0.495865372952283
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",94,"6107900","FRA_016_MZB_LO_255","EYRIEUX",44.824705938446,4.79937332510439,1993,2016,24,19,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",94,"6107900","FRA_046_MZB_LO_836","EYRIEUX A BEAUCHASTEL ",44.8242818532411,4.798880797453,2008,2021,14,11,59.353061920305
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",95,"6117500","FRA_016_MZB_LO_261","EYGUES",44.1265920160637,4.71818029086712,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",95,"6117500","FRA_046_MZB_LO_859","AYGUES A CADEROUSSE ",44.1265875155952,4.71818273164151,2008,2021,14,12,0.521825148132668
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",96,"6121000","FRA_016_MZB_LO_263","CEZE",44.1473028747419,4.67893756989992,1994,2016,23,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",96,"6121000","FRA_046_MZB_LO_869","CEZE A CHUSCLAN ",44.1472985620923,4.67893645545748,2008,2021,14,13,0.47374726538734
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",97,"6123500","FRA_016_MZB_LO_264","OUVEZE",44.01384879134,4.87199916072513,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",97,"6123500","FRA_046_MZB_LO_874","OUVEZE A SORGUES 1",44.013344240719,4.87140396254964,2008,2021,14,12,71.5789154575396
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",98,"6123700","FRA_016_MZB_LO_265","SORGUE",43.9201197654534,5.13116345662725,1997,2016,20,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",98,"6123700","FRA_046_MZB_LO_875","SORGUE DES CAPUCINS A FONTAINE-DE-VAUCLUSE ",43.9195022791562,5.13141087235332,2008,2020,13,10,69.4552211064352
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",99,"6124000","FRA_016_MZB_LO_266","SORGUE",43.9383033953402,5.03884170480946,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",99,"6124000","FRA_046_MZB_LO_876","SORGUE A ISLE-SUR-LA-SORGUE ",43.9383401307631,5.03874895191618,2008,2020,13,11,8.2573329078603
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",100,"6128000","FRA_016_MZB_LO_268","GARDON D ALES",44.0943652644883,4.099285602546,1997,2016,20,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",100,"6128000","FRA_046_MZB_LO_881","GARDON D'ALES A ST-HILAIRE-DE-BRETHMAS 1",44.0945470205711,4.09938024186848,2008,2021,14,13,20.967626949431
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",101,"6129000","FRA_016_MZB_LO_269","GARDON D ANDUZE",44.0392150094595,3.998277370715,1994,2016,23,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",101,"6129000","FRA_046_MZB_LO_885","GARDON D'ANDUZE A TORNAC ",44.0392730517855,3.99869251077848,2008,2021,14,13,32.949811674579
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",102,"6129950","FRA_016_MZB_LO_270","ALZON",43.9826870673662,4.44174685402383,1994,2016,23,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",102,"6129950","FRA_046_MZB_LO_888","ALZON A ST-MAXIMIN ",43.9827587576865,4.44147785786186,2008,2021,14,13,22.3661186343935
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",103,"6133600","FRA_016_MZB_LO_272","ISERE",45.5324089574878,6.59939014546223,1992,2016,25,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",103,"6133600","FRA_046_MZB_LO_898","ISERE A MONTGIROD ",45.5324064209953,6.59940112272395,2008,2022,15,11,0.875202101076121
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",104,"6137000","FRA_016_MZB_LO_275","ARLY",45.6948364337622,6.40276327764631,1992,2016,25,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",104,"6137000","FRA_046_MZB_LO_903","ARLY A CESARCHES ",45.694145743919,6.40260108533507,2008,2021,14,10,75.4175617053758
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",105,"6137200","FRA_016_MZB_LO_276","ISERE",45.584043572933,6.27015453778729,1997,2016,20,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",105,"6137200","FRA_046_MZB_LO_904","ISERE A GRESY-SUR-ISERE ",45.5840341088737,6.27015363020009,2008,2022,15,11,1.02214068121666
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",106,"6139500","FRA_016_MZB_LO_277","ARC",45.4822812945616,6.29242504715771,1992,2016,25,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",106,"6139500","FRA_046_MZB_LO_909","ARC A ARGENTINE ",45.482272295183,6.29242185233238,2008,2022,15,10,0.999678047419671
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",107,"6143950","FRA_016_MZB_LO_278","ROMANCHE",45.1156741809546,6.01318325984009,1997,2016,20,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",107,"6143950","FRA_046_MZB_LO_920","ROMANCHE A BOURG D'OISANS - LE PONT ROUGE 2",45.1156982672062,6.01313094648784,2008,2022,15,11,4.76421452836853
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",108,"6149900","FRA_016_MZB_LO_281","CLAREE",44.9400328024001,6.68283257569538,1997,2016,20,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",108,"6149900","FRA_046_MZB_LO_933","CLAREE A VAL-DES-PRES 1",44.9401306706615,6.68278536016211,2008,2020,13,10,11.1583163570848
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",109,"6153900","FRA_016_MZB_LO_283","DURANCE",44.2148490236048,5.93470154576271,1997,2016,20,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",109,"6153900","FRA_046_MZB_LO_946","DURANCE A SISTERON 1",44.2148473042528,5.9347130258458,2008,2021,14,12,0.910711029310447
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",110,"6159000","FRA_016_MZB_LO_284","DURANCE",44.0354627979676,5.96523116911908,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",110,"6159000","FRA_046_MZB_LO_954","DURANCE A LES-MEES ",44.0353429846391,5.9644374514432,2008,2021,14,11,63.1906873271004
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",111,"6167000","FRA_016_MZB_LO_287","TECH",42.4946579062618,2.71842259888412,1994,2016,23,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",111,"6167000","FRA_046_MZB_LO_974","TECH A REYNES 1",42.4946567333059,2.71841015258821,2008,2021,14,12,1.00602192880436
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",112,"6168000","FRA_016_MZB_LO_288","TECH",42.5856272697508,2.98538922344486,1994,2016,23,18,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",112,"6168000","FRA_046_MZB_LO_975","TECH A ELNE ",42.5856246931357,2.98540100394158,2008,2021,14,13,0.983445981270477
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",113,"6170000","FRA_016_MZB_LO_289","TET",42.6441816255118,2.48409325065694,1994,2016,23,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",113,"6170000","FRA_046_MZB_LO_981","TET A EUS ",42.644164764147,2.48365928946222,2008,2021,14,13,34.7485575290772
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",114,"6175000","FRA_016_MZB_LO_290","AGLY",42.7639208192498,2.9867999389284,1994,2016,23,17,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",114,"6175000","FRA_046_MZB_LO_991","AGLY A ST-LAURENT-DE-LA-SALANQUE ",42.7639663164201,2.98710129719289,2008,2021,14,13,24.5439390565261
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",115,"6175600","FRA_016_MZB_LO_291","AUDE",42.7954161040727,2.22567266116219,1993,2016,24,13,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",115,"6175600","FRA_046_MZB_LO_994","AUDE A AXAT 2",42.7952209667972,2.2254418861701,2008,2021,14,11,28.0191717029745
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",116,"6179000","FRA_016_MZB_LO_295","ORBIEL",43.2554375114733,2.41040912626924,1993,2016,24,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",116,"6179000","FRA_046_MZB_LO_1017","ORBIEL A VILLALIER 1",43.2552217829045,2.41064842702586,2008,2021,14,13,30.0432451863989
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",117,"6179700","FRA_016_MZB_LO_296","ORBIEU",43.2251943091677,2.89251240703315,1993,2016,24,15,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",117,"6179700","FRA_046_MZB_LO_1022","ORBIEU A NEVIAN ",43.2259491445703,2.89255267483004,2008,2021,14,13,81.7220319865662
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",118,"6183000","FRA_016_MZB_LO_297","LERGUE",43.6279944813039,3.47740584866425,1992,2016,25,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",118,"6183000","FRA_046_MZB_LO_1037","LERGUE A BRIGNAC ",43.6281874379187,3.47731323561009,2008,2021,14,13,22.0896421209348
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",119,"6187100","FRA_016_MZB_LO_300","ORB",43.4376334434442,3.08737241078234,1992,2016,25,16,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",119,"6187100","FRA_046_MZB_LO_1045","ORB A CESSENON-SUR-ORB 2",43.4378206740677,3.08694107487719,2008,2021,14,13,39.5626025231411
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",120,"6195500","FRA_016_MZB_LO_301","ARC (PROV)",43.5048221453679,5.132373785133,1997,2016,20,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",120,"6195500","FRA_046_MZB_LO_1065","ARC A BERRE-L'ETANG ",43.5048462679305,5.1322428344114,2008,2021,14,12,10.6309833519026
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",121,"6196850","FRA_016_MZB_LO_302","TOULOUBRE",43.5413655922879,5.04283995237395,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",121,"6196850","FRA_046_MZB_LO_1068","TOULOUBRE A ST-CHAMAS 1",43.5413528490076,5.04283253344629,2011,2021,11,10,1.49621586965947
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",122,"6213000","FRA_016_MZB_LO_303","VAR",43.6682105118367,7.19625270468508,1997,2016,20,14,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",122,"6213000","FRA_046_MZB_LO_1089","VAR A NICE ",43.6682156361619,7.19624718254833,2008,2021,14,11,0.703226516019173
+"France","Mathieu Floury","first call; data Ellen used","FRA_016_MZB_LO",123,"6426000","FRA_016_MZB_LO_304","OGNON",47.4159445359011,6.18065558603846,1997,2016,20,12,0
+"France","French biodiversity agency and other agentcies (via Remi Escaffe)","second data call; new data","FRA_046_MZB_LO",123,"6426000","FRA_046_MZB_LO_1144","OGNON A BEAUMOTTE-AUBERTANS ",47.4159312016667,6.18064188128068,2008,2021,14,11,1.74848318824259
+"Germany","Jacqueline Bernet","second data call; new data","GER_050_MZB_LO",1,"120261","GER_050_MZB_LO_9","Radesforder Au",53.9740688739,10.1042091045,1994,2013,20,6,0
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",1,"SH_120261","GER_071_MZB_LO_1","Radesforder Au",53.974068875,10.1042091045,2009,2020,12,6,0.0001184061418419
+"Germany","Landesamt für Umwelt (Schleswig-Holstein) (LfU)","new data call","GER_071_MZB_LO",1,"SH_120261","GER_071_MZB_LO_1","Radesforder Au",53.974068875,10.1042091045,2009,2020,12,6,0
+"Germany","Jacqueline Bernet","second data call; new data","GER_050_MZB_LO",1,"120261","GER_050_MZB_LO_9","Radesforder Au",53.9740688739,10.1042091045,1994,2013,20,6,0.0001184061418419
+"Scotland","John Francis Murphy","first call; data Ellen used","SCO_041_MZB_LO",1,"9540","SCO_041_MZB_LO_3452","River Tweed",55.603053,-2.7810646,2006,2018,13,13,0
+"Scotland","Cathy Bennett","second data call; new data","SCO_061_MZB_LO",1,"9540","SCO_061_MZB_LO_636","River Tweed",55.6030523,-2.7810749,2005,2018,14,14,0.633663185199745
+"Scotland","John Francis Murphy","first call; data Ellen used","SCO_041_MZB_LO",2,"122480","SCO_041_MZB_LO_3453","River Clyde",55.851559,-4.2448337,2006,2018,13,13,0
+"Scotland","Cathy Bennett","second data call; new data","SCO_061_MZB_LO",2,"122480","SCO_061_MZB_LO_951","River Clyde",55.8515522,-4.244835,2005,2018,14,14,0.738219962113975
+"Scotland","John Francis Murphy","first call; data Ellen used","SCO_041_MZB_LO",3,"122783","SCO_041_MZB_LO_3454","River Stinchar",55.098636,-4.9966615,2006,2018,13,13,0
+"Scotland","Cathy Bennett","second data call; new data","SCO_061_MZB_LO",3,"122783","SCO_061_MZB_LO_1135","River Stinchar",55.0986428,-4.9966701,2005,2018,14,14,0.905558337830912
+"Scotland","John Francis Murphy","first call; data Ellen used","SCO_041_MZB_LO",4,"123153","SCO_041_MZB_LO_3455","River Cree",54.957889,-4.4807206,2006,2018,13,12,0
+"Scotland","Cathy Bennett","second data call; new data","SCO_061_MZB_LO",4,"123153","SCO_061_MZB_LO_1279","River Cree",54.957899,-4.4807309,2005,2018,14,14,1.25292476893273
+"Scotland","John Francis Murphy","first call; data Ellen used","SCO_041_MZB_LO",5,"206837","SCO_041_MZB_LO_3456","River Ewe",57.764595,-5.6023178,2006,2018,13,13,0
+"Scotland","Cathy Bennett","second data call; new data","SCO_061_MZB_LO",5,"206837","SCO_061_MZB_LO_1541","River Ewe",57.764571,-5.6023473,2005,2018,14,14,3.11206276745191
+"Scotland","John Francis Murphy","first call; data Ellen used","SCO_041_MZB_LO",6,"207030","SCO_041_MZB_LO_3457","River Spey",57.619855,-3.1067165,2006,2018,13,13,0
+"Scotland","Cathy Bennett","second data call; new data","SCO_061_MZB_LO",6,"207030","SCO_061_MZB_LO_1646","River Spey",57.6198388,-3.1067172,2005,2018,14,14,1.75557221436122
+"Scotland","John Francis Murphy","first call; data Ellen used","SCO_041_MZB_LO",7,"207309","SCO_041_MZB_LO_3458","River Spey",57.122993,-3.8538993,2006,2018,13,13,0
+"Scotland","Cathy Bennett","second data call; new data","SCO_061_MZB_LO",7,"207309","SCO_061_MZB_LO_1826","Allt a' Mharcaidh",57.1229788,-3.8539137,2005,2018,14,14,1.75490369709939
+"Spain","Miguel Cañedo-Argüelles","first call; data Ellen used","ESP_033_MZB_LO",1,"0074-BIO","ESP_033_MZB_LO_11","Ebro",42.6764471851984,-2.89667384568,2006,2017,12,12,0
+"Spain","Aitor Larrañaga","first call; data Ellen used","ESP_034_MZB_LO",1,"103000525","ESP_034_MZB_LO_85","Zadorra",42.6769964,-2.8965875,1993,2019,27,27,59.8814371533478
+"Spain","Aitor Larrañaga","second data call; new data","ESP_034_MZB_LO",1,"BC17","ESP_034_MZB_LO_332","Zadorra",42.6769964,-2.8965875,1993,2022,30,30,59.8814371533478
+"Spain","Alfredo Llorente","second data call; new data","ESP_045_MZB_LO",1,"ZAD828","ESP_045_MZB_LO_162","ZADORRA",42.6769964,-2.8965875,1993,2024,32,32,59.8814371533478
+"Spain","David Cunillera-Montcusí","second data call; new data","ESP_058_MZB_LO",1,"0074-BIO","ESP_058_MZB_LO_16","Zadorra",42.6764471851935,-2.89667384568,2009,2018,10,9,5.31462146504559e-07
+"Spain","Aitor Larrañaga","first call; data Ellen used","ESP_034_MZB_LO",1,"103000525","ESP_034_MZB_LO_85","Zadorra",42.6769964,-2.8965875,1993,2019,27,27,0
+"Spain","Miguel Cañedo-Argüelles","first call; data Ellen used","ESP_033_MZB_LO",1,"0074-BIO","ESP_033_MZB_LO_11","Ebro",42.6764471851984,-2.89667384568,2006,2017,12,12,59.8814371533478
+"Spain","David Cunillera-Montcusí","second data call; new data","ESP_058_MZB_LO",1,"0074-BIO","ESP_058_MZB_LO_16","Zadorra",42.6764471851935,-2.89667384568,2009,2018,10,9,59.8814376812597
+"Spain","Aitor Larrañaga","second data call; new data","ESP_034_MZB_LO",2,"Gip28","ESP_034_MZB_LO_21","Endara",43.2936662,-1.729694356,1996,2021,26,24,0
+"Spain","Alfredo Llorente","second data call; new data","ESP_045_MZB_LO",2,"END102","ESP_045_MZB_LO_51","ENDARA",43.293665,-1.7297261,2015,2024,10,6,2.51147914486438
+"Spain","Aitor Larrañaga","second data call; new data","ESP_034_MZB_LO",3,"Gip75","ESP_034_MZB_LO_73","Urumea",43.2764104,-1.955935788,1986,2021,36,33,0
+"Spain","Alfredo Llorente","second data call; new data","ESP_045_MZB_LO",3,"URU434","ESP_045_MZB_LO_153","URUMEA",43.2769078,-1.9557891,1993,2006,14,14,55.0394012093861
+"Spain","Aitor Larrañaga","second data call; new data","ESP_034_MZB_LO",5,"BC38","ESP_034_MZB_LO_353","Angiozar",43.10797023,-2.445497941,2007,2022,16,15,0
+"Spain","Alfredo Llorente","second data call; new data","ESP_045_MZB_LO",5,"DAG050","ESP_045_MZB_LO_25","ANGIOZAR",43.107943,-2.4454906,2007,2024,18,17,3.00343244894589
+"Spain","Aitor Larrañaga","second data call; new data","ESP_034_MZB_LO",6,"BC54","ESP_034_MZB_LO_363","Bidasoa",43.2940308,-1.7294226,1997,2021,25,25,0
+"Spain","Alfredo Llorente","second data call; new data","ESP_045_MZB_LO",6,"END102","ESP_045_MZB_LO_51","ENDARA",43.293665,-1.7297261,2015,2024,10,6,46.2670259826033
+"Spain","Alfredo Llorente","second data call; new data","ESP_045_MZB_LO",8,"END102","ESP_045_MZB_LO_51","ENDARA",43.293665,-1.7297261,2015,2024,10,6,0
+"Spain","Aitor Larrañaga","second data call; new data","ESP_034_MZB_LO",8,"Gip28","ESP_034_MZB_LO_21","Endara",43.2936662,-1.729694356,1996,2021,26,24,2.51147914486438
+"Spain","Aitor Larrañaga","second data call; new data","ESP_034_MZB_LO",8,"BC54","ESP_034_MZB_LO_363","Bidasoa",43.2940308,-1.7294226,1997,2021,25,25,46.2670259826033
+"Sweden","Richard Johnson","first call; data Ellen used","SWE_038_MZB_LO",1,"SE-8","SWE_038_MZB_LO_8","Dammån",57.0178806547001,15.3376889679,2007,2018,12,12,0
+"Sweden","Lenka Kuglerová","first call; data Ellen used","SWE_039_MZB_LO",1,"29","SWE_039_MZB_LO_12","Dammån",57.0178716714294,15.3376888864602,2009,2019,11,9,0.971909161779862
+"Sweden","Richard Johnson","first call; data Ellen used","SWE_038_MZB_LO",2,"SE-31","SWE_038_MZB_LO_31","Svedån Sved",58.0239955194995,14.1321457091999,2001,2018,18,18,0
+"Sweden","Lenka Kuglerová","first call; data Ellen used","SWE_039_MZB_LO",2,"149","SWE_039_MZB_LO_65","Svedån",58.0240046158567,14.1321624189101,2001,2019,19,11,1.37751626961559
+"Sweden","Richard Johnson","first call; data Ellen used","SWE_038_MZB_LO",3,"SE-35","SWE_038_MZB_LO_35","Viepsajåkkå",66.4780451976994,17.663502393,2007,2019,13,13,0
+"Sweden","Lenka Kuglerová","first call; data Ellen used","SWE_039_MZB_LO",3,"158","SWE_039_MZB_LO_73","Viepsajåkkå",66.4780451977121,17.6635023930047,1998,2019,22,14,1.44392757755429e-06

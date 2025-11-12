@@ -1,0 +1,101 @@
+"country","prov","origin","dataset.id","group","org.site","unique.id","river","latitude","longitude","st.yr","ed.yr","yr.ln","yr.num","distance"
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",1,"1585","ENG_062_MZB_LO_283","EWDEN BECK","53.45671241","-1.562836287",2002,2018,17,14,0
+"England","John Francis Murphy","first call, data Ellen used","ENG_041_MZB_LO",1,"1585","ENG_041_MZB_LO_3757","Ewden Beck from Source to River Don","53.456695","-1.5628349",1996,2018,23,20,1.87513479513888
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",2,"33751","ENG_062_MZB_LO_867","VER","51.78882884","-0.387371112",2002,2023,22,19,0
+"England","Judy England","first call, data Ellen used","ENG_042_MZB_LO",2,"33751","ENG_042_MZB_LO_22","VER","51.788822","-0.387395",2008,2017,10,10,1.75332904634151
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",3,"81318","ENG_062_MZB_LO_3182","MIMRAM","51.8433258","-0.24462415",2002,2023,22,21,0
+"England","Judy England","first call, data Ellen used","ENG_042_MZB_LO",3,"81318","ENG_042_MZB_LO_16","MIMRAM","51.843319","-0.244648",2005,2017,13,13,1.74752134585404
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",4,"36178","ENG_062_MZB_LO_1146","CRANLEIGH WATERS","51.1186668","-0.473281432",2002,2024,23,23,0
+"England","John Francis Murphy","first call, data Ellen used","ENG_041_MZB_LO",4,"36178","ENG_041_MZB_LO_3482","Cranleigh Waters","51.118671","-0.47330515",1995,2018,24,24,1.66589115310039
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",5,"43197","ENG_062_MZB_LO_1335","LITTLE STOUR (SO)","51.27852562","1.172957225",2002,2018,17,15,0
+"England","John Francis Murphy","first call, data Ellen used","ENG_041_MZB_LO",5,"43197","ENG_041_MZB_LO_3530","Nailbourne and Little Stour","51.278521","1.1729283",1994,2018,25,22,2.01116811608098
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",6,"65904","ENG_062_MZB_LO_2861","ETHEROW","53.46931799","-1.970523256",2002,2021,20,20,0
+"England","John Francis Murphy","first call, data Ellen used","ENG_041_MZB_LO",6,"65904","ENG_041_MZB_LO_3554","Etherow (Woodhead Res. to Glossop Bk.)","53.469301","-1.9705258",1995,2018,24,23,1.83513724054846
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",7,"34171","ENG_062_MZB_LO_929","MIMRAM","51.84760751","-0.248348569",2002,2023,22,22,0
+"England","John Francis Murphy","first call, data Ellen used","ENG_041_MZB_LO",7,"34171","ENG_041_MZB_LO_3464","Mimram (Codicote Bottom to Lee)","51.847601","-0.24837229",1994,2018,25,24,1.72673432208787
+"England","Judy England","first call, data Ellen used","ENG_042_MZB_LO",7,"34171","ENG_042_MZB_LO_14","MIMRAM","51.847601","-0.248372",2002,2017,16,16,1.709106783689
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",8,"51052","ENG_062_MZB_LO_1814","SEVERN","52.74314587","-2.789875005",2004,2013,10,10,0
+"England","John Francis Murphy","first call, data Ellen used","ENG_041_MZB_LO",8,"51052","ENG_041_MZB_LO_3509","Severn - conf Bele Bk to conf Sundorne Bk","52.743131","-2.7898771",1994,2013,20,18,1.60459408544268
+"England","John Francis Murphy","first call, data Ellen used","ENG_041_MZB_LO",9,"67595","ENG_041_MZB_LO_3571","Etherow (Woodhead Res. to Glossop Bk.)","53.465304","-1.9805152",1997,2018,22,19,0
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",9,"67595","ENG_062_MZB_LO_2939","ETHEROW","53.4654549688","-1.9804372195",2002,2023,22,18,16.9958392776845
+"England","Judy England","first call, data Ellen used","ENG_042_MZB_LO",9,"81318","ENG_042_MZB_LO_16","MIMRAM","51.843319","-0.244648",2005,2017,13,13,0
+"England","James Sinclair","second data call, new data","ENG_062_MZB_LO",9,"81318","ENG_062_MZB_LO_3182","MIMRAM","51.8433258022","-0.2446241504",2002,2023,22,21,1.74759602464949
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",1,"103000578","ESP_034_MZB_LO_138","Oria","43.0810712","-2.1527286",1993,2019,27,27,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",1,"ORI258","ESP_045_MZB_LO_126","ORIA","43.0810712","-2.1527286",1993,2024,32,32,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",2,"Gip49","ESP_034_MZB_LO_44","Oria","43.08181","-2.152854",2003,2017,15,15,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",2,"ORI258","ESP_045_MZB_LO_126","ORIA","43.0810712","-2.1527286",1993,2024,32,32,80.5646681525385
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",3,"103000610","ESP_034_MZB_LO_170","Deba","43.0814872","-2.4474737",2002,2019,18,18,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",3,"DEB202","ESP_045_MZB_LO_30","DEBA","43.0814872","-2.4474737",2002,2024,23,23,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",5,"BC137","ESP_034_MZB_LO_305","Deba","43.0814872","-2.4474737",2002,2021,20,20,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",5,"DEB202","ESP_045_MZB_LO_30","DEBA","43.0814872","-2.4474737",2002,2024,23,23,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",8,"103000516","ESP_034_MZB_LO_76","Urola","43.1323467","-2.3513851",1993,2019,27,25,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",8,"URO210","ESP_045_MZB_LO_145","UROLA","43.1323467","-2.3513851",1993,2024,32,30,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",9,"103000527","ESP_034_MZB_LO_87","Antzuola","43.1015275","-2.3915388",2007,2019,13,13,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",9,"DAN055","ESP_045_MZB_LO_26","ANTZUOLA","43.1015275","-2.3915388",2007,2024,18,18,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",10,"103000533","ESP_034_MZB_LO_93","Estanda","43.0504046","-2.2191363",2002,2019,18,18,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",10,"OES116","ESP_045_MZB_LO_105","Estanda","43.0504046","-2.2191363",2002,2024,23,23,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",11,"103000537","ESP_034_MZB_LO_97","Deba","43.1268631","-2.4273828",2009,2019,11,9,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",11,"DUB042","ESP_045_MZB_LO_42","UBERA","43.1268631","-2.4273828",2009,2024,16,14,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",12,"103000540","ESP_034_MZB_LO_100","Urola","43.0067008","-2.3295061",2002,2018,17,11,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",12,"URO026","ESP_045_MZB_LO_142","UROLA","43.0067008","-2.3295061",2002,2024,23,14,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",13,"103000545","ESP_034_MZB_LO_105","Ego","43.1891977","-2.4519425",1993,2019,27,25,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",13,"DEG068","ESP_045_MZB_LO_35","EGO","43.1891977","-2.4519425",1993,2024,32,30,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",14,"103000547","ESP_034_MZB_LO_107","Bidasoa","43.2940308","-1.7294226",1997,2019,23,23,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",14,"BID555","ESP_045_MZB_LO_19","BIDASOA","43.2940308","-1.7294226",1997,2024,28,28,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",14,"END102","ESP_045_MZB_LO_51","ENDARA","43.293665","-1.7297261",2015,2024,10,6,46.2670259826033
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",15,"103000549","ESP_034_MZB_LO_109","Oiartzun","43.3033912","-1.8853049",1993,2019,27,27,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",15,"OIA102","ESP_045_MZB_LO_108","OIARTZUN","43.3033912","-1.8853049",1993,2024,32,32,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",16,"103000567","ESP_034_MZB_LO_127","Oria","43.1668333","-2.0715202",1993,2019,27,16,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",16,"ORI424","ESP_045_MZB_LO_127","ORIA","43.1668333","-2.0715202",1993,2024,32,21,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",17,"103000573","ESP_034_MZB_LO_133","Ibaieder","43.1733514","-2.2561423",2002,2019,18,18,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",17,"UIB154","ESP_045_MZB_LO_138","IBAIEDER","43.1733514","-2.2561423",2002,2024,23,23,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",18,"103000575","ESP_034_MZB_LO_135","Oria","43.2711862","-2.056947",2002,2019,18,17,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",18,"ORI606","ESP_045_MZB_LO_129","ORIA","43.2711862","-2.056947",2002,2024,23,22,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",19,"103000577","ESP_034_MZB_LO_137","Urola","43.0725695","-2.3305818",1997,2019,23,22,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",19,"URO106","ESP_045_MZB_LO_143","UROLA","43.0725695","-2.3305818",1997,2024,28,27,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",20,"103000592","ESP_034_MZB_LO_152","Oiartzun","43.2813632","-1.8203729",2002,2016,15,8,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",20,"OIA044","ESP_045_MZB_LO_106","OIARTZUN","43.2813632","-1.8203729",2002,2024,23,11,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",21,"103000599","ESP_034_MZB_LO_159","Oria","43.0573502","-2.1733788",2007,2019,13,13,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",21,"ORI220","ESP_045_MZB_LO_124","ORIA","43.0573502","-2.1733788",2007,2024,18,18,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",22,"103000609","ESP_034_MZB_LO_169","Mape","43.3670659","-2.702943",1999,2019,21,19,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",22,"OKM056","ESP_045_MZB_LO_114","MAPE","43.3670659","-2.702943",1999,2024,26,25,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",24,"103000614","ESP_034_MZB_LO_174","Oria","43.0217141","-2.2418122",2004,2019,16,16,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",24,"ORI122","ESP_045_MZB_LO_123","ORIA","43.0217141","-2.2418122",2004,2024,21,21,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",25,"103000616","ESP_034_MZB_LO_176","Deba","43.1778603","-2.4190195",2007,2019,13,13,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",25,"DEB348","ESP_045_MZB_LO_32","DEBA","43.1778603","-2.4190195",2007,2024,18,18,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",26,"103000624","ESP_034_MZB_LO_184","Urola","43.1085381","-2.3188706",2007,2019,13,13,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",26,"URO158","ESP_045_MZB_LO_144","UROLA","43.1085381","-2.3188706",2007,2024,18,18,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",27,"103000627","ESP_034_MZB_LO_187","Zaldivia","43.0485376","-2.1577687",2002,2019,18,18,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",27,"OZA090","ESP_045_MZB_LO_132","ZALDIBIA","43.0485376","-2.1577687",2002,2024,23,23,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",28,"103000631","ESP_034_MZB_LO_191","Urola","43.2256554","-2.2582403",2007,2019,13,13,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",28,"URO400","ESP_045_MZB_LO_147","UROLA","43.2256554","-2.2582403",2007,2024,18,18,0
+"Spain","Aitor Larrañaga","first call, data Ellen used","ESP_034_MZB_LO",29,"103000635","ESP_034_MZB_LO_195","OÃ±ati","43.0646151","-2.4425529",1997,2019,23,23,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",29,"DOI095","ESP_045_MZB_LO_41","OÑATI","43.0646151","-2.4425529",1997,2024,28,28,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",31,"BC96","ESP_034_MZB_LO_394","Deba","42.9816118","-2.5664562",2002,2022,21,8,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",31,"DEB034","ESP_045_MZB_LO_28","DEBA","42.9816118","-2.5664562",2002,2024,23,10,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",32,"Gip19","ESP_034_MZB_LO_11","Deba","43.082","-2.447405",1987,2021,35,25,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",32,"DEB202","ESP_045_MZB_LO_30","DEBA","43.0814872","-2.4474737",2002,2024,23,23,55.7588610540788
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",34,"BC37","ESP_034_MZB_LO_352","Deba","43.1268631","-2.4273828",2009,2021,13,11,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",34,"DUB042","ESP_045_MZB_LO_42","UBERA","43.1268631","-2.4273828",2009,2024,16,14,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",36,"BC146","ESP_034_MZB_LO_313","Deba","43.1778603","-2.4190195",2007,2021,15,15,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",36,"DEB348","ESP_045_MZB_LO_32","DEBA","43.1778603","-2.4190195",2007,2024,18,18,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",38,"BC48","ESP_034_MZB_LO_360","Ego","43.1891977","-2.4519425",1993,2021,29,27,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",38,"DEG068","ESP_045_MZB_LO_35","EGO","43.1891977","-2.4519425",1993,2024,32,30,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",43,"BC115","ESP_034_MZB_LO_283","Oiartzun","43.2813632","-1.8203729",2002,2022,21,10,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",43,"OIA044","ESP_045_MZB_LO_106","OIARTZUN","43.2813632","-1.8203729",2002,2024,23,11,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",52,"BC164","ESP_034_MZB_LO_328","Zaldivia","43.0485376","-2.1577687",2002,2021,20,20,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",52,"OZA090","ESP_045_MZB_LO_132","ZALDIBIA","43.0485376","-2.1577687",2002,2024,23,23,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",53,"BC149","ESP_034_MZB_LO_315","Araxes","43.1256121","-2.0796553",2002,2011,10,10,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",53,"OAR226","ESP_045_MZB_LO_102","ARAXES","43.1256121","-2.0796553",2002,2011,10,10,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",55,"BC92","ESP_034_MZB_LO_390","Oria","43.2711862","-2.056947",2002,2021,20,19,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",55,"ORI606","ESP_045_MZB_LO_129","ORIA","43.2711862","-2.056947",2002,2024,23,22,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",57,"BC39","ESP_034_MZB_LO_354","Urola","43.0067008","-2.3295061",2002,2020,19,12,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",57,"URO026","ESP_045_MZB_LO_142","UROLA","43.0067008","-2.3295061",2002,2024,23,14,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",60,"BC94","ESP_034_MZB_LO_392","Urola","43.0725695","-2.3305818",1997,2021,25,24,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",60,"URO106","ESP_045_MZB_LO_143","UROLA","43.0725695","-2.3305818",1997,2024,28,27,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",62,"BC160","ESP_034_MZB_LO_325","Urola","43.1085381","-2.3188706",2007,2021,15,15,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",62,"URO158","ESP_045_MZB_LO_144","UROLA","43.1085381","-2.3188706",2007,2024,18,18,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",65,"BC168","ESP_034_MZB_LO_331","Urola","43.2256554","-2.2582403",2007,2022,16,16,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",65,"URO400","ESP_045_MZB_LO_147","UROLA","43.2256554","-2.2582403",2007,2024,18,18,0
+"Spain","Alfredo Llorente","second data call, new data","ESP_045_MZB_LO",67,"OKM040","ESP_045_MZB_LO_113","MAPE","43.365167","-2.7103575",1999,2013,15,7,0
+"Spain","Aitor Larrañaga","second data call, new data","ESP_034_MZB_LO",67,"BC4","ESP_034_MZB_LO_355","Mape","43.365167","-2.7103575",1999,2013,15,6,0

@@ -1,0 +1,346 @@
+country,prov,origin,dataset.id,group,org.site,unique.id,river,latitude,longitude,st.yr,ed.yr,yr.ln,yr.num
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,9,157240,ENG_062_MZB_LO_3377,ASH (LEE),51.84844843,0.074778703,2011,2023,13,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,10,35948,ENG_062_MZB_LO_1089,SCOTSGROVE BROOK,51.75791588,-0.975104264,2003,2015,13,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,30,51578,ENG_062_MZB_LO_1873,DOVE (DOVE(UPPER)),53.13520405,-1.820860322,2002,2012,11,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,34,53508,ENG_062_MZB_LO_2073,TAME (UT - OLDBURY ARM),52.56480622,-1.994079868,2002,2014,13,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,49,67463,ENG_062_MZB_LO_2932,CHORLTON BK,53.44122731,-2.238541242,2002,2014,13,6
+Hungary,Zoltan Csabai,"first call, data Ellen used",HUN_022_MZB_LO,1,101180109,HUN_022_MZB_LO_54,Tisza,46.18551547,20.10484453,2005,2017,13,12
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,9,IR1285,IRL_051_MZB_LO_1285,BALLINABOY,53.4628295,-10.0062869,2009,2023,15,5
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,1,St. 2 Innl. Gjærvollstadvatn ca 75 m,NOR_054_MZB_LO_43,Farsund,58.20983827,6.79702991,2003,2020,18,18
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,1,St. 3 Innl. Gjærvollstadvatn ca. 150 m,NOR_054_MZB_LO_44,Farsund,58.21049744,6.79669967,2003,2020,18,18
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,4,St. 4 utløp Saudlandsvatn,NOR_054_MZB_LO_45,Farsund,58.1994906,6.76873976,2003,2020,18,13
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,5,St. 6 innløp Saudlandsvatn v/ eplehage,NOR_054_MZB_LO_47,Farsund,58.20641722,6.75998163,2003,2020,18,18
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,5,St. 7 Innløp Saudlandsvatn v/ kanal,NOR_054_MZB_LO_48,Farsund,58.20634127,6.75923746,2003,2020,18,18
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,10,St. 7 Taksteinsbekken,NOR_054_MZB_LO_58,Vikedal,59.56608,6.02388,2003,2020,18,15
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,12,St. 6 Nausta ved Gamlestølen,NOR_054_MZB_LO_80,Nausta,61.57854361,5.94312742,2003,2019,17,9
+Scotland,Cathy Bennett,"second data call, new data",SCO_061_MZB_LO,3,206904,SCO_061_MZB_LO_1568,Allt nan Ramh,58.2881129,-5.072397,2005,2014,10,5
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,1,103000578,ESP_034_MZB_LO_138,Oria,43.0810712,-2.1527286,1993,2019,27,27
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,1,Gip49,ESP_034_MZB_LO_44,Oria,43.08181,-2.152854,2003,2017,15,15
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,2,103000610,ESP_034_MZB_LO_170,Deba,43.0814872,-2.4474737,2002,2019,18,18
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,3,Gip14,ESP_034_MZB_LO_6,Urumea,43.29617,-1.727905,1996,2021,26,24
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,4,103000610,ESP_034_MZB_LO_170,Deba,43.0814872,-2.4474737,2002,2019,18,18
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,4,BC137,ESP_034_MZB_LO_305,Deba,43.0814872,-2.4474737,2002,2021,20,20
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,6,Gip49,ESP_034_MZB_LO_44,Oria,43.08181,-2.152854,2003,2017,15,15
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,6,103000578,ESP_034_MZB_LO_138,Oria,43.0810712,-2.1527286,1993,2019,27,27
+Belgium,Marie Anne Eurie Forio,merge of Ellen's data and second data call,BEL_005_MZB_LO,12,BEVL_VMM_133900,BEL_005_MZB_LO_70,BOSBEEK,51.10361028,5.807662036,1991,2009,19,16
+Belgium,Marie Anne Eurie Forio,merge of Ellen's data and second data call,BEL_005_MZB_LO,18,BEVL_VMM_277500,BEL_005_MZB_LO_117,KLEINE NETE,51.23680383,5.082887435,1994,2017,24,12
+Belgium,Marie Anne Eurie Forio,merge of Ellen's data and second data call,BEL_005_MZB_LO,29,BEVL_VMM_310000,BEL_005_MZB_LO_147,ZWARTE NEET,51.26109217,5.093087965,1989,2017,29,13
+Belgium,Marie Anne Eurie Forio,merge of Ellen's data and second data call,BEL_005_MZB_LO,33,BEVL_VMM_317000,BEL_005_MZB_LO_151,WIMP,51.11554938,4.798117294,1989,2021,33,18
+England,John Francis Murphy,"first call, data Ellen used",ENG_041_MZB_LO,8,67595,ENG_041_MZB_LO_3571,Etherow (Woodhead Res. to Glossop Bk.),53.465304,-1.9805152,1997,2018,22,19
+England,Judy England,"first call, data Ellen used",ENG_042_MZB_LO,1,81318,ENG_042_MZB_LO_16,MIMRAM,51.843319,-0.244648,2005,2017,13,13
+England,Judy England,"first call, data Ellen used",ENG_042_MZB_LO,1,34171,ENG_042_MZB_LO_14,MIMRAM,51.847601,-0.248372,2002,2017,16,16
+England,Judy England,"first call, data Ellen used",ENG_042_MZB_LO,3,33751,ENG_042_MZB_LO_22,VER,51.788822,-0.387395,2008,2017,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,8,1585,ENG_062_MZB_LO_283,EWDEN BECK,53.45671241,-1.562836287,2002,2018,17,14
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,11,74827,ENG_062_MZB_LO_3097,SCOUT DIKE,53.53599518,-1.639557587,2002,2019,18,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,12,1445,ENG_062_MZB_LO_262,SHIRE BROOK,53.35102134,-1.363859032,2004,2016,13,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,20,150447,ENG_062_MZB_LO_3307,ESHTON/ WINTERBURN/ HETTON/ FLASBY  BECKS,53.98848083,-2.089598614,2008,2018,11,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,36,1346,ENG_062_MZB_LO_229,RUSHYFORD BECK,54.64355393,-1.541319886,2002,2016,15,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,40,1608,ENG_062_MZB_LO_290,HOLME,53.55913063,-1.813207459,2002,2015,14,12
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,50,1591,ENG_062_MZB_LO_286,MIDGELDEN BROOK,53.70776816,-2.124021123,2002,2019,18,11
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,55,1631,ENG_062_MZB_LO_300,WOOLER WATER,55.56030895,-2.004072336,2003,2019,17,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,60,1702,ENG_062_MZB_LO_325,BOTHAL BROCKS BURN,55.17455711,-1.626547941,2002,2017,16,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,93,154079,ENG_062_MZB_LO_3335,TEES,54.69956799,-2.367793529,2011,2024,14,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,100,9406,ENG_062_MZB_LO_654,AXE (DEVON),50.74654216,-3.048678354,2002,2022,21,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,103,8350,ENG_062_MZB_LO_505,BRUE,51.10658399,-2.463894187,2003,2023,21,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,105,8494,ENG_062_MZB_LO_507,MOORS,50.83364229,-1.862200508,2003,2023,21,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,108,86036,ENG_062_MZB_LO_3206,SHREEN WATER,51.0837833,-2.267315527,2002,2024,23,14
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,120,9115,ENG_062_MZB_LO_586,HAMPSHIRE AVON (EASTERN),51.3322731,-1.781537489,2002,2013,12,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,133,154697,ENG_062_MZB_LO_3352,DART,50.45893938,-3.72106506,2010,2023,14,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,157,77976,ENG_062_MZB_LO_3142,RED RIVER,50.22941947,-5.301435521,2002,2012,11,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,170,33407,ENG_062_MZB_LO_845,MIMRAM,51.82996935,-0.215130978,2014,2023,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,170,178969,ENG_062_MZB_LO_3431,MIMRAM,51.82909891,-0.207560776,2009,2023,15,12
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,171,179285,ENG_062_MZB_LO_3442,MIMRAM,51.83663651,-0.232067587,2014,2023,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,173,178972,ENG_062_MZB_LO_3433,MIMRAM,51.81861025,-0.196717779,2014,2023,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,173,178970,ENG_062_MZB_LO_3432,MIMRAM,51.82638556,-0.207117015,2009,2024,16,13
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,173,33597,ENG_062_MZB_LO_858,MIMRAM,51.82008998,-0.198806194,2002,2023,22,12
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,174,33751,ENG_062_MZB_LO_867,VER,51.78882884,-0.387371112,2002,2023,22,19
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,177,34080,ENG_062_MZB_LO_910,SALMON BROOK,51.61901111,-0.042632315,2004,2014,11,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,178,33842,ENG_062_MZB_LO_875,CHESS,51.69381992,-0.597740668,2002,2018,17,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,183,178977,ENG_062_MZB_LO_3438,BEANE,51.85931189,-0.113806243,2014,2023,10,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,184,178975,ENG_062_MZB_LO_3436,BEANE,51.87126549,-0.128632086,2014,2023,10,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,183,178976,ENG_062_MZB_LO_3437,BEANE,51.86331949,-0.123181091,2014,2023,10,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,188,178965,ENG_062_MZB_LO_3430,MIMRAM,51.85175213,-0.261632929,2014,2023,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,193,34165,ENG_062_MZB_LO_927,CHESS,51.67832293,-0.530486789,2003,2021,19,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,194,81318,ENG_062_MZB_LO_3182,MIMRAM,51.8433258,-0.24462415,2002,2023,22,21
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,199,34307,ENG_062_MZB_LO_962,CHESS,51.68682055,-0.583201546,2003,2022,20,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,202,76077,ENG_062_MZB_LO_3116,BULBOURNE,51.77701215,-0.599091044,2003,2023,21,12
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,209,96882,ENG_062_MZB_LO_3244,LEACH,51.73809665,-1.709160408,2003,2012,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,212,36020,ENG_062_MZB_LO_1108,LODDON,51.29222445,-1.024157836,2004,2023,20,20
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,221,36041,ENG_062_MZB_LO_1113,LODDON,51.29176001,-1.025616115,2004,2023,20,20
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,214,36178,ENG_062_MZB_LO_1146,CRANLEIGH WATERS,51.1186668,-0.473281432,2002,2024,23,23
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,219,35528,ENG_062_MZB_LO_1043,WYE (THAMES,51.62657846,-0.743161883,2002,2014,13,13
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,225,35831,ENG_062_MZB_LO_1068,WEY (SOUTH),51.11808578,-0.855493753,2002,2023,22,11
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,230,35919,ENG_062_MZB_LO_1081,THAMES (SE AREA),51.41425878,-0.497987294,2002,2014,13,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,231,35935,ENG_062_MZB_LO_1084,SILCHESTER BROOK,51.34813474,-1.108563196,2002,2014,13,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,254,36221,ENG_062_MZB_LO_1153,CHURN,51.66547752,-1.892124731,2002,2014,13,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,256,42088,ENG_062_MZB_LO_1205,DOUR,51.14751809,1.267270217,2002,2019,18,13
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,265,43192,ENG_062_MZB_LO_1334,BOURNE RIVULET,51.23036063,-1.381660716,2004,2017,14,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,267,43746,ENG_062_MZB_LO_1393,DARENT,51.36806012,0.210107524,2002,2014,13,13
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,269,43312,ENG_062_MZB_LO_1353,ALRE,51.0934175,-1.173290298,2002,2024,23,17
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,265,42119,ENG_062_MZB_LO_1211,BOURNE RIVULET,51.23676119,-1.384726197,2003,2017,15,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,283,43197,ENG_062_MZB_LO_1335,LITTLE STOUR (SO),51.27852562,1.172957225,2002,2018,17,15
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,283,70602,ENG_062_MZB_LO_3074,LITTLE STOUR (SO),51.27272386,1.168312739,2002,2011,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,283,70603,ENG_062_MZB_LO_3075,LITTLE STOUR (SO),51.27551514,1.169867232,2002,2011,10,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,283,70621,ENG_062_MZB_LO_3076,LITTLE STOUR (SO),51.28064451,1.176416358,2002,2014,13,13
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,283,70641,ENG_062_MZB_LO_3077,LITTLE STOUR (SO),51.28393149,1.183226789,2002,2023,22,19
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,627,77548,ENG_062_MZB_LO_3133,LITTLE STOUR (SO),51.28413089,1.1907708,2002,2011,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,293,43484,ENG_062_MZB_LO_1364,CRAY,51.4433735,0.154840285,2005,2015,11,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,294,43546,ENG_062_MZB_LO_1370,GROM,51.11630578,0.178167322,2002,2018,17,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,296,43732,ENG_062_MZB_LO_1390,GREAT STOUR,51.2250468,0.726858586,2002,2011,10,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,304,43806,ENG_062_MZB_LO_1401,MEDWAY,51.10038702,0.012586119,2003,2014,12,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,305,43807,ENG_062_MZB_LO_1402,LEN,51.26322413,0.557667333,2003,2013,11,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,316,72561,ENG_062_MZB_LO_3080,PAGHAM RIFE,50.7863672,-0.748727893,2002,2011,10,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,320,50380,ENG_062_MZB_LO_1758,SCOTIA BROOK,53.04647058,-2.212652738,2002,2012,11,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,325,50054,ENG_062_MZB_LO_1738,AVON (LS - ABOVE SOWE),52.3896757,-1.28129806,2002,2018,17,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,328,52117,ENG_062_MZB_LO_1926,PERRY,52.76149257,-2.830826613,2005,2023,19,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,330,52098,ENG_062_MZB_LO_1922,RAINS BROOK,52.34074134,-1.194857665,2002,2015,14,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,331,53803,ENG_062_MZB_LO_2104,ASHOP,53.40199085,-1.788776965,2002,2024,23,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,338,47608,ENG_062_MZB_LO_1572,WOOD BROOK,52.78218675,-1.212691501,2003,2018,16,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,340,53800,ENG_062_MZB_LO_2103,BURNTWOOD BROOK,52.66731942,-1.879421554,2003,2018,16,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,365,53364,ENG_062_MZB_LO_2059,BOTTESFORD BECK,53.54338458,-0.677155503,2002,2012,11,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,369,52866,ENG_062_MZB_LO_2008,SOAR,52.52318178,-1.282911921,2002,2014,13,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,375,49185,ENG_062_MZB_LO_1691,ANKER,52.57688832,-1.52629141,2003,2014,12,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,376,49209,ENG_062_MZB_LO_1692,COUNTESTHORPE BROOK,52.56558996,-1.125278719,2002,2015,14,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,382,49901,ENG_062_MZB_LO_1727,MAUN,53.13284216,-1.224447301,2002,2014,13,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,382,51076,ENG_062_MZB_LO_1822,MAUN,53.12842333,-1.234779167,2002,2014,13,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,395,50612,ENG_062_MZB_LO_1779,TORNE,53.42487467,-1.092630248,2002,2015,14,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,399,50959,ENG_062_MZB_LO_1802,ALNE,52.21850513,-1.846399929,2002,2011,10,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,470,54684,ENG_062_MZB_LO_2189,MARDYKE EAST,51.54275277,0.337648147,2002,2015,14,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,489,150202,ENG_062_MZB_LO_3306,EYE BROOK,52.58342959,-0.771330342,2008,2024,17,12
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,496,55781,ENG_062_MZB_LO_2483,STONTON BROOK,52.52947629,-0.905951377,2013,2024,12,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,500,55841,ENG_062_MZB_LO_2506,WHAPLODE RIVER,52.87309038,0.002866359,2002,2016,15,7
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,503,55856,ENG_062_MZB_LO_2516,WILLOW BROOK (NORTH),52.50187785,-0.682055913,2002,2016,15,12
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,540,154139,ENG_062_MZB_LO_3341,HOWES BECK,54.55279752,-2.762007457,2009,2018,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,544,69300,ENG_062_MZB_LO_3053,IRWELL,53.71444045,-2.201085649,2002,2019,18,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,565,65904,ENG_062_MZB_LO_2861,ETHEROW,53.46931799,-1.970523256,2002,2021,20,20
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,569,66742,ENG_062_MZB_LO_2890,BOLLIN,53.25494472,-2.121486894,2003,2014,12,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,570,164423,ENG_062_MZB_LO_3423,EAGLEY BK,53.61384126,-2.425799097,2013,2024,12,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,603,68316,ENG_062_MZB_LO_3008,VALLEY BROOK,53.08228867,-2.353503706,2004,2018,15,5
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,610,161357,ENG_062_MZB_LO_3416,CHEW BK,53.53108017,-1.982655667,2013,2024,12,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,629,77540,ENG_062_MZB_LO_3129,BURLINGTON BROOK,52.69520589,-2.324647426,2003,2021,19,18
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,641,76557,ENG_062_MZB_LO_3119,HULL/WEST BECK,53.99094921,-0.388443355,2002,2018,17,13
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,641,76558,ENG_062_MZB_LO_3120,HULL/WEST BECK,53.99409157,-0.397581664,2002,2018,17,13
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,655,154810,ENG_062_MZB_LO_3353,EHEN,54.525157,-3.414631298,2010,2023,14,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,661,80976,ENG_062_MZB_LO_3171,SHREEN WATER,51.09329121,-2.269826455,2002,2019,18,8
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,672,89481,ENG_062_MZB_LO_3217,CALDER (WYRE),53.92916219,-2.696053702,2002,2021,20,16
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,682,142180,ENG_062_MZB_LO_3270,HELVELLYN GILL,54.54886114,-3.058144552,2007,2018,12,11
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,690,150646,ENG_062_MZB_LO_3310,GLYNCH BROOK,52.00498938,-2.383593634,2008,2021,14,14
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,695,153104,ENG_062_MZB_LO_3325,KELD GILL,54.51762418,-2.700812169,2009,2018,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,695,153106,ENG_062_MZB_LO_3327,THORNSHIP GILL,54.51020694,-2.698213963,2009,2018,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,702,154135,ENG_062_MZB_LO_3337,HELTONDALE BECK,54.57756648,-2.781606992,2009,2018,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,705,153075,ENG_062_MZB_LO_3323,HOWES BECK,54.55648473,-2.750108301,2009,2018,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,711,158736,ENG_062_MZB_LO_3390,AVON (LS - ABOVE SOWE),52.41144962,-1.134853817,2012,2021,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,712,154964,ENG_062_MZB_LO_3359,GILT BROOK,52.99830749,-1.281498059,2010,2024,15,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,719,157548,ENG_062_MZB_LO_3383,RUDYARD BROOK,53.11552442,-2.069041777,2011,2021,11,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,724,160147,ENG_062_MZB_LO_3403,LAMBOURN,51.41105354,-1.325951357,2011,2023,13,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,724,160149,ENG_062_MZB_LO_3404,LAMBOURN,51.41196567,-1.328209842,2011,2023,13,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,727,160159,ENG_062_MZB_LO_3406,NOE,53.37022992,-1.781479293,2012,2023,12,6
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,738,34171,ENG_062_MZB_LO_929,MIMRAM,51.84760751,-0.248348569,2002,2023,22,22
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,351,48185,ENG_062_MZB_LO_1606,MEDEN,53.23368315,-1.029240766,2002,2013,12,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,402,51052,ENG_062_MZB_LO_1814,SEVERN,52.74314587,-2.789875005,2004,2013,10,10
+Finland,Jukka Aroviita,"second data call, new data",FIN_004_MZB_LO,1,S055,FIN_004_MZB_LO_52,Vanjoki,60.516866,24.227676,1998,2021,24,7
+Finland,Jukka Aroviita,"second data call, new data",FIN_004_MZB_LO,8,S172,FIN_004_MZB_LO_169,Konttijoki,66.359311,25.892558,2011,2021,11,5
+Finland,Jukka Aroviita,"second data call, new data",FIN_004_MZB_LO,8,S173,FIN_004_MZB_LO_170,Konttijoki,66.35416,25.897253,2011,2021,11,5
+France,Maxence Forcellini ,"first call, data Ellen used",FRA_014_MZB_LO,1,svg,FRA_014_MZB_LO_2,Rhone,45.8323815,5.299435,1999,2014,16,16
+France,Anthony Maire,"first call, data Ellen used",FRA_015_MZB_LO,1,1,FRA_015_MZB_LO_1,Rhone,45.83197222,5.298113889,2000,2019,20,20
+France,French biodiversity agency and other agentcies (via Remi Escaffe),"second data call, new data",FRA_046_MZB_LO,20,6072400,FRA_046_MZB_LO_778,Rhone,45.85396034,5.805818155,2009,2021,13,10
+Germany,Stefan Stoll,"first call, data Ellen used",GER_020_MZB_LO,1,108000153,GER_020_MZB_LO_1,Thranenbach,49.70591667,7.101083333,1986,2005,20,10
+Ireland,Elvira de Eyto,"first call, data Ellen used",IRL_023_MZB_LO,1,4,IRL_023_MZB_LO_4,Cottage,53.951784,-9.559057,2003,2019,17,17
+Ireland,Elvira de Eyto,"first call, data Ellen used",IRL_023_MZB_LO,3,12,IRL_023_MZB_LO_12,Lodge,53.97774,-9.559862,2003,2018,16,16
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,12,IR0120,IRL_051_MZB_LO_120,LIFFEY,53.1356112,-6.6229486,2010,2022,13,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,23,IR0179,IRL_051_MZB_LO_179,AUGHBOY (WEXFORD),52.6383929,-6.2345273,2007,2018,12,6
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,35,IR0216,IRL_051_MZB_LO_216,COOLBOY ,52.7635854,-6.4616184,2010,2023,14,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,41,IR0238,IRL_051_MZB_LO_238,KNICKEEN,53.0026079,-6.5240909,2010,2023,14,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,43,IR0242,IRL_051_MZB_LO_242,KILDAVIN STREAM,52.6744349,-6.682386,2010,2022,13,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,46,IR0250,IRL_051_MZB_LO_250,ROSNASTRAW STREAM,52.7779036,-6.4279946,2010,2022,13,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,60,IR0370,IRL_051_MZB_LO_370,NORE,52.5238554,-7.1370224,2007,2022,16,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,71,IR0477,IRL_051_MZB_LO_477,ROSSESTOWN,52.7736554,-7.6907135,2008,2020,13,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,128,IR0853,IRL_051_MZB_LO_853,OWVANE (LIMERICK),52.534464,-9.1464908,2008,2020,13,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,132,IR0873,IRL_051_MZB_LO_873,BLEACH,53.0121496,-8.636186,2012,2023,12,7
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,153,IR0942,IRL_051_MZB_LO_942,GRANEY (SHANNON),52.9087221,-8.545599,2012,2023,12,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,157,IR1033,IRL_051_MZB_LO_1033,CASTLEGAR,53.4775944,-8.4929558,2008,2023,16,6
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,190,IR1350,IRL_051_MZB_LO_1350,OWENMORE (MAYO),54.1404202,-9.7543174,2008,2020,13,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,204,IR1423,IRL_051_MZB_LO_1423,MOY,53.986619,-9.1124863,2007,2022,16,6
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,241,IR1634,IRL_051_MZB_LO_1634,STRAGAR,54.6618836,-8.420878,2008,2021,14,5
+Ireland,Hugh B. Feeley,"second data call, new data",IRL_051_MZB_LO,245,IR1623,IRL_051_MZB_LO_1623,GLENADDRAGH,54.6315493,-8.5932746,2008,2022,15,6
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,1,Station 11,NOR_054_MZB_LO_41,Vikedal,59.54897,5.99821,2004,2020,17,16
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,2,St. 4 utløp Saudlandsvatn,NOR_054_MZB_LO_45,Farsund,58.1994906,6.76873976,2003,2020,18,13
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,2,St. 6 innløp Saudlandsvatn v/ eplehage,NOR_054_MZB_LO_47,Farsund,58.20641722,6.75998163,2003,2020,18,18
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,10,St. 6 Fjellgardsvatn ved Roaldskvam,NOR_054_MZB_LO_57,Vikedal,59.57074,6.05054,2003,2020,18,15
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,24,St. 9 Nausta ved Espeland,NOR_054_MZB_LO_83,Nausta,61.57720393,5.89628408,2003,2019,17,9
+Norway,Gaute Velle,"first call, data Ellen used",NOR_054_MZB_LO,22,St. 16 Træla,NOR_054_MZB_LO_75,Nausta,61.54505916,5.78735976,2003,2019,17,9
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,1,103000516,ESP_034_MZB_LO_76,Urola,43.1323467,-2.3513851,1993,2019,27,25
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,1,Gip63,ESP_034_MZB_LO_60,Urola,43.13403,-2.350034,1996,2021,26,24
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,2,103000527,ESP_034_MZB_LO_87,Antzuola,43.1015275,-2.3915388,2007,2019,13,13
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,3,103000533,ESP_034_MZB_LO_93,Estanda,43.0504046,-2.2191363,2002,2019,18,18
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,4,103000537,ESP_034_MZB_LO_97,Deba,43.1268631,-2.4273828,2009,2019,11,9
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,5,103000540,ESP_034_MZB_LO_100,Urola,43.0067008,-2.3295061,2002,2018,17,11
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,6,103000545,ESP_034_MZB_LO_105,Ego,43.1891977,-2.4519425,1993,2019,27,25
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,7,103000547,ESP_034_MZB_LO_107,Bidasoa,43.2940308,-1.7294226,1997,2019,23,23
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,7,Gip14,ESP_034_MZB_LO_6,Urumea,43.29617,-1.727905,1996,2021,26,24
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,8,103000549,ESP_034_MZB_LO_109,Oiartzun,43.3033912,-1.8853049,1993,2019,27,27
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,9,103000567,ESP_034_MZB_LO_127,Oria,43.1668333,-2.0715202,1993,2019,27,16
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,10,103000573,ESP_034_MZB_LO_133,Ibaieder,43.1733514,-2.2561423,2002,2019,18,18
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,11,103000575,ESP_034_MZB_LO_135,Oria,43.2711862,-2.056947,2002,2019,18,17
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,12,103000577,ESP_034_MZB_LO_137,Urola,43.0725695,-2.3305818,1997,2019,23,22
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,13,103000592,ESP_034_MZB_LO_152,Oiartzun,43.2813632,-1.8203729,2002,2016,15,8
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,13,Gip8,ESP_034_MZB_LO_74,Oiartzun,43.28399,-1.818153,1996,2021,26,24
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,14,103000599,ESP_034_MZB_LO_159,Oria,43.0573502,-2.1733788,2007,2019,13,13
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,15,103000609,ESP_034_MZB_LO_169,Mape,43.3670659,-2.702943,1999,2019,21,19
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,16,103000610,ESP_034_MZB_LO_170,Deba,43.0814872,-2.4474737,2002,2019,18,18
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,17,103000614,ESP_034_MZB_LO_174,Oria,43.0217141,-2.2418122,2004,2019,16,16
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,18,103000616,ESP_034_MZB_LO_176,Deba,43.1778603,-2.4190195,2007,2019,13,13
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,19,103000624,ESP_034_MZB_LO_184,Urola,43.1085381,-2.3188706,2007,2019,13,13
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,19,Gip61,ESP_034_MZB_LO_58,Urola,43.10386,-2.316059,2000,2017,18,17
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,20,103000627,ESP_034_MZB_LO_187,Zaldivia,43.0485376,-2.1577687,2002,2019,18,18
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,21,103000631,ESP_034_MZB_LO_191,Urola,43.2256554,-2.2582403,2007,2019,13,13
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,22,103000635,ESP_034_MZB_LO_195,OÃ±ati,43.0646151,-2.4425529,1997,2019,23,23
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,23,Gip12,ESP_034_MZB_LO_4,Urola,43.01862,-2.333612,1996,2021,26,24
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,24,Gip14,ESP_034_MZB_LO_6,Urumea,43.29617,-1.727905,1996,2021,26,24
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,24,103000547,ESP_034_MZB_LO_107,Bidasoa,43.2940308,-1.7294226,1997,2019,23,23
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,25,BC96,ESP_034_MZB_LO_394,Deba,42.9816118,-2.5664562,2002,2022,21,8
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,26,Gip17,ESP_034_MZB_LO_9,Deba,43.04714,-2.49928,2000,2012,13,13
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,28,Gip19,ESP_034_MZB_LO_11,Deba,43.082,-2.447405,1987,2021,35,25
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,29,103000537,ESP_034_MZB_LO_97,Deba,43.1268631,-2.4273828,2009,2019,11,9
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,29,BC37,ESP_034_MZB_LO_352,Deba,43.1268631,-2.4273828,2009,2021,13,11
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,31,103000616,ESP_034_MZB_LO_176,Deba,43.1778603,-2.4190195,2007,2019,13,13
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,31,BC146,ESP_034_MZB_LO_313,Deba,43.1778603,-2.4190195,2007,2021,15,15
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,33,103000545,ESP_034_MZB_LO_105,Ego,43.1891977,-2.4519425,1993,2019,27,25
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,33,BC48,ESP_034_MZB_LO_360,Ego,43.1891977,-2.4519425,1993,2021,29,27
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,34,103000547,ESP_034_MZB_LO_107,Bidasoa,43.2940308,-1.7294226,1997,2019,23,23
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,35,103000533,ESP_034_MZB_LO_93,Estanda,43.0504046,-2.2191363,2002,2019,18,18
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,35,Gip47,ESP_034_MZB_LO_42,Oria,43.04932,-2.209168,2003,2016,14,14
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,37,103000573,ESP_034_MZB_LO_133,Ibaieder,43.1733514,-2.2561423,2002,2019,18,18
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,38,Gip35,ESP_034_MZB_LO_29,Urumea,43.25962,-1.94499,1987,2017,31,23
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,39,103000592,ESP_034_MZB_LO_152,Oiartzun,43.2813632,-1.8203729,2002,2016,15,8
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,39,Gip8,ESP_034_MZB_LO_74,Oiartzun,43.28399,-1.818153,1996,2021,26,24
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,39,BC115,ESP_034_MZB_LO_283,Oiartzun,43.2813632,-1.8203729,2002,2022,21,10
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,40,103000549,ESP_034_MZB_LO_109,Oiartzun,43.3033912,-1.8853049,1993,2019,27,27
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,41,103000549,ESP_034_MZB_LO_109,Oiartzun,43.3033912,-1.8853049,1993,2019,27,27
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,42,103000635,ESP_034_MZB_LO_195,OÃ±ati,43.0646151,-2.4425529,1997,2019,23,23
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,43,103000610,ESP_034_MZB_LO_170,Deba,43.0814872,-2.4474737,2002,2019,18,18
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,43,BC137,ESP_034_MZB_LO_305,Deba,43.0814872,-2.4474737,2002,2021,20,20
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,44,103000614,ESP_034_MZB_LO_174,Oria,43.0217141,-2.2418122,2004,2019,16,16
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,46,103000599,ESP_034_MZB_LO_159,Oria,43.0573502,-2.1733788,2007,2019,13,13
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,47,103000627,ESP_034_MZB_LO_187,Zaldivia,43.0485376,-2.1577687,2002,2019,18,18
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,47,BC164,ESP_034_MZB_LO_328,Zaldivia,43.0485376,-2.1577687,2002,2021,20,20
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,48,BC149,ESP_034_MZB_LO_315,Araxes,43.1256121,-2.0796553,2002,2011,10,10
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,50,103000575,ESP_034_MZB_LO_135,Oria,43.2711862,-2.056947,2002,2019,18,17
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,50,BC92,ESP_034_MZB_LO_390,Oria,43.2711862,-2.056947,2002,2021,20,19
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,52,103000540,ESP_034_MZB_LO_100,Urola,43.0067008,-2.3295061,2002,2018,17,11
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,52,BC39,ESP_034_MZB_LO_354,Urola,43.0067008,-2.3295061,2002,2020,19,12
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,53,103000527,ESP_034_MZB_LO_87,Antzuola,43.1015275,-2.3915388,2007,2019,13,13
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,54,103000577,ESP_034_MZB_LO_137,Urola,43.0725695,-2.3305818,1997,2019,23,22
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,54,BC94,ESP_034_MZB_LO_392,Urola,43.0725695,-2.3305818,1997,2021,25,24
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,55,Gip61,ESP_034_MZB_LO_58,Urola,43.10386,-2.316059,2000,2017,18,17
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,55,103000624,ESP_034_MZB_LO_184,Urola,43.1085381,-2.3188706,2007,2019,13,13
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,55,BC160,ESP_034_MZB_LO_325,Urola,43.1085381,-2.3188706,2007,2021,15,15
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,57,Gip63,ESP_034_MZB_LO_60,Urola,43.13403,-2.350034,1996,2021,26,24
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,57,103000516,ESP_034_MZB_LO_76,Urola,43.1323467,-2.3513851,1993,2019,27,25
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,58,103000631,ESP_034_MZB_LO_191,Urola,43.2256554,-2.2582403,2007,2019,13,13
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,58,BC168,ESP_034_MZB_LO_331,Urola,43.2256554,-2.2582403,2007,2022,16,16
+Spain,Aitor Larrañaga,"first call, data Ellen used",ESP_034_MZB_LO,78,103000609,ESP_034_MZB_LO_169,Mape,43.3670659,-2.702943,1999,2019,21,19
+Spain,Aitor Larrañaga,"second data call, new data",ESP_034_MZB_LO,80,Gip14,ESP_034_MZB_LO_6,Urumea,43.29617,-1.727905,1996,2021,26,24
+Spain,Alfredo Llorente,"second data call, new data",ESP_045_MZB_LO,3,EGA146,ESP_045_MZB_LO_45,EGA,42.6286778,-2.467228,1993,2006,14,14
+Spain,Alfredo Llorente,"second data call, new data",ESP_045_MZB_LO,7,OKM040,ESP_045_MZB_LO_113,MAPE,43.365167,-2.7103575,1999,2013,15,7
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,9,SN_OBF02100,GER_064_MZB_LO_563,Elbe-2,51.34920442,13.2448065,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,11,SN_OBF02550,GER_064_MZB_LO_565,Elbe-2,51.48440901,13.13165929,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,13,SN_OBF02810,GER_064_MZB_LO_569,Elbe-2,51.64856644,12.89512337,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,32,NRW_212260,GER_064_MZB_LO_210,Suelz,50.86884851,7.20059411,2008,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,33,NRW_212246,GER_064_MZB_LO_209,Suelz,50.86150866,7.212813399,2008,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,56,NRW_791325,GER_064_MZB_LO_479,Diemel,51.48689264,9.117495174,2007,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,62,SH_121534,GER_064_MZB_LO_536,Stoer,54.03348684,9.845316355,2009,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,62,SH_121535,GER_064_MZB_LO_537,Stoer,54.03111796,9.840901789,2009,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,62,SH_121536,GER_064_MZB_LO_538,Stoer,54.03104892,9.836625494,2009,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,66,SH_121541,GER_064_MZB_LO_540,Radesforder Au,53.97369317,10.13583653,2009,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,68,SH_123704,GER_064_MZB_LO_545,Schafflunder Muehlenstrom,54.74748689,9.118099188,2009,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,69,SH_123276,GER_064_MZB_LO_543,Schafflunder Muehlenstrom,54.75297314,9.139447988,2009,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,69,SH_123702,GER_064_MZB_LO_544,Schafflunder Muehlenstrom,54.74926628,9.126990939,2009,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,72,SH_126616,GER_064_MZB_LO_547,Schwartau,53.93514975,10.70953143,2010,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,72,SH_127134,GER_064_MZB_LO_549,Schwartau,53.9376329,10.70495584,2010,2020,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,75,SN_OBF00090,GER_064_MZB_LO_551,Elbe,50.8606542,14.22827168,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,77,SN_OBF00100,GER_064_MZB_LO_552,Elbe-0 (Labe od toku Jílovský potok po tok Kirnitzsch),50.89048528,14.22916996,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,77,SN_OBF00200,GER_064_MZB_LO_553,Elbe-0 (Labe od toku Jílovský potok po tok Kirnitzsch),50.89130271,14.23014716,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,79,SN_OBF00300,GER_064_MZB_LO_555,Elbe,50.90463615,14.20742371,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,81,SN_OBF01200,GER_064_MZB_LO_558,Elbe-1,51.09581062,13.64297521,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,83,SN_OBF01800,GER_064_MZB_LO_561,Elbe,51.20933156,13.40404232,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,85,SN_OBF02700,GER_064_MZB_LO_568,Elbe,51.55823624,13.01213585,2009,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,89,ST_410001,GER_064_MZB_LO_690,Elbe,51.92980587,11.95248351,2008,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,91,ST_410020,GER_064_MZB_LO_692,Elbe,52.06455708,11.68035933,2006,2019,10,10
+Germany,Ariane Moulinec,new data call,GER_064_MZB_LO,93,ST_410060,GER_064_MZB_LO_694,Elbe,52.78353524,12.03018622,2006,2019,10,10
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,351,48185,ENG_062_MZB_LO_1606,MEDEN,53.23368315,-1.029240766,2002,2013,12,9
+England,James Sinclair,"second data call, new data",ENG_062_MZB_LO,402,51052,ENG_062_MZB_LO_1814,SEVERN,52.74314587,-2.789875005,2004,2013,10,10
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,1,SN_OBF02100,GER_072_MZB_LO_14,Elbe-2,51.34920442,13.2448065,2009,2019,11,11
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,3,SN_OBF02550,GER_072_MZB_LO_16,Elbe-2,51.48440901,13.13165929,2009,2019,11,11
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,5,SN_OBF02810,GER_072_MZB_LO_20,Elbe-2,51.64856644,12.89512337,2009,2019,11,11
+Sweden,Lenka Kuglerová,first call; data Ellen used,SWE_039_MZB_LO,1,162,SWE_039_MZB_LO_76,Viskansbäcken,62.45301225,16.43853549,2011,2019,9,9
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,1,Spez_083_VD_190,CHE_075_MZB_LO_233,Combagnou,46.57482297,6.43316114,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,5,Spez_084_VD_648,CHE_075_MZB_LO_235,Irence,46.51130338,6.432541894,2018,2018,1,1
+England,State data,second data call; new data,ENG_052_MZB_LO,1,165427,ENG_052_MZB_LO_2,SHEAF,53.344,-1.497,2024,2024,1,1
+England,State data,second data call; new data,ENG_052_MZB_LO,2,217552,ENG_052_MZB_LO_76,LONG BECK,54.206,-1.167,2024,2024,1,1
+England,State data,second data call; new data,ENG_052_MZB_LO,4,218052,ENG_052_MZB_LO_99,PAUL STREAM,50.087,-5.541,2024,2024,1,1
+England,State data,second data call; new data,ENG_052_MZB_LO,7,221036,ENG_052_MZB_LO_213,ANGARRACK STREAM,50.175,-5.35,2024,2024,1,1
+Germany,"Landesamt für Natur, Umwelt und Klima Nordrhein-Westfalen (LANUK)",new data call,GER_070_MZB_LO,33,NRW_212246,GER_070_MZB_LO_140,Suelz,50.86150866,7.212813399,2008,2019,12,7
+Germany,Landesamt für Umwelt (Schleswig-Holstein) (LfU),new data call,GER_071_MZB_LO,1,SH_121535,GER_071_MZB_LO_4,Stoer,54.03111796,9.840901789,2009,2020,12,5
+Germany,Landesamt für Umwelt (Schleswig-Holstein) (LfU),new data call,GER_071_MZB_LO,1,SH_121536,GER_071_MZB_LO_5,Stoer,54.03104892,9.836625494,2009,2020,12,5
+Germany,Landesamt für Umwelt (Schleswig-Holstein) (LfU),new data call,GER_071_MZB_LO,5,SH_121541,GER_071_MZB_LO_7,Radesforder Au,53.97369317,10.13583653,2009,2020,12,5
+Germany,Landesamt für Umwelt (Schleswig-Holstein) (LfU),new data call,GER_071_MZB_LO,8,SH_123702,GER_071_MZB_LO_11,Schafflunder Muehlenstrom,54.74926628,9.126990939,2009,2020,12,6
+Germany,Landesamt für Umwelt (Schleswig-Holstein) (LfU),new data call,GER_071_MZB_LO,9,SH_123704,GER_071_MZB_LO_12,Schafflunder Muehlenstrom,54.74748689,9.118099188,2009,2020,12,6
+Germany,Landesamt für Umwelt (Schleswig-Holstein) (LfU),new data call,GER_071_MZB_LO,11,SH_126616,GER_071_MZB_LO_14,Schwartau,53.93514975,10.70953143,2010,2020,11,5
+Germany,Landesamt für Umwelt (Schleswig-Holstein) (LfU),new data call,GER_071_MZB_LO,11,SH_127134,GER_071_MZB_LO_16,Schwartau,53.9376329,10.70495584,2010,2020,11,6
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,1,SN_OBF00080,GER_072_MZB_LO_1,Elbe,50.86335334,14.22628376,2009,2019,11,11
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,3,SN_OBF00100,GER_072_MZB_LO_3,Elbe-0 (Labe od toku Jílovský potok po tok Kirnitzsch),50.89048528,14.22916996,2009,2019,11,11
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,5,SN_OBF00250,GER_072_MZB_LO_5,Elbe,50.90663552,14.19484918,2009,2019,11,11
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,7,SN_OBF01200,GER_072_MZB_LO_9,Elbe-1,51.09581062,13.64297521,2009,2019,11,11
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,9,SN_OBF01800,GER_072_MZB_LO_12,Elbe,51.20933156,13.40404232,2009,2019,11,11
+Germany,"Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG), Sachsen",new data call,GER_072_MZB_LO,11,SN_OBF02600,GER_072_MZB_LO_18,Elbe,51.55773843,13.01045213,2009,2019,11,11
+Germany,Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU),new data call,GER_073_MZB_LO,1,ST_410002,GER_073_MZB_LO_56,Elbe,51.9317718,11.95299091,2008,2019,12,8
+Germany,Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU),new data call,GER_073_MZB_LO,3,ST_410021,GER_073_MZB_LO_58,Elbe,52.06490485,11.68325469,2008,2019,12,8
+Germany,Landesamt für Umweltschutz (Sachsen-Anhalt) (LAU),new data call,GER_073_MZB_LO,5,ST_410061,GER_073_MZB_LO_60,Elbe,52.78418582,12.03463673,2006,2019,14,8
+Sweden,Lenka Kuglerová,first call; data Ellen used,SWE_039_MZB_LO,1,79,SWE_039_MZB_LO_33,Kvarnån,63.43331375,16.52915741,2011,2019,9,9
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,1,CH_093b_LU,CHE_075_MZB_LO_65,Kleine Emme,47.07022622,8.277437952,2015,2015,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,8,CH_154_LU,CHE_075_MZB_LO_110,Ron Hochdorf,47.16485053,8.283378747,2019,2022,4,2
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,8,CH_SPEZ_510_LU,CHE_075_MZB_LO_125,Ron,47.17722711,8.277360503,2023,2023,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,9,CH_903_NE,CHE_075_MZB_LO_113,Sorge,47.01588626,6.907690055,2020,2022,3,3
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,11,Spez_005_AG,CHE_075_MZB_LO_144,Küntenerbach,47.38608469,8.326497318,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,12,CH_138_BE,CHE_075_MZB_LO_92,Chrümmlisbach,47.11736232,7.51945072,2019,2020,2,2
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,12,CH_138_BE_,CHE_075_MZB_LO_93,Chrümlisbach,47.12338636,7.509681496,2022,2022,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,12,CH_138_BE_bis,CHE_075_MZB_LO_94,Chrümlisbach,47.11827186,7.51793673,2021,2021,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,12,Spez_015_BE,CHE_075_MZB_LO_156,Chrümmelisbach,47.12151432,7.511431669,2017,2017,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,15,CH_140_FR,CHE_075_MZB_LO_96,Bainoz,46.80611863,6.817918357,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,15,Spez_027_FR,CHE_075_MZB_LO_168,Bainoz,46.80163058,6.811472428,2017,2017,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,16,CH_141_JU,CHE_075_MZB_LO_97,Erveratte,47.41521234,7.177933635,2019,2022,4,2
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,16,CH_141_JU_bis,CHE_075_MZB_LO_98,Erveratte,47.41516369,7.18030572,2019,2021,3,3
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,16,Spez_044_JU_ER_03_,CHE_075_MZB_LO_188,Ervaratte,47.41516369,7.18030572,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,18,CH_143_SG,CHE_075_MZB_LO_99,Zapfenbach,47.38820161,9.621418472,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,18,CH_144_SG,CHE_075_MZB_LO_100,Mittlerer Seegraben,47.38926583,9.61890492,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,18,Spez_058_SG,CHE_075_MZB_LO_206,Mittlerer Seegraben,47.38926583,9.61890492,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,19,CH_144_SG,CHE_075_MZB_LO_100,Mittlerer Seegraben,47.38926583,9.61890492,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,19,CH_143_SG,CHE_075_MZB_LO_99,Zapfenbach,47.38820161,9.621418472,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,19,Spez_057_SG,CHE_075_MZB_LO_205,Zapfenbach,47.38820161,9.621418472,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,20,CH_147_TG,CHE_075_MZB_LO_103,Eschelisbach,47.60597202,9.304547857,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,20,Spez_070_TG,CHE_075_MZB_LO_219,Eschelisbach,47.60480978,9.302977287,2015,2015,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,22,CH_152_VS,CHE_075_MZB_LO_108,Canal D'Uvrier,46.2463861,7.40623505,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,22,Spez_088_VS,CHE_075_MZB_LO_240,Canal D'Uvrier,46.24772464,7.400477183,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,26,CH_SPEZ_506_TI,CHE_075_MZB_LO_121,Scairolo,45.95628259,8.916986801,2023,2023,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,26,CH_SPEZ_507_TI,CHE_075_MZB_LO_122,Scairolo,45.95214316,8.908813479,2023,2023,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,29,SO_VER_01,CHE_075_MZB_LO_135,Verenabach,47.22860989,7.531317811,2019,2019,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,29,SO_VER_02,CHE_075_MZB_LO_136,Verenabach,47.22608174,7.53211885,2019,2019,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,29,SO_VER_03,CHE_075_MZB_LO_137,Verenabach,47.22499218,7.533595722,2019,2019,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,38,Spez_056_OW,CHE_075_MZB_LO_202,Rütibach,46.85073505,8.181917757,2019,2019,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,38,Spez_056_OW_010,CHE_075_MZB_LO_203,Ruetibach,46.85199353,8.177896488,2017,2017,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,39,Spez_056_OW_010,CHE_075_MZB_LO_203,Ruetibach,46.85199353,8.177896488,2017,2017,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,39,Spez_056_OW,CHE_075_MZB_LO_202,Rütibach,46.85073505,8.181917757,2019,2019,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,39,Spez_056_OW_311,CHE_075_MZB_LO_204,Rütibach,46.85073505,8.181917757,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,41,Spez_057_SG,CHE_075_MZB_LO_205,Zapfenbach,47.38820161,9.621418472,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,41,CH_144_SG,CHE_075_MZB_LO_100,Mittlerer Seegraben,47.38926583,9.61890492,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,41,Spez_058_SG,CHE_075_MZB_LO_206,Mittlerer Seegraben,47.38926583,9.61890492,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,42,Spez_058_SG,CHE_075_MZB_LO_206,Mittlerer Seegraben,47.38926583,9.61890492,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,42,CH_143_SG,CHE_075_MZB_LO_99,Zapfenbach,47.38820161,9.621418472,2019,2022,4,4
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,42,Spez_057_SG,CHE_075_MZB_LO_205,Zapfenbach,47.38820161,9.621418472,2018,2018,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,45,VD_CAR_BRE_0736,CHE_075_MZB_LO_254,Carrouge,46.57136727,6.778425516,2019,2019,1,1
+Switzerland,Maxime Chevre,new data call,CHE_075_MZB_LO,45,VD_PAR_BRO_0711,CHE_075_MZB_LO_257,Parimbot,46.56549732,6.786988068,2019,2019,1,1
+Switzerland,Christopher Robinson,new data call,CHE_076_MZB_LO,2,2,CHE_076_MZB_LO_2,Mezza-Gluna,46.72993537,10.12762957,2001,2022,22,22
+Switzerland,Christopher Robinson,new data call,CHE_076_MZB_LO,2,3,CHE_076_MZB_LO_3,Mezza-Gluna,46.72926829,10.13072476,2001,2022,22,22
+Switzerland,Christopher Robinson,new data call,CHE_076_MZB_LO,2,6,CHE_076_MZB_LO_6,Sura,46.72639271,10.12823825,2001,2022,22,22
+Switzerland,Christopher Robinson,new data call,CHE_076_MZB_LO,2,8,CHE_076_MZB_LO_8,Immez,46.72696699,10.13250781,2001,2022,22,22
