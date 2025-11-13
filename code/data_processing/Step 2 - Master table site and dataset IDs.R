@@ -21,6 +21,7 @@ code<-read_xlsb("data/1_MASTERTABLE.xlsb", sheet = "Countrycodes") %>%
   select(countrycode:X3.letter.Code) %>%
   rename(Country = "country")
 
+##trying my own approach to data prep 
 ###---Load all taxa files, set working directory to the directory with the unprocessed data for your taxonomic group
 file.list <- list.files(path = paste0(getwd(), "/data/Unprocessed_datasets_MZB"), pattern='\\.csv$', full.names = TRUE)
 file.list <- file.list[!grepl("LE", basename(file.list))] ##filter out lentic files
