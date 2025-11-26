@@ -10,8 +10,8 @@ library(tidyverse)
 ###---Load the overview, site list, and country codes from the master table
 #Site list
 sites<-read_xlsb("data/1_MASTERTABLE.xlsb", sheet = "samples1_MZB") %>%#load the list for your taxonomic group
-  filter(ecosystem == "lotic") %>%
-  filter(fulfills.requirement == "yes") 
+  filter(ecosystem == "lotic") #%>%
+  #filter(fulfills.requirement == "yes") 
 #Overview
 over<-read_xlsb("data/1_MASTERTABLE.xlsb", sheet = "overview") %>%
   filter(Taxa.group == "macroinvertebrates", ecosystem == "lotic") ##filter to desired taxonomic group and ecosystem
@@ -29,172 +29,166 @@ taxa.files <- sapply(file.list, read.csv, simplify = FALSE, sep = ";", fileEncod
 taxa.files <- setNames(taxa.files, basename(file.list))
 #df <- rbindlist(taxa.files) ##if want to bind all dfs together
 
-##test
-file.list_le <- list.files(path = paste0(getwd(), "/data/Unprocessed_datasets_MZB"), pattern='\\.csv$', full.names = TRUE)
-file.list_le <- file.list_le[grepl("LE", basename(file.list_le))] 
-taxa.files_le <- sapply(file.list_le, read.csv, simplify = FALSE, sep = ";", fileEncoding="latin1")
-taxa.files_le <- setNames(taxa.files_le, basename(file.list_le)) ##set the name of each file to be the base name rather than the whole directory string 
-
-
 ##So, effectively I want to add the unique provider number, country code, file name, dataset id and unique id to the site list
-##now, the site list does already have a dataset id and unique id... 
-test <- sites %>%
-  filter(is.na(Unique.ID))
+
+##So, add provision number and country to the site list
+##then, would start from the raw taxa data and join to the site list (without dataset ID and unique ID) - 
+##generate datasetID and uniqueID 
+##add datafiles from overview to the list, but these are missing in the raw csv files 
+
 
 ###---Add owner numbers to the site list
 ##create df of unique codes for each provider, and add to site 
 prov_map <- over %>%
-  mutate(Provider.Number= sprintf("%03d", as.integer(Provider.Number))) %>%
+  mutate(  Provider.Number = str_pad(Provider.Number, width = 3, pad = "0")) %>%
   select(Data_owner, Provider.Number) %>%
   distinct()
+str(prov_map)
 
 sites_clean <- left_join(sites, prov_map, by = "Data_owner") %>%##add unique provider.number 
-  left_join(code, by = "Country") ##add country code
-
+  left_join(code, by = "Country") %>% ##add country code
+  mutate(Site_ID_original = trimws(Site_ID_original)) 
 ##correct the format of the provider in the overview sheet and select columns that you want to retain 
 over_clean <- over %>%
-  mutate(Provider.Number= sprintf("%03d", as.integer(Provider.Number))) %>%
+  mutate(  Provider.Number = str_pad(Provider.Number, width = 3, pad = "0")) %>%##add provider number 
   select(Provider.Number, ecosystem, file_name, Country, TG_short, ecosys_short) %>%
   distinct()
-
-##so there are 5 duplicate provider number and file name .. but are from different sampling years, but these are in the same datafile, so don't want to retain the sampling year (gives duplicates when joining further down)
-##check duplicates:
-dups_all <- over_clean %>%
-  group_by(across(everything())) %>%
-  filter(n() > 1) %>%
-  ungroup()
-
-testdf <- taxa.files[["ESP_034_MZB_LO.csv"]]
 
 ##match site ID original in sites df to site id in taxa.files, then attach the file name from the file that contains that site id to the sites clean df. 
 ##make lookup table that has all file names and site ids (unique)
 taxa_lookup <- imap_dfr(taxa.files, ~tibble(file_name = .y, Site_ID_original = as.character(.x$Site.ID))) %>%
   distinct() %>%
+  mutate(Site_ID_original = trimws(Site_ID_original)) %>% ##trim any white space from the site names 
   left_join(over_clean, by = "file_name") %>% ##add file name, provider number, country and ecosystem from overview df
-  mutate(Site.ID_unprocessed = Site_ID_original)
-
-##check if any duplicate site names or file names (shouldn't have any duplicates)
-dups_all <- taxa_lookup %>%
-  group_by(across(everything())) %>%
-  filter(n() > 1) %>%
-  ungroup()
-
-##check if any NAs in original site ids or file names
-test_1 <- taxa_lookup %>%
-  filter(is.na(Site_ID_original))
-##one file contains an NA site ID: ESP_036_MZB_LO2.csv 
-testdf <- taxa.files[["ESP_036_MZB_LO2.csv"]] %>%
-  filter(is.na(Site.ID))
-##Looks like it is just a whole bunch (4305 rows) of all NAs - will likely want to clean this up at somepoint 
-
-##check if any NA files names 
-test_2 <- taxa_lookup %>%
-  filter(is.na(file_name))
-##no 
+  mutate(Site.ID_unprocessed = Site_ID_original) 
 
 
 ##Join file name to site df by original site id from the raw unprocessed data (should theoretically be the same)
 sites_clean_2 <- left_join(sites_clean, taxa_lookup, by = c("Site_ID_original", "Provider.Number", "ecosystem", "Country"))
-##so there are 14 rows that are causing a multijoin
 
-dups_sites <- sites_clean %>%
-  group_by(Site_ID_original, Provider.Number, ecosystem, Country) %>%
+
+##Create dataset and unique IDs
+make_ids <- function(df) {
+  df %>%
+    mutate(
+      Dataset.ID_marie = tools::file_path_sans_ext(file_name),
+      Unique.ID_marie  = paste(Dataset.ID_marie, SGN_Site_ID, sep = "_")
+    )
+}
+
+sites_clean_3 <- make_ids(sites_clean_2) %>%
+  select(file_name, Dataset.ID, Unique.ID, Dataset.ID_marie, Unique.ID_marie, Site.ID_unprocessed, origin:Country, countrycode, X3.letter.Code, Latitude_Y:ecosystem, TG_short, ecosys_short, River.lake:Provider.Number)
+str(sites_clean_3)
+
+##save this to a processed data folder, so don't need to re-run this code 
+write.csv(sites_clean_3, "data/data_processing/Step2_MZB_sites_lotic.csv", row.names = FALSE)
+
+readLines("data/data_processing/Step2_MZB_sites_lotic.csv", n = 10)
+
+
+
+
+###CODE BELOW -- looking into missing filenames and trying to figure out why file names are missing - perhaps these are removed in later steps? 
+##why different from james? keep going and see where this comes up again 
+
+##1) Missing files in raw data that exist in the master overview spreadsheet
+##overview says there are 83 datafiles (88 total rows, where 4 files have 2-3 rows as the datafile contains multiple year periods) for lotic data, but in the folder there are only 80, 
+missing_files <- anti_join(over, taxa_lookup, by = "file_name")
+##so there are 3 datafiles in overview that are not in the raw data - why?
+##FRA_098_MZB_LO.csv, FIN_0101_MZB_LO.csv, PRT_106_MZB_LO.csv
+
+##2) Why am I getting more sites when joining sites_clean to taxa lookup? 
+##check if any duplicate site names or file names (shouldn't have any duplicates)
+dups_taxa_lookup <- taxa_lookup %>%
+  group_by(across(everything())) %>%
   filter(n() > 1) %>%
   ungroup()
 
-dups_taxa <- taxa_lookup %>%
+##check for duplicates in the cleaned site list 
+dups_sites_clean_2 <- sites_clean_2 %>%
   group_by(Site_ID_original, Provider.Number, ecosystem, Country) %>%
   filter(n() > 1) %>%
-  ungroup() ##there are duplicates here because data comes from two different csvs (LO1 or LO2) but that is not preserved or differentiated in Site_ID_original or in the Dataset ID, so not sure which goes with what 
+  ungroup()
+##there are duplicates here, where for 4 datasets there are the same Site IDs  GER_018_MZB_LO1.csv , GER_018_MZB_LO2.csv, (same site id in master table and raw csv) ESP_036_MZB_LO1.csv, ESP_036_MZB_LO2.csv (same site ids in raw data, but not in master table)
+ger_018_lo1 <- taxa.files[["GER_018_MZB_LO1.csv"]] %>%
+  filter(Site.ID %in% dups_sites_clean_2$Site_ID_original)
+ger_018_lo2 <- taxa.files[["GER_018_MZB_LO2.csv"]]%>%
+  filter(Site.ID %in% dups_sites_clean_2$Site_ID_original)
 
-dup_rows <- sites_clean_2 %>%
-  count(Site_ID_original, Provider.Number, ecosystem, Country) %>%
-  filter(n > 1)
+ger_018_overlap <- anti_join(ger_018_lo1, ger_018_lo2, by = c("Site.ID", "Sampling.date", "Taxon.name", "Taxon.ID", "Abundance"))
+##okay, so my interpretation of this is that ger_018_lo2 contains the same data as ger_018_lo1, as there are no unique data. lo2 just does not contain a sample ID, so retain lo1 
+##so for this one would be okay to just keep one, but i think maybe want to figure out a systematic way to deal with this .. 
 
-problem_rows <- sites_clean_2 %>%
-  semi_join(dup_rows,
-            by = c("Site_ID_original", "Provider.Number", "ecosystem", "Country")) ##based on james df, the duplicate ones from germany come from LO2 - this is coded implicitly in his for loop by overwriting and choosing the order it appears in overview, is this right?
+esp_036_lo1 <- taxa.files[["ESP_036_MZB_LO1.csv"]] %>%
+  filter(Site.ID %in% dups_sites_clean_2$Site_ID_original)
+esp_036_lo2 <- taxa.files[["ESP_036_MZB_LO2.csv"]] %>%
+  filter(Site.ID %in% dups_sites_clean_2$Site_ID_original)
 
-taxa_lookup %>%
-  semi_join(dup_rows,
-            by = c("Site_ID_original", "Provider.Number", "ecosystem", "Country"))
+esp_036_overlap <- anti_join(esp_036_lo1, esp_036_lo2, by = c("Site.ID", "Sampling.date", "Taxon.name", "Taxon.ID", "Abundance"))
+##so for this spain dataset, these have the same site ID but have different data - wouldn't we want to keep them both? at least at this stage? 
+##i think the issue for this one, is that in the raw csv for LO2 the site names have been changed and are not listed as the site_id_original as in the master table samples 
+##this would also fix why those sites that are listed in the master table do not have associated raw data 
 
-##check for any NAs in site IDs
-test_3 <- sites_clean_2 %>%
-  filter(is.na(Site.ID_unprocessed))
+##my solution - i think need to talk to james/nathalie .. 
 
-test_4 <- sites_clean_2 %>%
-  filter(is.na(file_name))
-##887 missing file names - so I think this means that there are 887 sites where the original sample ID in the sites df does not match the site ID in the unprocessed data, why? 
 
-missing_filenames <- sites_clean_2 %>%
-  filter(is.na(file_name)) %>%
-  select(Dataset.ID, Country) %>%
+##3) Filename NAs - sites that are listed in the Mastertable site list, but do not exist in the raw data 
+filename_NA <- sites_clean_3 %>%
+  filter(is.na(file_name)) 
+##879 sites missing file names - so I think this means that there are 887 sites where the original sample ID in the sites df does not match the site ID in the unprocessed data, why? 
+
+missing_filenames <- filename_NA %>%
+  select(Dataset.ID, Dataset.ID_marie,  Country) %>%
   distinct()
-##so 6 datasets where site ids do not match .. 
-#IRL_051_MZB_LO, AUT_001_MZB_LO, NLD_028_MZB_LO, ESP_034_MZB_LO, ESP_036_MZB_LO, CHE_075_MZB_LO
+##so 4 datasets where site ids do not match .. 
+#IRL_051_MZB_LO, AUT_001_MZB_LO,  ESP_034_MZB_LO, ESP_036_MZB_LO 
+
 
 ##Look to see which sites are missing where -- why? 
 raw_ids <- taxa_lookup %>% distinct()
 site_ids <- sites %>% select(Dataset.ID, Unique.ID, Site_ID_original) %>% distinct()
 
 ids_in_raw_not_in_sites <- raw_ids %>%
-  anti_join(site_ids, by = "Site_ID_original") ##2268 sites that are in raw data that are not in site df - i think these are ones that were determined as not suitable (i.e., do not fulfill requirements)
+  anti_join(site_ids, by = "Site_ID_original") ##2sites that are in raw data that are not in site df 
 ids_in_sites_not_in_raw <- site_ids %>%
-  anti_join(raw_ids, by = "Site_ID_original") ##886 sites in site df that are not in the raw unproccessed data 
+  anti_join(raw_ids, by = "Site_ID_original") ##879 sites in site df that are not in the raw unproccessed data 
 
 ##are these removed at some point later? or is there something else about the original site ids that i am missing? 
 
 
-
-james_mzb_df <- read.csv("EU macroinvert database processing/Step 2 - Master table site and dataset IDs/MZB sites.csv") %>%
-  filter(ecosystem == "lotic")
+##Checking that the same NAs come up in my dataset and james
+james_mzb_df <- read.csv("EU macroinvert database processing/Step 2 - Master table site and dataset IDs/MZB sites_18.11.2025.csv") %>%
+  filter(ecosystem == "lotic") #%>%
+  filter(fulfills.requirement == "yes") ##this is the most recent one that comes from dropbox 
 
 test_j <- james_mzb_df %>%
   filter(is.na(Filename))
-##has 879 w/ missing file names, and dataset ids, and unique ids  -
+##has 879 w/ missing file names, and dataset ids, and unique ids  - the discrepancy in numbers is because in james don't have issues from ESP_036_MZB_LO,
+
+
+my_na <- filename_NA %>%
+  select(Site_ID_original, my_file_name = file_name) %>%
+  distinct()
+
+james_na <- test_j %>%
+  select(Site_ID_original, james_file_name = Filename) %>%
+  distinct()
+
+compare <- my_na %>%
+  full_join(james_na, by = c("Site_ID_original"))
+
+##I think we have the same NAs 
 
 
 
-###---Add owner numbers to the site list
-sites$Provider.Number<-NA
-prov<-unique(sites$Data_owner)
-for (i in 1:length(prov)) {
-  nums<-which(sites$Data_owner==prov[i])
-  num<-over$Provider.Number[which(over$Data_owner==prov[i])[1]]
-  
-  if (nchar(num)==1) {
-    num<-paste("00",num, sep="")
-  }
-  if (nchar(num)==2) {
-    num<-paste("0",num, sep="")
-  }
-  
-  sites$Provider.Number[nums]<-num
-}
 
-###---Add Filenames and dataset IDs
-sites$Filename<-NA
-sites$Dataset.ID<-NA
-prov<-unique(sites$Provider.Number)
-for (i in 1:length(prov)) {
-  sites.nums<-which(sites$Provider.Number==prov[i])
-  sub<-sites[sites.nums,]
-  sub2<-subset(over, over$Provider.Number==as.numeric(prov[i]))
-  for (j in 1:length(sub2$file_name)) {
-    num<-which(taxa.files==sub2$file_name[j])
-    dat<-taxa.files[[num]]
-    sub3<-sub[which(sub$ecosystem==sub2$ecosystem[j]),]
-    nums<-which(sites$Site_ID_original %in% dat$Site.ID & sites$Provider.Number %in% sub3$Provider.Number & sites$ecosystem %in% sub3$ecosystem)
-    if (length(nums)>0) {
-      cty.num<-which(code$country==sub2$Country[j])
-      sites$Filename[nums]<-sub2$file_name[j]
-      sites$Dataset.ID[nums]<-paste(code$X3.letter.Code[cty.num], prov[i], sub2$TG_short[j], sub2$ecosys_short[j], sep="_")
-    }
-  }
-}
+###Integrating checks to make sure joining/filtering etc. is all working correctly
 
-###---Add unique site IDs
-sites$Unique.ID<-paste(sites$Dataset.ID, sites$SGN_Site_ID, sep="_")
+##Check filter on LE files, only filtered out LE (no LO)
+file.list_le <- list.files(path = paste0(getwd(), "/data/Unprocessed_datasets_MZB"), pattern='\\.csv$', full.names = TRUE)
+file.list_le <- file.list_le[grepl("LE", basename(file.list_le))] 
+taxa.files_le <- sapply(file.list_le, read.csv, simplify = FALSE, sep = ";", fileEncoding="latin1")
+taxa.files_le <- setNames(taxa.files_le, basename(file.list_le)) ##set the name of each file to be the base name rather than the whole directory string 
 
-write.csv(sites, "MZB sites.csv", row.names=FALSE, fileEncoding = "latin1")
+
+
