@@ -143,6 +143,8 @@ missing_filenames <- filename_NA %>%
 ##so 4 datasets where site ids do not match .. 
 #IRL_051_MZB_LO, AUT_001_MZB_LO,  ESP_034_MZB_LO, ESP_036_MZB_LO 
 
+##ESP_034_MZB_LO --> these sites exist in the master site list, because this data set was coming from 3 different csv, only keep most recent csv that does not have all sites 
+##AUT_001_MZB_LO --> that missing site does not exist 
 
 ##Look to see which sites are missing where -- why? 
 raw_ids <- taxa_lookup %>% distinct()
