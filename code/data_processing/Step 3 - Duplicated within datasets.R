@@ -37,7 +37,7 @@ sites3_test <- sites_mg %>%
 lo_sites_less_100m <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within less than 100m.csv")
 lo_sites_within_100m_1km <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within 101-1000m.csv")
 
-sites_to_be_removed <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Step 3 - duplicated within removed.csv")
+sites_to_be_removed_james <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Step 3 - duplicated within removed.csv")
 
 
 
@@ -57,117 +57,6 @@ sites_mg <- sites_mg %>%
   filter(fulfills.requirement == "yes") ##select sites that fulfill requirements 
 
 
-find_close_pairs <- function(df, min_dist = 0, max_dist = 100) {
-  # df = one dataset (one Dataset.ID)
-  if (nrow(df) < 2) return(tibble())  # nothing to compare
-  
-  # Make sf object in projected CRS (meters)
-  df_sf <- st_as_sf(
-    df,
-    coords = c("Longitude_X", "Latitude_Y"),
-    crs = 4326,
-    remove = FALSE
-  ) %>%
-    st_transform(3034)  
-  
-  # Distance matrix (units in m)
-  dmat <- st_distance(df_sf)
-  dmat_num <- drop_units(dmat)  # numeric matrix
-  
-  # Get upper triangle pairs with 0 < d <= cutoff (so don't have duplicated pairs)
-  idx <- which(
-    dmat_num > min_dist & dmat_num <= max_dist & upper.tri(dmat_num),
-    arr.ind = TRUE
-  )
-  
-  if (nrow(idx) == 0) return(tibble())
-  
-  i <- idx[, "row"]
-  j <- idx[, "col"]
-  
-  # Build long-form pairwise df
-  tibble(
-    country     = df$Country[i],
-    prov        = df$Data_owner[i],
-    origin_i    = df$origin[i],
-    origin_j    = df$origin[j],
-    dataset.id  = df$Dataset.ID[i],
-    org.site_i  = df$Site_ID_original[i],
-    org.site_j  = df$Site_ID_original[j],
-    unique.id_i = df$Unique.ID[i],
-    unique.id_j = df$Unique.ID[j],
-    river_i     = df$River.lake[i],
-    river_j     = df$River.lake[j],
-    latitude_i  = df$Latitude_Y[i],
-    latitude_j  = df$Latitude_Y[j],
-    longitude_i = df$Longitude_X[i],
-    longitude_j = df$Longitude_X[j],
-    st.yr_i     = df$Starting_year[i],
-    st.yr_j     = df$Starting_year[j],
-    ed.yr_i     = df$Ending_year[i],
-    ed.yr_j     = df$Ending_year[j],
-    yr.ln_i     = df$Year_count[i],
-    yr.ln_j     = df$Year_count[j],
-    yr.num_i    = df$Sampling_years[i],
-    yr.num_j    = df$Sampling_years[j],
-    distance_m  = dmat_num[idx] 
-  )
-}
-
-##Get list of site pairs within 100m, within each dataset 
-within_100m <- sites_mg %>%
-  group_split(Dataset.ID) %>%
-  map_dfr(find_close_pairs, min_dist= 0, max_dist = 100) %>%
-  ungroup() %>%
-  mutate(within_distance_type = "within_100m") %>%
-  mutate(pair_id = if_else(
-    unique.id_i < unique.id_j,
-    paste(unique.id_i, unique.id_j, sep = "__"),
-    paste(unique.id_j, unique.id_i, sep = "__") ##create a unique id for the pair, so know which sites are the pair
-  )) %>%
-  pivot_longer( cols = matches("_(i|j)$"),               # all columns ending in _i or _j
-                names_to = c(".value", "site_role"),     # .value = base name, site_role = i/j
-                names_pattern = "(.+)_([ij])$") ##transform table so in long form - so have one row for each unique site id 
-
-
-##Get list of site pairs within 100m-1000m, within each dataset 
-within_1000m <- sites3_test %>%
-  group_split(Dataset.ID) %>%
-  map_dfr(find_close_pairs, min_dist = 101, max_dist = 1000) %>%
-  ungroup() %>%
-   mutate(within_distance_type = "within_100m_to_1000m") %>%
-  mutate(pair_id = if_else(
-    unique.id_i < unique.id_j,
-    paste(unique.id_i, unique.id_j, sep = "__"),
-    paste(unique.id_j, unique.id_i, sep = "__") ##create a unique id for the pair, so know which sites are the pair
-  )) %>%
-  pivot_longer( cols = matches("_(i|j)$"),               # all columns ending in _i or _j
-                names_to = c(".value", "site_role"),     # .value = base name, site_role = i/j
-                names_pattern = "(.+)_([ij])$") ##transform table so in long form - so have one row for each unique site id 
-
-##i am getting more/different sites than james
-
-
-marie_1000m_unique_ids <- within_1000m %>%
-  select(unique.id) %>%
-  distinct()
-
-james_1000m_unique_ids <- within.1km.2 %>%
-  select(unique.id) %>%
-  distinct()
-
-james_marie_overlap_1000m <- inner_join(marie_1000m_unique_ids, james_1000m_unique_ids, by = "unique.id")
-
-
-##Save csv of site pairs 
-write.csv(within_100m, "data/data_processing/Step3_lotic_MZB_within_less_100m.csv")
-write.csv(within_1000m, "data/data_processing/Step3_lotic_MZB_within_100m_1000m.csv")
-
-
-
-##Trying approach using clusters rather than pairwise comparisons
-df <- sites_mg %>%
-  filter(Dataset.ID == "CZE_003_MZB_LO")
 ##function to identify clusters 
 find_clusters <- function(df, min_dist = 100, max_dist = 1000) {
   if (nrow(df) < 2) return(tibble())
@@ -339,6 +228,21 @@ num_clusters_100m <- within_100m_clusters_dedup %>%
   count()
 ##79 clusters/groups - most have 2 sites per cluster, 8 have 3 sites per cluster, and 1 has 4 sites in cluster
 ##Then, need to go through each cluster  
+
+
+
+
+##Save csv of site pairs 
+#write.csv(within_100m, "data/data_processing/Step3_lotic_MZB_within_less_100m.csv")
+#write.csv(within_1000m, "data/data_processing/Step3_lotic_MZB_within_100m_1000m.csv")
+
+
+#######################################################################################################
+#
+#                          SORT SITES TO KEEP AND REMOVE OR CHECK MANUALLY
+#
+#######################################################################################################
+
 #from workflow:
 #1)  	Overlapping sites within <=100m are found
 #Fix: Check group-by-group within just the group file. If the river names are different within the group, then keep all sites. If the river names are the same, pick one to keep (usually the one with the longest time series) and record the other sites for removal.
@@ -347,11 +251,11 @@ num_clusters_100m <- within_100m_clusters_dedup %>%
 #Fix: Check group-by-group within the group file. If the river names are different within the group, then keep all sites. If the river names are the same, check the sites manually in qGIS. If they occur in different river sections (e.g., different tributaries), then keep all sites. If they do not, pick one to keep (usually the one with the longer time series) and record the others for removal.
 
 
-##My logic for keeping/removing sites from a group within a dataset
+##My logic for keeping/removing sites from a group within a dataset - applied to each river within a group 
 ##1) if all river names are different - keep all 
 ##2) If river names are the same (or blank), keep longest time series
 ##3) If river names are the same (or blank) and time series length is the same, keep the one with the most sampling years
-##4) If river names are the same (or blank) and time series length is the same and number of sampling years is the same, keep the one in the group that is closest to the centroid of the cluster of groups
+##4) If river names are the same (or blank) and time series length is the same and number of sampling years is the same, check manually
 ##5) If tied on all conditions above, or site is part of multiple groups and gets different score  - check manually, 
 
 ##Set up workflow so that for each site pair - if different river names, keep both, if no river name or if river name is the same, pick the one in the pair that has the longer time series 
@@ -361,9 +265,11 @@ num_clusters_100m <- within_100m_clusters_dedup %>%
 ##Create sorting function
 sorting_function <- function(df, tol = 1e-8) {
   df %>% 
+    group_by(river, .add = TRUE) %>% ##group each cluster by river, so that within each cluster, if all unique rivers will keep all, but if there are duplicate rivers in cluster will treat as replicates ..
     mutate(
-      # do all sites share the same river? (ignore NAs)
-      same_river = n_distinct(river) <= 1,
+      n_in_river = n(), ##how many sites share this river in this cluster?
+     
+    #for rivers with more than 1 site: compute time-series summaries within that river 
       max_yr_ln  = max(yr.ln, na.rm = TRUE),
       n_max_ln   = sum(yr.ln == max_yr_ln),
       
@@ -375,46 +281,29 @@ sorting_function <- function(df, tol = 1e-8) {
       ),
       
       # how many sites are tied on BOTH metrics and have the same river name? 
-      n_tied = sum(yr.ln == max_yr_ln & yr.num == max_yr_num_tied & same_river == TRUE),
+      n_tied = sum(yr.ln == max_yr_ln & yr.num == max_yr_num_tied),
       
-      # cluster centroid
-      cluster_centroid_lat = mean(latitude, na.rm = TRUE),
-      cluster_centroid_lon = mean(longitude, na.rm = TRUE),
-      dist_to_centroid = sqrt(
-        (latitude  - cluster_centroid_lat)^2 +
-          (longitude - cluster_centroid_lon)^2
-      ),
-      
-      # min distance among tied-top sites only
-      min_dist_tied = min(
-        if_else(yr.ln == max_yr_ln & yr.num == max_yr_num_tied,
-                dist_to_centroid,
-                Inf),
-        na.rm = TRUE),
-        
-      #how many sites are essentially at the same min distance? 
-      n_min_dist = sum(yr.ln == max_yr_ln & yr.num == max_yr_num_tied  & abs(dist_to_centroid - min_dist_tied) < tol)
       ) %>%
     mutate(
       site_sorting = case_when(
-        # 1) different rivers in cluster → keep all
-        !same_river ~ "keep",
+        # 1) If river only appears once in the group - keep
+        n_in_river == 1 ~ "keep",
         
         # 2) same river, any site with strictly shorter time series than the max → remove
-        same_river & yr.ln < max_yr_ln ~ "remove",
+        n_in_river > 1 & yr.ln < max_yr_ln ~ "remove",
         
         # 3) same river, unique longest time series (no tie) → keep
-        same_river & yr.ln == max_yr_ln & n_max_ln == 1 ~ "keep",
+        n_in_river >1 & yr.ln == max_yr_ln & n_max_ln == 1 ~ "keep",
         
         #4) same river, tied for longest time series, but less number of sampling years - remove
-        same_river & yr.ln == max_yr_ln & yr.num < max_yr_num_tied ~ "remove",
+        n_in_river > 1 & yr.ln == max_yr_ln & yr.num < max_yr_num_tied ~ "remove",
     
         
         #5) where they are tied on all 3, need to check manually and make decision 
-        n_tied >=2 ~ "tied - check manually", 
+       n_in_river >1 & n_tied >1 ~ "tied - check manually", 
         
         ##6) same river, tied for longest time series, but most number of sampling years - keep - order is important here, don't want to keep all the ones that are tied, so this comes after the tie indication
-        same_river & yr.ln == max_yr_ln & yr.num == max_yr_num_tied ~ "keep",
+        n_in_river >1 & yr.ln == max_yr_ln & yr.num == max_yr_num_tied ~ "keep",
         
         
         # anything weird left over
@@ -424,53 +313,1188 @@ sorting_function <- function(df, tol = 1e-8) {
 }
 
 
-
-
-##Starting with 100m set - 168 observations, 79 clusters/groups (most have 2 sites per cluster, 8 have 3 sites per cluster, and 1 has 4 sites in cluster)
-
-
+##Sort 100m data
 within_100m_sorted <- within_100m_clusters_dedup %>%
   group_split(dataset.id, group) %>%
-  map_dfr(sorting_function, tol = 1e-3) %>%
+  map_dfr(sorting_function) %>%
   ungroup()
-  
-  
-tied_100m <- within_100m_sorted %>%
-  filter(n_tied >= 2) %>%
-  select(site_sorting, group:n_min_dist)
 
-num_groups_tied_100m <- tied_100m %>%
-  select(dataset.id, group) %>%
-  distinct()
-##14 groups
-
-within_100m_removed <- within_100m_sorted %>%
-  filter(site_sorting == "remove")
-
+##Sort 1km data
 within_1km_sorted <- within_1km_clusters_dedup %>%
   group_split(dataset.id, group) %>%
   map_dfr(sorting_function) %>%
   ungroup()
 
-tied_1km <- within_1km_sorted %>%
-  filter(n_tied >= 2) %>%
-  select(site_sorting, group:min_dist_tied)
-
-num_groups_tied_1km <- tied_1km %>%
-  select(dataset.id, group) %>%
-  distinct()
-##55 groups tied 
-
-within_1km_removed <- within_1km_sorted %>%
-  filter(site_sorting == "remove")
 
 ##Combine the sorted lists for both 100m and 1km 
 sites_sorted <- rbind(within_100m_sorted, within_1km_sorted)
 
-sites_removed <- sites_sorted %>%
-  filter(site_sorting != "keep")
+
+#######################################################################################################
+#
+#                          MANUALLY CHECK TIED SITES
+#
+#######################################################################################################
+
+##sites tied 
+tied <- sites_sorted %>%
+  filter(n_tied >= 2) %>%
+  select(site_sorting, group:n_tied)
+
+num_groups_tied <- tied %>%
+  select(dataset.id, within_distance_type, group) %>%
+  distinct()
+##77 groups tied 
+
+##General tie breaker rules: if on same reach, keep site id that james kept (if in his list) or the one with lower site number (random but consistent - if not on his list), if 3 sites on same reach, keep one in middle, if on different tributaries - keep 
+##Checking, dataset IDs in alphabetical order
+## 	CHE_040_MZB_LO, group 1 ------
+test_coords <- tied %>%
+  filter(dataset.id == "CHE_040_MZB_LO") %>%
+  filter(group == 1) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##different tributaries (i think) - keep both - same as james 
+
+## 	CHE_076_MZB_LO, group 3 ------
+test_coords <- tied %>%
+  filter(dataset.id == "CHE_076_MZB_LO") %>%
+  filter(group == 3) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##3 rivers names, just keep 1 from each, selecting lowest site code - some same as james, but keeping  at least and only one site from each unique river name
+
+## 	DNK_011_MZB_LO, group 5 ------
+test_coords <- tied %>%
+  filter(dataset.id == "DNK_011_MZB_LO") %>%
+  filter(group == 5) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##different tributaries, keep both - same as james
+
+## 	ENG_041_MZB_LO, group 3 ------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_041_MZB_LO") %>%
+  filter(group == 3) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same channel, only keep 1 - lower site # (not in james list)
+
+## 	ENG_062_MZB_LO, group 15 ------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 15) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same river name, remove 1 - same as james (james removes 1211)
+
+## 	ENG_062_MZB_LO, group 50 ------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 50) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##look like are on same channel, only keep 1 - same as james 
+
+## 	ENG_062_MZB_LO, group 61 ------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 61) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##look like are on same channel, only keep 1 - same as james 
+
+## 	ENG_062_MZB_LO, group 328 ------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 328) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##look like are on same channel, only keep 1 - same as james 
+
+## 	ENG_062_MZB_LO, group 330 ------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 330) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##look like are on same channel, only keep 1 - same as james 
+
+## 	ENG_062_MZB_LO, group 334------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 334) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##look like are on same channel, only keep 1 (not in james list)
+
+## 	ENG_062_MZB_LO, group 340------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 340) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##look like are on same channel, only keep 1 - same as james 
 
 
+## 	ENG_062_MZB_LO, group 452------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 452) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##2 of the same sites as in group 334, already sorted. third group has much shorter time series, so is removed 
+
+## 	ENG_062_MZB_LO, group 503------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 503) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, only keep 1 site - same as james 
+
+## 	ENG_062_MZB_LO, group 544------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 544) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, only keep 1 site - same as james 
+
+## 	ENG_062_MZB_LO, group 610------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 610) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, only keep 1 site - same as james 
+
+## 	ENG_062_MZB_LO, group 672------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 672) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, only keep 1 site - same site as james 
+
+## 	ENG_062_MZB_LO, group 683------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 683) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##all 3 on same reach, keep the two are the furthest extremes, which are more than 1 km apart - this is to match james 
+
+## 	ENG_062_MZB_LO, group 690------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 690) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, keep 1 - same as james 
+
+## 	ENG_062_MZB_LO, group 694------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 694) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, keep 1 (not in james list)
+
+## 	ENG_062_MZB_LO, group 695------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 695) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on two different rivers, within each river, two sites on same reach, just keep one from each - same ones as james 
+
+## 	ENG_062_MZB_LO, group 713------
+test_coords <- tied %>%
+  filter(dataset.id == "ENG_062_MZB_LO") %>%
+  filter(group == 713) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##looks like all three are on the same reach (a little hard to tell) - two edge ones - this is to match james
+
+## 	ESP_034_MZB_LO, group 19------
+test_coords <- tied %>%
+  filter(dataset.id == "ESP_034_MZB_LO") %>%
+  filter(group == 19) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##all 4 sites are on same reach, 2 of 4 are already removed due to short time series, keep only one of the two tied sites - keep one that doesn't lead to conflicted sorting (so is different than james) 
+
+## 	ESP_060_MZB_LO, group 4------
+test_coords <- tied %>%
+  filter(dataset.id == "ESP_060_MZB_LO") %>%
+  filter(group == 4) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same reach, keep 1 (not in james list)
+
+## 	FIN_004_MZB_LO, group 9------
+test_coords <- tied %>%
+  filter(dataset.id == "FIN_004_MZB_LO") %>%
+  filter(group == 9) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##3 sites on same reach, keep same one as james 
+
+## 	FRA_015_MZB_LO, group 1------
+test_coords <- tied %>%
+  filter(dataset.id == "FRA_015_MZB_LO") %>%
+  filter(group == 1) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same reach and river, only keep 1 - same one as james
+
+## 	GER_017_MZB_LO, group 1 ------
+test_coords <- tied %>%
+  filter(dataset.id == "GER_017_MZB_LO") %>%
+  filter(group == 1) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same reach and river, only keep 1 (not in james list)
+
+
+## 	GER_018_MZB_LO, group 3------
+test_coords <- tied %>%
+  filter(dataset.id == "GER_018_MZB_LO") %>%
+  filter(group == 3) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same reach and river, only keep 1 (not in james list)
+
+## 	GER_018_MZB_LO, group 5------
+test_coords <- tied %>%
+  filter(dataset.id == "GER_018_MZB_LO") %>%
+  filter(group == 5) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same reach and river, only keep 1 (not in james list)
+
+## 	GER_047_MZB_LO, group 2------
+test_coords <- tied %>%
+  filter(dataset.id == "GER_047_MZB_LO") %>%
+  filter(group == 2) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##sites are identical, just keep 1 (not in james list)
+
+## 	GER_047_MZB_LO, group 3------
+test_coords <- tied %>%
+  filter(dataset.id == "GER_047_MZB_LO") %>%
+  filter(group == 3) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##sites are identical, just keep 1 (not in james list)
+
+## 	GER_070_MZB_LO, group 27-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_070_MZB_LO") %>%
+  filter(group == 27) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same reach, just keep 1 (not on james list)
+
+## 	GER_070_MZB_LO, group 34 **-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_070_MZB_LO") %>%
+  filter(group == 34) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##all 3 on same reach, keep middle one - note overlap with group 35 (b/c two farthest sites are more than 1 km, but all are on the same reach, - keep the two farthest apart, gives some match then to one site james removed
+ 
+## 	GER_070_MZB_LO, group 35 **-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_070_MZB_LO") %>%
+  filter(group == 35) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##all 4 on same reach, keep middle one - also there is overlap here with group 34, keeping the two sites that are farthest apart (141 and 143)- 
+
+## 	GER_070_MZB_LO, group 56-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_070_MZB_LO") %>%
+  filter(group == 56) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, only keep 1 (not in james list)
+
+## 	GER_071_MZB_LO, group 2-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_071_MZB_LO") %>%
+  filter(group == 2) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##4 sites on the same reach, keep two furthest outside - this is to match james
+
+## 	GER_071_MZB_LO, group 5-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_071_MZB_LO") %>%
+  filter(group == 5) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##2 sites on same reach, keep only 1 - same one as james
+
+## 	GER_071_MZB_LO, group 9-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_071_MZB_LO") %>%
+  filter(group == 9) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##3 sites on same reach, keep only 1 - one is already removed due to fewer number of years, 
+##also overlap with sites in group 10, so going to keep the two farthest part sites (9 and 10) to get max number of sites, even though 10 has 1 less year of samplng
+
+
+## 	GER_072_MZB_LO, group 1-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 1) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##both on same reach, keep only 1 
+
+
+## 	GER_072_MZB_LO, group 3-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 3) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##both on same reach, keep only 1 
+
+## 	GER_072_MZB_LO, group 5-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 5) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##both on same reach, keep only 1 
+
+
+## 	GER_072_MZB_LO, group 1-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 1) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##not entirely clear if on same reach, one looks like its not on any stream, and so could be on main reach or side trib, but likely on same, so keep 1 
+
+## 	GER_072_MZB_LO, group 3-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 3) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same branch, keep 1 
+
+## 	GER_072_MZB_LO, group 5-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 5) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same branch, keep 1 
+
+## 	GER_072_MZB_LO, group 7-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 7) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same branch, keep 1
+
+
+## 	GER_072_MZB_LO, group 9-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 9) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same branch, keep 1 
+
+## 	GER_072_MZB_LO, group 11-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_072_MZB_LO") %>%
+  filter(group == 11) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same branch, keep 1 
+
+
+## 	GER_073_MZB_LO, group 1-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_073_MZB_LO") %>%
+  filter(group == 1) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same branch, keep 1 - removing same one as james
+
+
+## 	GER_073_MZB_LO, group 5-----
+test_coords <- tied %>%
+  filter(dataset.id == "GER_073_MZB_LO") %>%
+  filter(group == 5) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same branch, keep 1 - removing same one as james
+
+
+## 	HUN_022_MZB_LO, group 1-----
+test_coords <- tied %>%
+  filter(dataset.id == "HUN_022_MZB_LO") %>%
+  filter(group == 1) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same point - removing same one as james
+
+## 	IRL_023_MZB_LO, group 1-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_023_MZB_LO") %>%
+  filter(group == 1) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##points not exactly on stream, but if snapped to closest river then would be on same reach - remove 1, same one as james 
+
+## 	IRL_023_MZB_LO, group 3-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_023_MZB_LO") %>%
+  filter(group == 3) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - removing same one as james 
+
+
+## 	IRL_051_MZB_LO, group 9-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 9) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same point, remove 1 - removing same one as james 
+
+## 	IRL_051_MZB_LO, group 3-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 3) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - 
+
+
+## 	IRL_051_MZB_LO, group 41-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 41) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 43-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 43) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 61-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 61) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##all 3 on same reach, 2 are identical remove 2  - 1 same as james, and 1 more, keep lowest site number
+
+
+## 	IRL_051_MZB_LO, group 71-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 71) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##hard to tell where stream is, but remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 128-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 128) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##hard to tell where stream is, but remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 132-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 132) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 157-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 157) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 190-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 190) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 204-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 204) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - same as james 
+
+## 	IRL_051_MZB_LO, group 241-----
+test_coords <- tied %>%
+  filter(dataset.id == "IRL_051_MZB_LO") %>%
+  filter(group == 241) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on same reach, remove 1 - same as james 
+
+## 	NOR_054_MZB_LO, group 2-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 2) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##3 sites, keep 1 - same as james 
+
+## 	NOR_054_MZB_LO, group 6-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 6) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##3 sites, keep 1 - same as james 
+
+## 	NOR_054_MZB_LO, group 9-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 9) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##on different tribs into the lake, keep both 
+
+## 	NOR_054_MZB_LO, group 11-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 11) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same site, remove 1  - same as james  
+
+## 	NOR_054_MZB_LO, group 13-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 13) %>%
+  filter(within_distance_type == "within_100m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same reach, remove 1  - same as james 
+
+## 	NOR_054_MZB_LO, group 3-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 3) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same sites that are also part of within 100m group 6, already dealt with 
+
+## 	NOR_054_MZB_LO, group 5-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 5) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##same sites that are also part of within 100m group 6, and 100-1000m group 5, already dealt with 
+
+## 	NOR_054_MZB_LO, group 11-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 11) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##different streams, keep both 
+
+## 	NOR_054_MZB_LO, group 13-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 13) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##site 55 and 56 are on different tribs, site 57 on same trib as 55, so remove that one (same as james)
+
+
+## 	NOR_054_MZB_LO, group 17-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 17) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##sites on different tribs into the lake, keep both 
+
+## 	NOR_054_MZB_LO, group 18-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 18) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##sites on different tribs into different lakes, keep both 
+
+## 	NOR_054_MZB_LO, group 21-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 21) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##sites on main stem and tributary, keep both 
+
+## 	NOR_054_MZB_LO, group 25-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 25) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##sites both on same reach, remove 1 - same as james 
+
+
+## 	NOR_054_MZB_LO, group 27-----
+test_coords <- tied %>%
+  filter(dataset.id == "NOR_054_MZB_LO") %>%
+  filter(group == 27) %>%
+  filter(within_distance_type == "within_100m_to_1000m") %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##sites both on same reach, remove 1 - same as james 
+
+
+
+
+###Create final sorted df ----- 
+##Select only sites previously already sorted - i.e., not tied
+sites_sorted_notie <- sites_sorted %>%
+  filter(site_sorting %in% c("keep", "remove")) %>%
+  mutate(tiebreaker_state = site_sorting)
+
+##make df of only tied 
+sites_sorted_tie <- sites_sorted %>%
+  filter(site_sorting %in% c("tied - check manually"))
+##Make column with decision tree made of tie breaker states for each site ------------
+sites_sorted_tie <- sites_sorted_tie %>%
+  mutate(tiebreaker_state = case_when(
+    grepl("CHE_040_MZB_LO_3", unique.id) ~ "keep",
+    grepl("CHE_040_MZB_LO_10", unique.id) ~ "keep",
+    grepl("CHE_076_MZB_LO_2", unique.id) ~ "keep",
+    grepl("CHE_076_MZB_LO_3", unique.id) ~ "remove",
+    grepl("CHE_076_MZB_LO_4", unique.id) ~ "keep",
+    grepl("CHE_076_MZB_LO_5", unique.id) ~ "keep",
+    grepl("CHE_076_MZB_LO_6", unique.id) ~ "remove",
+    grepl("CHE_076_MZB_LO_7", unique.id) ~ "remove",
+    grepl("CHE_076_MZB_LO_8", unique.id) ~ "remove",
+    grepl("CHE_076_MZB_LO_9", unique.id) ~ "remove",
+    grepl("DNK_011_MZB_LO_144", unique.id) ~ "keep",
+    grepl("DNK_011_MZB_LO_145", unique.id) ~ "keep",
+    grepl("ENG_041_MZB_LO_3496", unique.id) ~ "keep",
+    grepl("ENG_041_MZB_LO_3513", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_1211", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_1382", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_285", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_286", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_325", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_456", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_1547", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_1926", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_1554", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_1922", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_1556", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3246", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_1580", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_2103", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_2515", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_2516", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_2731", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3053", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3021", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3416", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3217", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3225", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3269", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3270", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3300", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3309", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3310", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3324", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3343", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3325", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3326", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3327", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3328", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3358", unique.id) ~ "keep",
+    grepl("ENG_062_MZB_LO_3359", unique.id) ~ "remove",
+    grepl("ENG_062_MZB_LO_3360", unique.id) ~ "keep",
+    grepl("ESP_034_MZB_LO_11", unique.id) ~ "keep",
+    grepl("ESP_034_MZB_LO_38", unique.id) ~ "remove",
+    grepl("ESP_060_MZB_LO_20", unique.id) ~ "keep",
+    grepl("ESP_060_MZB_LO_21", unique.id) ~ "remove",
+    grepl("FIN_004_MZB_LO_169", unique.id) ~ "remove",
+    grepl("FIN_004_MZB_LO_170", unique.id) ~ "remove",
+    grepl("FIN_004_MZB_LO_171", unique.id) ~ "keep",
+    grepl("FRA_015_MZB_LO_1", unique.id) ~ "remove",
+    grepl("FRA_015_MZB_LO_2", unique.id) ~ "keep",
+    grepl("GER_017_MZB_LO_3", unique.id) ~ "keep",
+    grepl("GER_017_MZB_LO_4", unique.id) ~ "remove",
+    grepl("GER_018_MZB_LO_21", unique.id) ~ "keep",
+    grepl("GER_018_MZB_LO_129", unique.id) ~ "remove",
+    grepl("GER_018_MZB_LO_25", unique.id) ~ "keep",
+    grepl("GER_018_MZB_LO_139", unique.id) ~ "remove",
+    grepl("GER_047_MZB_LO_2", unique.id) ~ "keep",
+    grepl("GER_047_MZB_LO_22", unique.id) ~ "remove",
+    grepl("GER_047_MZB_LO_3", unique.id) ~ "keep",
+    grepl("GER_047_MZB_LO_23", unique.id) ~ "remove",
+    grepl("GER_070_MZB_LO_117", unique.id) ~ "keep",
+    grepl("GER_070_MZB_LO_118", unique.id) ~ "remove",
+    grepl("GER_070_MZB_LO_139", unique.id) ~ "remove",
+    grepl("GER_070_MZB_LO_141", unique.id) ~ "keep",
+    grepl("GER_070_MZB_LO_142", unique.id) ~ "remove",
+    grepl("GER_070_MZB_LO_140", unique.id) ~ "remove",
+    grepl("GER_070_MZB_LO_143", unique.id) ~ "keep",
+    grepl("GER_070_MZB_LO_392", unique.id) ~ "keep",
+    grepl("GER_070_MZB_LO_410", unique.id) ~ "remove",
+    grepl("GER_071_MZB_LO_3", unique.id) ~ "keep",
+    grepl("GER_071_MZB_LO_4", unique.id) ~ "remove",
+    grepl("GER_071_MZB_LO_5", unique.id) ~ "remove",
+    grepl("GER_071_MZB_LO_6", unique.id) ~ "keep",
+    grepl("GER_071_MZB_LO_7", unique.id) ~ "remove",
+    grepl("GER_071_MZB_LO_8", unique.id) ~ "keep",
+    grepl("GER_071_MZB_LO_11", unique.id) ~ "remove",
+    grepl("GER_071_MZB_LO_12", unique.id) ~ "remove", 
+    grepl("GER_072_MZB_LO_14", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_15", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_16", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_17", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_20", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_21", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_1", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_2", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_3", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_4", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_5", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_6", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_9", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_10", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_12", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_13", unique.id) ~ "keep",
+    grepl("GER_072_MZB_LO_18", unique.id) ~ "remove",
+    grepl("GER_072_MZB_LO_19", unique.id) ~ "keep",
+    grepl("GER_073_MZB_LO_55", unique.id) ~ "keep",
+    grepl("GER_073_MZB_LO_56", unique.id) ~ "remove",
+    grepl("GER_073_MZB_LO_59", unique.id) ~ "keep",
+    grepl("GER_073_MZB_LO_60", unique.id) ~ "remove",
+    grepl("HUN_022_MZB_LO_22", unique.id) ~ "keep",
+    grepl("HUN_022_MZB_LO_54", unique.id) ~ "remove",
+    grepl("IRL_023_MZB_LO_3", unique.id) ~ "keep",
+    grepl("IRL_023_MZB_LO_4", unique.id) ~ "remove",
+    grepl("IRL_023_MZB_LO_11", unique.id) ~ "keep",
+    grepl("IRL_023_MZB_LO_12", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_1284", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_1285", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_71", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_72", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_238", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_239", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_241", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_242", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_369", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_370", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_371", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_477", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_478", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_853", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_854", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_873", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_874", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_1032", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_1033", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_1349", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_1350", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_1422", unique.id) ~ "keep",
+    grepl("IRL_051_MZB_LO_1423", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_1634", unique.id) ~ "remove",
+    grepl("IRL_051_MZB_LO_1635", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_42", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_43", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_44", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_46", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_47", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_48", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_49", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_53", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_58", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_59", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_80", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_81", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_54", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_55", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_56", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_57", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_63", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_67", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_65", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_68", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_71", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_72", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_75", unique.id) ~ "remove",
+    grepl("NOR_054_MZB_LO_76", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_82", unique.id) ~ "keep",
+    grepl("NOR_054_MZB_LO_83", unique.id) ~ "remove",
+    
+    
+  ))
+
+##join back into single df 
+sites_sorted_tiebreaker <- rbind(sites_sorted_notie, sites_sorted_tie)
+
+#######################################################################################################
+#
+#                          MANUALLY CHECK CONFLICTING SITE SORTING
+#
+#######################################################################################################
+
+####Look into conflicting sites ------------------
+
+##Check if any unique.ids have conflicting sorting - i.e., in some pairs are listed as keep and others as remove
+conflicted_ids <- sites_sorted_tiebreaker %>%
+  group_by(unique.id) %>%
+  summarise(
+    n_states = n_distinct(tiebreaker_state),
+    states   = paste(sort(unique(tiebreaker_state)), collapse = ", ")
+  ) %>%
+  filter(n_states > 1) 
+##15 with conflicting states - these also need to be checked manually  ... 
+
+##Conflicted site: ENG_062_MZB_LO_1113 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_1113")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##only kept because came up in <100m and was a trib and mainstem so different names so kept, but is too close to others on main stem, so remove
+
+
+##Conflicted site: ENG_062_MZB_LO_1211 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_1211")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove  (fixed in tie coding above)
+
+
+##Conflicted site: ENG_062_MZB_LO_1231 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_1231")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove - kept b/c unique stream name in group - shows up in two groups, in one is removed b/c fewer sampling years. remove
+
+##Conflicted site: ENG_062_MZB_LO_1382 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_1382")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove - too close to other sites - shows up in 2 groups (same as 1211) (fixed in tie coding above)
+
+##Conflicted site: ENG_062_MZB_LO_2104 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_2104")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove, 2 other sites close on main stem, and want to keep the one <100m on other trib
+
+##Conflicted site: ENG_062_MZB_LO_2995 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_2995")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove, 2 other sites close on main stem, and want to keep the one <100m on other trib
+
+##Conflicted site: ENG_062_MZB_LO_3206 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_3206")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove, shows up in two groups, another close site that has longer time series 
+
+##Conflicted site: ENG_062_MZB_LO_3246 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ENG_062_MZB_LO_3246")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove, shows up in two groups, only 2 of these sites can be kept - keeping longest time series 
+
+
+##Conflicted site: ESP_034_MZB_LO_11 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ESP_034_MZB_LO_11")))) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##keep, remove other tied site to avoid conflict - all was equal had only selected other to be same as james, but clearer reasoning here (fixed in tie coding above)
+
+##Conflicted site: ESP_034_MZB_LO_33 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "ESP_034_MZB_LO_33")))) %>% 
+  filter(group %in% c(16, 42, 73)) %>%
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##is in 3 groups, kept in one group where it had the longest time series, but in other two groups does not, so remove, but in the group where it was kept (16), keep the site that had second longest time seires (site 366)
+
+##Conflicted site: GER_071_MZB_LO_11 / 10 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "GER_071_MZB_LO_11")))) %>% 
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##going to keep the two sites furthest apart (9 and 10), fix coding of 10 below because originally marked to remove b/c 1 less sampling year. but this way get to keep two sites rather than just 1, and 9 and 10 are more than 1 km apart 
+
+##Conflicted site: IRL_051_MZB_LO_643 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "IRL_051_MZB_LO_643")))) %>% 
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##remove, too close to another site on same stem 
+
+##Conflicted site: NOR_054_MZB_LO_45 / 47 / 48 ------
+test_coords <- sites_sorted_tiebreaker %>%
+  filter(map_lgl(members, ~ any(str_detect(.x, "NOR_054_MZB_LO_45")))) %>% 
+  select(!members) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id",  alpha = 1, alpha.regions = 1, cex = 4)
+##says it is on a different river than 16, but its not - so keep 16 and remove 45 
+##remove 47 and 48, only come as keep because different river than 16, but too close to 46, so remove 
+
+
+###Resolve conflicts - make column with decision to fix conflicts, and assign final states  ------------
+sites_sorted_final <- sites_sorted_tiebreaker %>%
+  mutate(final_state = case_when(
+    startsWith(unique.id, "ENG_062_MZB_LO_1113") ~ "remove",
+    startsWith(unique.id, "ENG_062_MZB_LO_1231") ~ "remove",
+    startsWith(unique.id, "ENG_062_MZB_LO_2104") ~ "remove",
+    startsWith(unique.id, "ENG_062_MZB_LO_2995") ~ "remove",
+    startsWith(unique.id, "ENG_062_MZB_LO_3206") ~ "remove",
+    startsWith(unique.id, "ENG_062_MZB_LO_3246") ~ "remove",
+    startsWith(unique.id, "ESP_034_MZB_LO_33") ~ "remove",
+    startsWith(unique.id, "ESP_034_MZB_LO_366") ~ "keep",
+    startsWith(unique.id, "GER_071_MZB_LO_10") ~ "keep",
+    startsWith(unique.id, "IRL_051_MZB_LO_643") ~ "remove",
+    startsWith(unique.id, "NOR_054_MZB_LO_45") ~ "remove",
+    startsWith(unique.id, "NOR_054_MZB_LO_47") ~ "remove",
+    startsWith(unique.id, "NOR_054_MZB_LO_48") ~ "remove",
+    TRUE ~ NA_character_
+  ),
+  final_state = coalesce(final_state, tiebreaker_state) ##fill in any NAs with the state written in the tiebreaker
+  ) 
+
+##double check there are no more conflicting sites 
+conflicted_ids <- sites_sorted_final %>%
+  group_by(unique.id) %>%
+  summarise(
+    n_states = n_distinct(final_state),
+    states   = paste(sort(unique(final_state)), collapse = ", ")
+  ) %>%
+  filter(n_states > 1) 
+## hell ya no conflicts 
+
+
+##Make final df of sites to remove ---------
+sites_to_be_removed_marie <- sites_sorted_final %>%
+  filter(final_state == "remove")
+##I remove 371 sites 
+sites_to_be_removed_marie$members <- as.character(sites_to_be_removed_marie$members)
+
+##save csv
+write.csv(sites_to_be_removed_marie, "data/data_processing/Step3_within_datasets_sites_to_be_removed_.csv")
+
+
+
+##Look into overlapping sites between james and Marie  -----------
+##when james has one marked to remove that i dont, i have usually selected the one with longer time series and/or more sampling years. not sure why he has selected the shorter one 
+##some sites missing from james that really should be removed (e.g., GER 018, GER 047, GER 070)
+
+
+unique.id_marie <- sites_to_be_removed_marie %>%
+  select(unique.id) %>%
+  distinct() 
+##I remove 322 sites 
+
+unique.id_james <- sites_to_be_removed_james %>%
+  select(unique.id) %>%
+  distinct() 
+##james removes 297 sites 
+
+
+###Look into figure out where there is and is not overlap 
+##create a master list of all unique ids that show up in both removal dfs
+all_ids <- union(sites_to_be_removed_marie$unique.id, sites_to_be_removed_james$unique.id) %>% 
+  tibble(unique.id = .) %>%
+  left_join(sites_mg %>% select(Dataset.ID, Unique.ID) %>% rename(unique.id = "Unique.ID"), by = "unique.id")
+
+compare_df <- all_ids %>%
+  mutate(
+    marie_remove = unique.id %in% sites_to_be_removed_marie$unique.id,
+    james_remove = unique.id %in% sites_to_be_removed_james$unique.id
+  ) %>%
+  mutate(
+    category = case_when(
+      marie_remove & james_remove ~ "both_remove",
+      marie_remove & !james_remove ~ "marie_only",
+      !marie_remove & james_remove ~ "james_only",
+      TRUE ~ "neither"   # shouldn’t happen since union was taken
+    )
+  )
+
+##calculate # of differences
+table(compare_df$category)
+
+119-94
+322-297
+
+james_only_id <- compare_df %>% filter(category == "james_only") 
+
+james_remove_sites <- sites_sorted %>%
+  filter(map_lgl(members, ~ any(.x %in% james_only_id$unique.id))) %>%
+  mutate(james_removed = case_when(
+    unique.id %in% james_only_id$unique.id ~ "james_removed"
+  )) %>%
+  select(site_sorting, james_removed, group:n_tied)
+
+##30 of these 92 do come up in my site sorted
+##of these 30, often marked removed by james even if river name is different, or sometimes the shorter time series was selected (when same river name)
+##so 62 do not? 
+
+##so a bunch are sites that don't even come up in my distance grouping... look into those later 
 
 
 ##lets just look at the ones that are tied/same distance 
@@ -489,83 +1513,6 @@ head(tied)
 
 head(tied)
   
-  
-  
-  group_by(dataset.id, group) %>%
-  mutate(
-    # do all sites share the same river? (ignore NAs)
-    same_river = n_distinct(na.omit(river)) <= 1,
-    
-    max_yr_ln  = max(yr.ln, na.rm = TRUE),
-    n_max_ln   = sum(yr.ln == max_yr_ln),
-    
-    # among sites with max yr.ln, what is the max # years?
-    max_yr_num_tied = max(
-      if_else(yr.ln == max_yr_ln, yr.num, NA_real_),
-      na.rm = TRUE
-    ),
-    
-    # how many sites are tied on BOTH metrics?
-    n_tied_both = sum(yr.ln == max_yr_ln & yr.num == max_yr_num_tied),
-    
-    # cluster centroid
-    cluster_centroid_lat = mean(latitude, na.rm = TRUE),
-    cluster_centroid_lon = mean(longitude, na.rm = TRUE),
-    dist_to_centroid = sqrt(
-      (latitude  - cluster_centroid_lat)^2 +
-        (longitude - cluster_centroid_lon)^2
-    ),
-    
-    # min distance among tied-top sites only
-    min_dist_tied = min(
-      if_else(yr.ln == max_yr_ln & yr.num == max_yr_num_tied,
-              dist_to_centroid,
-              Inf),
-      na.rm = TRUE
-    )
-  ) %>%
-  mutate(
-    site_sorting = case_when(
-      # 1) different rivers in cluster → keep all
-      !same_river ~ "keep",
-      
-      # 2) same river, strictly shorter time series → remove
-      same_river & yr.ln < max_yr_ln ~ "remove",
-      
-      # 3) same river, unique longest time series (no tie) → keep
-      same_river & yr.ln == max_yr_ln & n_max_ln == 1 ~ "keep",
-      
-      # 4) same river, tied on length & years: use centroid to break tie
-      same_river & yr.ln == max_yr_ln & yr.num == max_yr_num_tied &
-        dist_to_centroid == min_dist_tied ~ "keep",
-      
-      same_river & yr.ln == max_yr_ln & yr.num == max_yr_num_tied &
-        dist_to_centroid > min_dist_tied ~ "remove",
-      
-      # anything weird left over
-      TRUE ~ "tied - check manually"
-    )
-  ) %>%
-  ungroup() 
-
-##join both together
-sites_sorted <- rbind(within_1000m_sorted, within_100m_sorted)
-
-conflicted_sites <- sites_sorted %>%
-  group_by(unique.id) %>%
-  summarise(
-    n_states = n_distinct(site_sorting),
-    states   = paste(sort(unique(site_sorting)), collapse = ", ")
-  ) %>%
-  filter(n_states > 1)
-
-
-##sites to check manually
-manual_check_sites <- sites_sorted %>%
-  filter(site_sorting == "tied - check manually")
-##38 
-
-
 
 ##Conflicting Site 1 and 2: ENG_062_MZB_LO_1108 and ENG_062_MZB_LO_1113
 test_coords <- sites_sorted %>%
