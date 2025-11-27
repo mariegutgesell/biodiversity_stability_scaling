@@ -10,54 +10,21 @@ library(units)
 library(purrr)
 library(tidyverse)
 library(mapview)
+
+
 ##Read in data that has been assigned datafile names, database IDs, unique IDs, country codes, 
-sites_mg <- read.csv("data/data_processing/Step2_MZB_sites_lotic.csv",   colClasses = c(Provider.Number = "character"))  
+sites_mg <- read.csv("data/data_processing/Step2_MZB_sites_lotic.csv",   colClasses = c(Provider.Number = "character"))  %>%
+  mutate(Latitude_Y = as.numeric(Latitude_Y),  Longitude_X = as.numeric(Longitude_X)) %>% ##ensure lat and long are numeric
+  filter(fulfills.requirement == "yes") ##select sites that fulfill requirements - this is based on dataset criteria listed in data call 
 
 ##NOTE: as of Nov 24, still have the issue of the duplicates from the two files (see issue #2 in step 2 code, otherwise all other data matches james)
 
-
 #######################################################################################################
 #
-#                                   REMOVE ALREADY CHECKED DATASETS
+#                                           FUNCTIONS
 #
 #######################################################################################################
-
-#we already have a list of datasets that have been checked, so these can be removed from the site list to
-#avoid repeating effort - these can be removed from the site list of sites that need to be checked, not ones that should all be removed 
-
-#file is called "Datasets already checked.csv"
-rem<-read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Datasets already checked.csv")
-
-sites3_test <- sites_mg %>%
-  filter(!Dataset.ID %in% rem$checked) %>%
-  filter(fulfills.requirement == "yes")
-##so these would be the datasets that still need to be checked? 
-
-##look at dfs made:
-lo_sites_less_100m <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within less than 100m.csv")
-lo_sites_within_100m_1km <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within 101-1000m.csv")
-
-sites_to_be_removed_james <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Step 3 - duplicated within removed.csv")
-
-
-
-#######################################################################################################
-#
-#                                   CHECK OVERLAPPING SITES WITHIN DATASETS
-#
-#######################################################################################################
-
-#overlap is checked within 100m and 1km, but lists must be examined manually
-#within 100m is manually checked first because these are almost always overlapping so the checking is faster
-#within 1km = >100m but <=1km, these are typically slower to get through
-##make sure lat/long are numeric 
-sites_mg <- sites_mg %>%
-  mutate(Latitude_Y = as.numeric(Latitude_Y),
-         Longitude_X = as.numeric(Longitude_X)) %>%
-  filter(fulfills.requirement == "yes") ##select sites that fulfill requirements 
-
-
-##function to identify clusters 
+##Function to identify clusters (function logic: assigns group number to cluster of sites within defined distance)
 find_clusters <- function(df, min_dist = 100, max_dist = 1000) {
   if (nrow(df) < 2) return(tibble())
   
@@ -81,7 +48,7 @@ find_clusters <- function(df, min_dist = 100, max_dist = 1000) {
   ##for each site (k) identify which other sites fall within specific distance band (min_dist and max_dist) - but exclude the site itself 
   for (k in seq_len(nrow(df))) {
     ##extract the distances from site k to all sites
-     dists_k <- dmat_num[, k]
+    dists_k <- dmat_num[, k]
     
     # identify neighbors > min & <= max (excluding self)
     neigh_idx <- which(dists_k > min_dist & dists_k <= max_dist)
@@ -122,13 +89,8 @@ find_clusters <- function(df, min_dist = 100, max_dist = 1000) {
   bind_rows(clusters)
 }
 
-##function to filter redundant clusters 
-#Sorts clusters from largest to smallest
-#Keeps the large clusters
-#For each cluster, it checks all the smaller clusters:
-#  If a smaller cluster’s members are entirely contained within a larger one, the smaller cluster is marked as redundant
-
-#Returns only the unique, non-subset clusters.
+##Function to filter redundant clusters (function logic: sorts clusters from largest to smallest, starts with the larger clusters, for each cluster checks all smaller clusters. If a smaller cluster’s members are entirely contained within a larger one, the smaller cluster is marked as redundant)
+#Returns only the unique, non-subset clusters. (note: sites can still occur in multiple clusters if not full subsets of eachother)
 filter_redundant_clusters <- function(df_members) {
   # df_members: rows = groups, cols = group, members (list of unique.ids) 
   n <- nrow(df_members)
@@ -149,7 +111,7 @@ filter_redundant_clusters <- function(df_members) {
     #compare to all other clusters 
     for (jj in seq_along(ord)) {
       j <- ord[jj]
-    
+      
       ##skip if: -j is the same cluster as i, or j has already been marked for removal
       if (j == i || !keep[j]) next
       
@@ -168,6 +130,68 @@ filter_redundant_clusters <- function(df_members) {
   df_members[keep, , drop = FALSE]
 }
 
+##Function to sort sites into keep/remove/tie-breaker 
+##Logic for keeping/removing sites from a group within a dataset - applied to each river within a group 
+##1) if all river names are different - keep all 
+##2) When river names are the same (or blank), keep longest time series
+##3) When river names are the same (or blank) and time series length is the same, keep the one with the most sampling years
+##4) When river names are the same (or blank) and time series length is the same and number of sampling years is the same, tied - check manually
+sorting_function <- function(df) {
+  df %>% 
+    group_by(river, .add = TRUE) %>% ##group each cluster by river, so that within each cluster, if all unique rivers will keep all, but if there are duplicate rivers in cluster will treat as replicates ..
+    mutate(
+      n_in_river = n(), ##how many sites share this river in this cluster?
+      
+      #for rivers with more than 1 site: compute time-series summaries within that river 
+      max_yr_ln  = max(yr.ln, na.rm = TRUE),
+      n_max_ln   = sum(yr.ln == max_yr_ln),
+      
+      # max_yr_num = max(yr.num, na.rm = TRUE)
+      # among sites with max yr.ln, what is the max # years?
+      max_yr_num_tied = max(
+        if_else(yr.ln == max_yr_ln, yr.num, NA_real_),
+        na.rm = TRUE
+      ),
+      
+      # how many sites are tied on BOTH metrics and have the same river name? 
+      n_tied = sum(yr.ln == max_yr_ln & yr.num == max_yr_num_tied),
+      
+    ) %>%
+    mutate(
+      site_sorting = case_when(
+        # 1) If river only appears once in the group - keep
+        n_in_river == 1 ~ "keep",
+        
+        # 2) same river, any site with strictly shorter time series than the max → remove
+        n_in_river > 1 & yr.ln < max_yr_ln ~ "remove",
+        
+        # 3) same river, unique longest time series (no tie) → keep
+        n_in_river >1 & yr.ln == max_yr_ln & n_max_ln == 1 ~ "keep",
+        
+        #4) same river, tied for longest time series, but less number of sampling years - remove
+        n_in_river > 1 & yr.ln == max_yr_ln & yr.num < max_yr_num_tied ~ "remove",
+        
+        
+        #5) where they are tied on all 3, need to check manually and make decision 
+        n_in_river >1 & n_tied >1 ~ "tied - check manually", 
+        
+        ##6) same river, tied for longest time series, but most number of sampling years - keep - order is important here, don't want to keep all the ones that are tied, so this comes after the tie indication
+        n_in_river >1 & yr.ln == max_yr_ln & yr.num == max_yr_num_tied ~ "keep",
+        
+        
+        # anything weird left over
+        #  TRUE ~ "tied - check manually"
+      )
+    )
+}
+
+#######################################################################################################
+#
+#                                   CHECK OVERLAPPING SITES WITHIN DATASETS
+#
+#######################################################################################################
+
+##Identify clusters within 100m and filter out redundant clusters ------------------
 ##Get clusters within 100m 
 within_100m_clusters <- sites_mg %>%
   group_split(Dataset.ID) %>%
@@ -191,7 +215,7 @@ within_100m_clusters_dedup <- within_100m_clusters %>%
   inner_join(kept_groups_100m, by = c("dataset.id", "group")) %>%
   mutate(within_distance_type = "within_100m")
 
-##Get clusters within 1km 
+####Identify clusters within 100m - 1km and filter out redundant clusters ------------------
 within_1km_clusters <- sites_mg %>%
   group_split(Dataset.ID) %>%
   map_dfr(find_clusters, min_dist = 101, max_dist = 1000) %>%
@@ -211,7 +235,7 @@ within_1km_clusters_dedup <- within_1km_clusters %>%
   mutate(within_distance_type = "within_100m_to_1000m") 
 
 
-
+##Count number of clusters and number of sites within each cluster 
 cluster_count_1km <- within_1km_clusters_dedup %>% count(unique.id)
 num_clusters_1km <- within_1km_clusters_dedup %>%
   group_by(dataset.id, group) %>%
@@ -231,10 +255,9 @@ num_clusters_100m <- within_100m_clusters_dedup %>%
 
 
 
-
-##Save csv of site pairs 
-#write.csv(within_100m, "data/data_processing/Step3_lotic_MZB_within_less_100m.csv")
-#write.csv(within_1000m, "data/data_processing/Step3_lotic_MZB_within_100m_1000m.csv")
+##Save csv of site clusters
+#write.csv(within_100m_clusters_dedup, "data/data_processing/Step3_lotic_MZB_within_less_100m.csv")
+#write.csv(within_1km_clusters_dedup, "data/data_processing/Step3_lotic_MZB_within_100m_1000m.csv")
 
 
 #######################################################################################################
@@ -242,75 +265,6 @@ num_clusters_100m <- within_100m_clusters_dedup %>%
 #                          SORT SITES TO KEEP AND REMOVE OR CHECK MANUALLY
 #
 #######################################################################################################
-
-#from workflow:
-#1)  	Overlapping sites within <=100m are found
-#Fix: Check group-by-group within just the group file. If the river names are different within the group, then keep all sites. If the river names are the same, pick one to keep (usually the one with the longest time series) and record the other sites for removal.
-
-#2)  	Overlapping sites within >100–1000m are found.
-#Fix: Check group-by-group within the group file. If the river names are different within the group, then keep all sites. If the river names are the same, check the sites manually in qGIS. If they occur in different river sections (e.g., different tributaries), then keep all sites. If they do not, pick one to keep (usually the one with the longer time series) and record the others for removal.
-
-
-##My logic for keeping/removing sites from a group within a dataset - applied to each river within a group 
-##1) if all river names are different - keep all 
-##2) If river names are the same (or blank), keep longest time series
-##3) If river names are the same (or blank) and time series length is the same, keep the one with the most sampling years
-##4) If river names are the same (or blank) and time series length is the same and number of sampling years is the same, check manually
-##5) If tied on all conditions above, or site is part of multiple groups and gets different score  - check manually, 
-
-##Set up workflow so that for each site pair - if different river names, keep both, if no river name or if river name is the same, pick the one in the pair that has the longer time series 
-##add a column that says keep/remove 
-##create map so can look at each site pair in R - rather than needing to go to QGIS, this way can check and do all sorting etc. in R and is fully reproducible 
-
-##Create sorting function
-sorting_function <- function(df, tol = 1e-8) {
-  df %>% 
-    group_by(river, .add = TRUE) %>% ##group each cluster by river, so that within each cluster, if all unique rivers will keep all, but if there are duplicate rivers in cluster will treat as replicates ..
-    mutate(
-      n_in_river = n(), ##how many sites share this river in this cluster?
-     
-    #for rivers with more than 1 site: compute time-series summaries within that river 
-      max_yr_ln  = max(yr.ln, na.rm = TRUE),
-      n_max_ln   = sum(yr.ln == max_yr_ln),
-      
-     # max_yr_num = max(yr.num, na.rm = TRUE)
-      # among sites with max yr.ln, what is the max # years?
-      max_yr_num_tied = max(
-        if_else(yr.ln == max_yr_ln, yr.num, NA_real_),
-        na.rm = TRUE
-      ),
-      
-      # how many sites are tied on BOTH metrics and have the same river name? 
-      n_tied = sum(yr.ln == max_yr_ln & yr.num == max_yr_num_tied),
-      
-      ) %>%
-    mutate(
-      site_sorting = case_when(
-        # 1) If river only appears once in the group - keep
-        n_in_river == 1 ~ "keep",
-        
-        # 2) same river, any site with strictly shorter time series than the max → remove
-        n_in_river > 1 & yr.ln < max_yr_ln ~ "remove",
-        
-        # 3) same river, unique longest time series (no tie) → keep
-        n_in_river >1 & yr.ln == max_yr_ln & n_max_ln == 1 ~ "keep",
-        
-        #4) same river, tied for longest time series, but less number of sampling years - remove
-        n_in_river > 1 & yr.ln == max_yr_ln & yr.num < max_yr_num_tied ~ "remove",
-    
-        
-        #5) where they are tied on all 3, need to check manually and make decision 
-       n_in_river >1 & n_tied >1 ~ "tied - check manually", 
-        
-        ##6) same river, tied for longest time series, but most number of sampling years - keep - order is important here, don't want to keep all the ones that are tied, so this comes after the tie indication
-        n_in_river >1 & yr.ln == max_yr_ln & yr.num == max_yr_num_tied ~ "keep",
-        
-        
-        # anything weird left over
-      #  TRUE ~ "tied - check manually"
-      )
-    )
-}
 
 
 ##Sort 100m data
@@ -328,6 +282,92 @@ within_1km_sorted <- within_1km_clusters_dedup %>%
 
 ##Combine the sorted lists for both 100m and 1km 
 sites_sorted <- rbind(within_100m_sorted, within_1km_sorted)
+
+
+#######################################################################################################
+#
+#                          RESOLVE TIED SITES
+#
+#######################################################################################################
+
+##1) Read in tiebreaker lookup table 
+tiebreaker_lookup <- read.csv("data/data_processing/Step3_lookup_tiebreaker_state.csv")
+
+##2) check for any new ties that currently do not exist in the lookup table 
+# all currently tied sites in this run
+ties_current <- sites_sorted %>%
+  filter(site_sorting == "tied - check manually") %>%
+  distinct(unique.id, dataset.id, group, within_distance_type)
+
+# which of these tied sites are *not* in your lookup table?
+new_ties <- ties_current %>%
+  anti_join(tiebreaker_lookup, by = "unique.id")
+
+##if there are new ties, this creates a csv listing which sites need a manual decision (i.e., new ties)
+if (nrow(new_ties) > 0) {
+  readr::write_csv(
+    new_ties,
+    "data/data_processing/new_ties_needing_tiebreaker.csv"
+  )
+  
+  stop(
+    glue::glue(
+      "There are {nrow(new_ties)} tied sites without tiebreaker decisions.\n",
+      "See data/data_processing/new_ties_needing_tiebreaker.csv and update lookup_tiebreaker_state.csv."
+    )
+  )
+}
+
+
+sites_sorted_tiebreaker <- sites_sorted %>%
+  # for non-tied sites, tiebreaker_state = site_sorting
+  mutate(
+    tiebreaker_state_initial = dplyr::if_else(
+      site_sorting %in% c("keep", "remove"),
+      site_sorting,
+      NA_character_
+    )
+  ) %>%
+  left_join(tiebreaker_lookup, by = "unique.id") %>%
+  mutate(
+    tiebreaker_state = coalesce(tiebreaker_state, tiebreaker_state_initial)
+  )
+
+
+still_missing <- sites_sorted_tiebreaker %>%
+  filter(site_sorting == "tied - check manually",
+         is.na(tiebreaker_state))
+
+stopifnot(nrow(still_missing) == 0)
+
+
+
+##filter out tied sites & join tiebreaker lookup table 
+sites_sorted_tie <- sites_sorted %>%
+  filter(site_sorting %in% c("tied - check manually")) %>%
+  left_join(tiebreaker_lookup, by = "unique.id")
+
+
+
+##make df of only tied 
+
+##Make column with decision tree made of tie breaker states for each site ------------
+
+##read in  tiebreaker decisions lookup table
+
+
+sites_sorted_notie <- sites_sorted %>%
+  filter(site_sorting %in% c("keep", "remove")) %>%
+  mutate(tiebreaker_state = site_sorting)
+
+
+
+#######################################################################################################
+#
+#                          RESOLVE CONFLICTED
+#
+#######################################################################################################
+
 
 
 #######################################################################################################
@@ -1094,180 +1134,12 @@ sites_sorted_notie <- sites_sorted %>%
 sites_sorted_tie <- sites_sorted %>%
   filter(site_sorting %in% c("tied - check manually"))
 ##Make column with decision tree made of tie breaker states for each site ------------
-##Make tibble with decision tree for tie breakers
-manual_tiebreaks <- tibble::tribble(
-  ~unique.id, ~tiebreaker_state,
-  "CHE_040_MZB_LO_3",      "keep",
-  "CHE_040_MZB_LO_10",     "keep",
-  "CHE_076_MZB_LO_2",      "keep",
-  "CHE_076_MZB_LO_3",      "remove",
-  "CHE_076_MZB_LO_4",      "keep",
-  "CHE_076_MZB_LO_5",      "keep",
-  "CHE_076_MZB_LO_6",      "remove",
-  "CHE_076_MZB_LO_7",      "remove",
-  "CHE_076_MZB_LO_8",      "remove",
-  "CHE_076_MZB_LO_9",      "remove",
-  "DNK_011_MZB_LO_144",    "keep",
-  "DNK_011_MZB_LO_145",    "keep",
-  "ENG_041_MZB_LO_3496",   "keep",
-  "ENG_041_MZB_LO_3513",   "remove",
-  "ENG_062_MZB_LO_1211",   "remove",
-  "ENG_062_MZB_LO_1382",   "remove",
-  "ENG_062_MZB_LO_285",    "keep",
-  "ENG_062_MZB_LO_286",    "remove",
-  "ENG_062_MZB_LO_325",    "remove",
-  "ENG_062_MZB_LO_456",    "keep",
-  "ENG_062_MZB_LO_1547",   "keep",
-  "ENG_062_MZB_LO_1926",   "remove",
-  "ENG_062_MZB_LO_1554",   "keep",
-  "ENG_062_MZB_LO_1922",   "remove",
-  "ENG_062_MZB_LO_1556",   "keep",
-  "ENG_062_MZB_LO_3246",   "remove",
-  "ENG_062_MZB_LO_1580",   "keep",
-  "ENG_062_MZB_LO_2103",   "remove",
-  "ENG_062_MZB_LO_2515",   "keep",
-  "ENG_062_MZB_LO_2516",   "remove",
-  "ENG_062_MZB_LO_2731",   "keep",
-  "ENG_062_MZB_LO_3053",   "remove",
-  "ENG_062_MZB_LO_3021",   "keep",
-  "ENG_062_MZB_LO_3416",   "remove",
-  "ENG_062_MZB_LO_3217",   "remove",
-  "ENG_062_MZB_LO_3225",   "keep",
-  "ENG_062_MZB_LO_3269",   "keep",
-  "ENG_062_MZB_LO_3270",   "remove",
-  "ENG_062_MZB_LO_3300",   "keep",
-  "ENG_062_MZB_LO_3309",   "keep",
-  "ENG_062_MZB_LO_3310",   "remove",
-  "ENG_062_MZB_LO_3324",   "keep",
-  "ENG_062_MZB_LO_3343",   "remove",
-  "ENG_062_MZB_LO_3325",   "remove",
-  "ENG_062_MZB_LO_3326",   "keep",
-  "ENG_062_MZB_LO_3327",   "remove",
-  "ENG_062_MZB_LO_3328",   "keep",
-  "ENG_062_MZB_LO_3358",   "keep",
-  "ENG_062_MZB_LO_3359",   "remove",
-  "ENG_062_MZB_LO_3360",   "keep",
-  "ESP_034_MZB_LO_11",     "keep",
-  "ESP_034_MZB_LO_38",     "remove",
-  "ESP_060_MZB_LO_20",     "keep",
-  "ESP_060_MZB_LO_21",     "remove",
-  "FIN_004_MZB_LO_169",    "remove",
-  "FIN_004_MZB_LO_170",    "remove",
-  "FIN_004_MZB_LO_171",    "keep",
-  "FRA_015_MZB_LO_1",      "remove",
-  "FRA_015_MZB_LO_2",      "keep",
-  "GER_017_MZB_LO_3",      "keep",
-  "GER_017_MZB_LO_4",      "remove",
-  "GER_018_MZB_LO_21",     "keep",
-  "GER_018_MZB_LO_129",    "remove",
-  "GER_018_MZB_LO_25",     "keep",
-  "GER_018_MZB_LO_139",    "remove",
-  "GER_047_MZB_LO_2",      "keep",
-  "GER_047_MZB_LO_22",     "remove",
-  "GER_047_MZB_LO_3",      "keep",
-  "GER_047_MZB_LO_23",     "remove",
-  "GER_070_MZB_LO_117",    "keep",
-  "GER_070_MZB_LO_118",    "remove",
-  "GER_070_MZB_LO_139",    "remove",
-  "GER_070_MZB_LO_141",    "keep",
-  "GER_070_MZB_LO_142",    "remove",
-  "GER_070_MZB_LO_140",    "remove",
-  "GER_070_MZB_LO_143",    "keep",
-  "GER_070_MZB_LO_392",    "keep",
-  "GER_070_MZB_LO_410",    "remove",
-  "GER_071_MZB_LO_3",      "keep",
-  "GER_071_MZB_LO_4",      "remove",
-  "GER_071_MZB_LO_5",      "remove",
-  "GER_071_MZB_LO_6",      "keep",
-  "GER_071_MZB_LO_7",      "remove",
-  "GER_071_MZB_LO_8",      "keep",
-  "GER_071_MZB_LO_11",     "remove",
-  "GER_071_MZB_LO_12",     "remove",
-  "GER_072_MZB_LO_14",     "remove",
-  "GER_072_MZB_LO_15",     "keep",
-  "GER_072_MZB_LO_16",     "remove",
-  "GER_072_MZB_LO_17",     "keep",
-  "GER_072_MZB_LO_20",     "remove",
-  "GER_072_MZB_LO_21",     "keep",
-  "GER_072_MZB_LO_1",      "remove",
-  "GER_072_MZB_LO_2",      "keep",
-  "GER_072_MZB_LO_3",      "remove",
-  "GER_072_MZB_LO_4",      "keep",
-  "GER_072_MZB_LO_5",      "remove",
-  "GER_072_MZB_LO_6",      "keep",
-  "GER_072_MZB_LO_9",      "remove",
-  "GER_072_MZB_LO_10",     "keep",
-  "GER_072_MZB_LO_12",     "remove",
-  "GER_072_MZB_LO_13",     "keep",
-  "GER_072_MZB_LO_18",     "remove",
-  "GER_072_MZB_LO_19",     "keep",
-  "GER_073_MZB_LO_55",     "keep",
-  "GER_073_MZB_LO_56",     "remove",
-  "GER_073_MZB_LO_59",     "keep",
-  "GER_073_MZB_LO_60",     "remove",
-  "HUN_022_MZB_LO_22",     "keep",
-  "HUN_022_MZB_LO_54",     "remove",
-  "IRL_023_MZB_LO_3",      "keep",
-  "IRL_023_MZB_LO_4",      "remove",
-  "IRL_023_MZB_LO_11",     "keep",
-  "IRL_023_MZB_LO_12",     "remove",
-  "IRL_051_MZB_LO_1284",   "keep",
-  "IRL_051_MZB_LO_1285",   "remove",
-  "IRL_051_MZB_LO_71",     "keep",
-  "IRL_051_MZB_LO_72",     "remove",
-  "IRL_051_MZB_LO_238",    "remove",
-  "IRL_051_MZB_LO_239",    "keep",
-  "IRL_051_MZB_LO_241",    "keep",
-  "IRL_051_MZB_LO_242",    "remove",
-  "IRL_051_MZB_LO_369",    "keep",
-  "IRL_051_MZB_LO_370",    "remove",
-  "IRL_051_MZB_LO_371",    "remove",
-  "IRL_051_MZB_LO_477",    "remove",
-  "IRL_051_MZB_LO_478",    "keep",
-  "IRL_051_MZB_LO_853",    "remove",
-  "IRL_051_MZB_LO_854",    "keep",
-  "IRL_051_MZB_LO_873",    "remove",
-  "IRL_051_MZB_LO_874",    "keep",
-  "IRL_051_MZB_LO_1032",   "keep",
-  "IRL_051_MZB_LO_1033",   "remove",
-  "IRL_051_MZB_LO_1349",   "keep",
-  "IRL_051_MZB_LO_1350",   "remove",
-  "IRL_051_MZB_LO_1422",   "keep",
-  "IRL_051_MZB_LO_1423",   "remove",
-  "IRL_051_MZB_LO_1634",   "remove",
-  "IRL_051_MZB_LO_1635",   "keep",
-  "NOR_054_MZB_LO_42",     "keep",
-  "NOR_054_MZB_LO_43",     "remove",
-  "NOR_054_MZB_LO_44",     "remove",
-  "NOR_054_MZB_LO_46",     "keep",
-  "NOR_054_MZB_LO_47",     "remove",
-  "NOR_054_MZB_LO_48",     "remove",
-  "NOR_054_MZB_LO_49",     "keep",
-  "NOR_054_MZB_LO_53",     "keep",
-  "NOR_054_MZB_LO_58",     "remove",
-  "NOR_054_MZB_LO_59",     "keep",
-  "NOR_054_MZB_LO_80",     "remove",
-  "NOR_054_MZB_LO_81",     "keep",
-  "NOR_054_MZB_LO_54",     "keep",
-  "NOR_054_MZB_LO_55",     "keep",
-  "NOR_054_MZB_LO_56",     "keep",
-  "NOR_054_MZB_LO_57",     "remove",
-  "NOR_054_MZB_LO_63",     "keep",
-  "NOR_054_MZB_LO_67",     "keep",
-  "NOR_054_MZB_LO_65",     "keep",
-  "NOR_054_MZB_LO_68",     "keep",
-  "NOR_054_MZB_LO_71",     "keep",
-  "NOR_054_MZB_LO_72",     "keep",
-  "NOR_054_MZB_LO_75",     "remove",
-  "NOR_054_MZB_LO_76",     "keep",
-  "NOR_054_MZB_LO_82",     "keep",
-  "NOR_054_MZB_LO_83",     "remove"
-)
 
-
+##read in  tiebreaker decisions lookup table
+tiebreaker_lookup <- read.csv("data/data_processing/Step3_lookup_tiebreaker_state.csv")
 
 sites_sorted_tie <- sites_sorted_tie %>%
-  left_join(manual_tiebreaks, by = "unique.id")
+  left_join(tiebreaker_lookup, by = "unique.id")
 
 
 ##join back into single df 
@@ -1402,32 +1274,16 @@ mapview(test_coords, map.types = "OpenTopoMap",legend = TRUE, zcol = "unique.id"
 
 
 ###Resolve conflicts - make column with decision to fix conflicts, and assign final states  ------------
-conflict_state_overrides <- tibble::tribble(
-  ~unique.id,                 ~final_state,
-  "ENG_062_MZB_LO_1113",     "remove",
-  "ENG_062_MZB_LO_1231",     "remove",
-  "ENG_062_MZB_LO_2104",     "remove",
-  "ENG_062_MZB_LO_2995",     "remove",
-  "ENG_062_MZB_LO_3206",     "remove",
-  "ENG_062_MZB_LO_3246",     "remove",
-  "ESP_034_MZB_LO_33",       "remove",
-  "ESP_034_MZB_LO_366",      "keep",
-  "GER_071_MZB_LO_10",       "keep",
-  "IRL_051_MZB_LO_643",      "remove",
-  "NOR_054_MZB_LO_45",       "remove",
-  "NOR_054_MZB_LO_47",       "remove",
-  "NOR_054_MZB_LO_48",       "remove"
-)
 
-
+##read in conflict resolution lookup table 
+conflict_overrides_lookup <- read.csv("data/data_processing/Step3_lookup_conflict_state_overrides.csv")
 
 sites_sorted_final <- sites_sorted_tiebreaker %>%
-  left_join(conflict_state_overrides, by = "unique.id") %>%
+  left_join(conflict_overrides_lookup, by = "unique.id") %>%
   mutate(final_state = coalesce(final_state, tiebreaker_state)) ##fill in any NAs with the state written in the tiebreaker
   
 
-write.csv(conflict_state_overrides, "data/data_processing/Step3_lookup_conflict_state_overrides.csv")
-write.csv(manual_tiebreaks, "data/data_processing/Step3_lookup_tiebreaker_state.csv")
+
 
 
 
@@ -1460,6 +1316,12 @@ write.csv(sites_to_be_removed_marie, "data/data_processing/Step3_within_datasets
 ##Look into overlapping sites between james and Marie  -----------
 ##when james has one marked to remove that i dont, i have usually selected the one with longer time series and/or more sampling years. not sure why he has selected the shorter one 
 ##some sites missing from james that really should be removed (e.g., GER 018, GER 047, GER 070)
+
+##look at dfs made:
+lo_sites_less_100m <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within less than 100m.csv")
+lo_sites_within_100m_1km <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within 101-1000m.csv")
+
+sites_to_be_removed_james <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Step 3 - duplicated within removed.csv")
 
 
 unique.id_marie <- sites_to_be_removed_marie %>%
