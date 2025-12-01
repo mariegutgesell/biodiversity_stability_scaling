@@ -1,0 +1,478 @@
+Site ID;Sample ID;Sampling date;Taxon name;Taxon ID;Abundance;Definition of abundance class;Abundance class;Site_ID_Ellen
+Saldur_1;;01.07.2010;Baetis sp.;;96,5;;;113000001
+Saldur_1;;01.07.2010;Blephariceridae Gen. sp.;;1,3;;;113000001
+Saldur_1;;01.07.2010;Capnia sp.;;2,2;;;113000001
+Saldur_1;;01.07.2010;Chironomidae Gen. sp.;;136,1;;;113000001
+Saldur_1;;01.07.2010;Chloroperla sp.;;3,8;;;113000001
+Saldur_1;;01.07.2010;Crenobia alpina;;1,7;;;113000001
+Saldur_1;;01.07.2010;Dictyogenus sp.;;3,2;;;113000001
+Saldur_1;;01.07.2010;Empididae Gen. sp.;;1,3;;;113000001
+Saldur_1;;01.07.2010;Epeorus sp.;;2,1;;;113000001
+Saldur_1;;01.07.2010;Isoperla sp.;;19,1;;;113000001
+Saldur_1;;01.07.2010;Leuctra sp.;;20,9;;;113000001
+Saldur_1;;01.07.2010;Limnephilidae Gen. sp.;;12,3;;;113000001
+Saldur_1;;01.07.2010;Limoniidae Gen. sp.;;8;;;113000001
+Saldur_1;;01.07.2010;Nemoura sp.;;3,3;;;113000001
+Saldur_1;;01.07.2010;Perlodes sp.;;3,7;;;113000001
+Saldur_1;;01.07.2010;Protonemura sp.;;8,8;;;113000001
+Saldur_1;;01.07.2010;Psychodidae Gen. sp.;;2,7;;;113000001
+Saldur_1;;01.07.2010;Rhabdiopteryx sp.;;36,9;;;113000001
+Saldur_1;;01.07.2010;Rhithrogena sp.;;1,5;;;113000001
+Saldur_1;;01.07.2010;Rhyacophila sp.;;12,6;;;113000001
+Saldur_1;;01.07.2010;Simuliidae Gen. sp.;;47,2;;;113000001
+Saldur_1;;01.07.2010;Siphonoperla sp.;;1,5;;;113000001
+Saldur_1;;01.07.2011;Baetis sp.;;78,2;;;113000001
+Saldur_1;;01.07.2011;Capnia sp.;;4,5;;;113000001
+Saldur_1;;01.07.2011;Ceratopogonidae Gen. sp.;;1,3;;;113000001
+Saldur_1;;01.07.2011;Chironomidae Gen. sp.;;154,7;;;113000001
+Saldur_1;;01.07.2011;Chloroperla sp.;;2,6;;;113000001
+Saldur_1;;01.07.2011;Crenobia alpina;;4,9;;;113000001
+Saldur_1;;01.07.2011;Dictyogenus sp.;;6,3;;;113000001
+Saldur_1;;01.07.2011;Empididae Gen. sp.;;1,4;;;113000001
+Saldur_1;;01.07.2011;Isoperla sp.;;5,9;;;113000001
+Saldur_1;;01.07.2011;Leuctra sp.;;19,8;;;113000001
+Saldur_1;;01.07.2011;Limnephilidae Gen. sp.;;31;;;113000001
+Saldur_1;;01.07.2011;Limoniidae Gen. sp.;;10,4;;;113000001
+Saldur_1;;01.07.2011;Nemoura sp.;;4,7;;;113000001
+Saldur_1;;01.07.2011;Perlodes sp.;;1,3;;;113000001
+Saldur_1;;01.07.2011;Polycentropodidae Gen. sp.;;2,6;;;113000001
+Saldur_1;;01.07.2011;Protonemura sp.;;42,2;;;113000001
+Saldur_1;;01.07.2011;Rhabdiopteryx sp.;;69;;;113000001
+Saldur_1;;01.07.2011;Rhyacophila sp.;;30,7;;;113000001
+Saldur_1;;01.07.2011;Simuliidae Gen. sp.;;78,4;;;113000001
+Saldur_1;;01.07.2011;Siphonoperla sp.;;2,2;;;113000001
+Saldur_1;;01.07.2012;Anthomyiidae Gen. sp.;;1,3;;;113000001
+Saldur_1;;01.07.2012;Baetis sp.;;162,2;;;113000001
+Saldur_1;;01.07.2012;Blephariceridae Gen. sp.;;1,3;;;113000001
+Saldur_1;;01.07.2012;Capnia sp.;;12;;;113000001
+Saldur_1;;01.07.2012;Ceratopogonidae Gen. sp.;;1,3;;;113000001
+Saldur_1;;01.07.2012;Chironomidae Gen. sp.;;165;;;113000001
+Saldur_1;;01.07.2012;Chloroperla sp.;;1,3;;;113000001
+Saldur_1;;01.07.2012;Crenobia alpina;;1,3;;;113000001
+Saldur_1;;01.07.2012;Dictyogenus sp.;;24,8;;;113000001
+Saldur_1;;01.07.2012;Empididae Gen. sp.;;15,3;;;113000001
+Saldur_1;;01.07.2012;Isoperla sp.;;13,4;;;113000001
+Saldur_1;;01.07.2012;Leuctra sp.;;16;;;113000001
+Saldur_1;;01.07.2012;Limnephilidae Gen. sp.;;34,4;;;113000001
+Saldur_1;;01.07.2012;Limoniidae Gen. sp.;;16,2;;;113000001
+Saldur_1;;01.07.2012;Nemoura sp.;;2,2;;;113000001
+Saldur_1;;01.07.2012;Perlodes sp.;;1,3;;;113000001
+Saldur_1;;01.07.2012;Protonemura sp.;;61,8;;;113000001
+Saldur_1;;01.07.2012;Rhabdiopteryx sp.;;96;;;113000001
+Saldur_1;;01.07.2012;Rhyacophila sp.;;37,4;;;113000001
+Saldur_1;;01.07.2012;Simuliidae Gen. sp.;;58,3;;;113000001
+Saldur_1;;01.07.2012;Siphonoperla sp.;;4,2;;;113000001
+Saldur_1;;01.07.2012;Tipulidae Gen. sp.;;1,3;;;113000001
+Saldur_1;;01.07.2013;Anthomyiidae Gen. sp.;;1,5;;;113000001
+Saldur_1;;01.07.2013;Baetis sp.;;69,3;;;113000001
+Saldur_1;;01.07.2013;Blephariceridae Gen. sp.;;3,2;;;113000001
+Saldur_1;;01.07.2013;Capnia sp.;;2;;;113000001
+Saldur_1;;01.07.2013;Chironomidae Gen. sp.;;72,7;;;113000001
+Saldur_1;;01.07.2013;Chloroperla sp.;;15,1;;;113000001
+Saldur_1;;01.07.2013;Dictyogenus sp.;;2,6;;;113000001
+Saldur_1;;01.07.2013;Empididae Gen. sp.;;4,3;;;113000001
+Saldur_1;;01.07.2013;Epeorus sp.;;1,3;;;113000001
+Saldur_1;;01.07.2013;Isoperla sp.;;2,3;;;113000001
+Saldur_1;;01.07.2013;Leuctra sp.;;16;;;113000001
+Saldur_1;;01.07.2013;Limnephilidae Gen. sp.;;6,5;;;113000001
+Saldur_1;;01.07.2013;Limoniidae Gen. sp.;;16,9;;;113000001
+Saldur_1;;01.07.2013;Nemoura sp.;;7,6;;;113000001
+Saldur_1;;01.07.2013;Perlodes sp.;;2,2;;;113000001
+Saldur_1;;01.07.2013;Protonemura sp.;;83,2;;;113000001
+Saldur_1;;01.07.2013;Psychodidae Gen. sp.;;3,7;;;113000001
+Saldur_1;;01.07.2013;Rhabdiopteryx sp.;;41,3;;;113000001
+Saldur_1;;01.07.2013;Rhyacophila sp.;;19,1;;;113000001
+Saldur_1;;01.07.2013;Simuliidae Gen. sp.;;18,8;;;113000001
+Saldur_1;;01.07.2013;Siphonoperla sp.;;1,3;;;113000001
+Saldur_1;;01.07.2013;Tipulidae Gen. sp.;;3,9;;;113000001
+Saldur_1;;01.07.2014;Baetis sp.;;42,8;;;113000001
+Saldur_1;;01.07.2014;Chironomidae Gen. sp.;;105,6;;;113000001
+Saldur_1;;01.07.2014;Chloroperla sp.;;6,1;;;113000001
+Saldur_1;;01.07.2014;Dictyogenus sp.;;3,4;;;113000001
+Saldur_1;;01.07.2014;Empididae Gen. sp.;;1,6;;;113000001
+Saldur_1;;01.07.2014;Leuctra sp.;;4,9;;;113000001
+Saldur_1;;01.07.2014;Limnephilidae Gen. sp.;;3,2;;;113000001
+Saldur_1;;01.07.2014;Limoniidae Gen. sp.;;7,8;;;113000001
+Saldur_1;;01.07.2014;Nemoura sp.;;6,2;;;113000001
+Saldur_1;;01.07.2014;Protonemura sp.;;183,7;;;113000001
+Saldur_1;;01.07.2014;Rhabdiopteryx sp.;;10,8;;;113000001
+Saldur_1;;01.07.2014;Rhyacophila sp.;;8,3;;;113000001
+Saldur_1;;01.07.2014;Simuliidae Gen. sp.;;4,5;;;113000001
+Saldur_1;;01.07.2014;Siphonoperla sp.;;1,3;;;113000001
+Saldur_1;;01.07.2015;Baetis sp.;;46,1;;;113000001
+Saldur_1;;01.07.2015;Blephariceridae Gen. sp.;;1,6;;;113000001
+Saldur_1;;01.07.2015;Chironomidae Gen. sp.;;266,1;;;113000001
+Saldur_1;;01.07.2015;Dixa sp.;;1,6;;;113000001
+Saldur_1;;01.07.2015;Empididae Gen. sp.;;1,6;;;113000001
+Saldur_1;;01.07.2015;Leuctra sp.;;3,2;;;113000001
+Saldur_1;;01.07.2015;Limnephilidae Gen. sp.;;4,9;;;113000001
+Saldur_1;;01.07.2015;Limoniidae Gen. sp.;;34,5;;;113000001
+Saldur_1;;01.07.2015;Mermithidae Gen. sp.;;1,6;;;113000001
+Saldur_1;;01.07.2015;Nemoura sp.;;1,6;;;113000001
+Saldur_1;;01.07.2015;Polycentropodidae Gen. sp.;;1,6;;;113000001
+Saldur_1;;01.07.2015;Protonemura sp.;;253,5;;;113000001
+Saldur_1;;01.07.2015;Rhabdiopteryx sp.;;4,9;;;113000001
+Saldur_1;;01.07.2015;Rhyacophila sp.;;3,3;;;113000001
+Saldur_1;;01.07.2015;Simuliidae Gen. sp.;;26,4;;;113000001
+Saldur_1;;01.07.2016;Baetis sp.;;80,7;;;113000001
+Saldur_1;;01.07.2016;Chironomidae Gen. sp.;;309,6;;;113000001
+Saldur_1;;01.07.2016;Chloroperla sp.;;1,6;;;113000001
+Saldur_1;;01.07.2016;Crenobia alpina;;1,6;;;113000001
+Saldur_1;;01.07.2016;Dictyogenus sp.;;4,9;;;113000001
+Saldur_1;;01.07.2016;Empididae Gen. sp.;;1,6;;;113000001
+Saldur_1;;01.07.2016;Leuctra sp.;;4,9;;;113000001
+Saldur_1;;01.07.2016;Limnephilidae Gen. sp.;;3,2;;;113000001
+Saldur_1;;01.07.2016;Limoniidae Gen. sp.;;31,3;;;113000001
+Saldur_1;;01.07.2016;Lumbriculidae Gen. sp.;;1,6;;;113000001
+Saldur_1;;01.07.2016;Nemoura sp.;;4,9;;;113000001
+Saldur_1;;01.07.2016;Protonemura sp.;;443;;;113000001
+Saldur_1;;01.07.2016;Psychodidae Gen. sp.;;6,6;;;113000001
+Saldur_1;;01.07.2016;Rhabdiopteryx sp.;;18,1;;;113000001
+Saldur_1;;01.07.2016;Rhyacophila sp.;;9,8;;;113000001
+Saldur_1;;01.07.2016;Simuliidae Gen. sp.;;4,9;;;113000001
+Saldur_1;;01.07.2017;Baetis sp.;;55,99472991;;;113000001
+Saldur_1;;01.07.2017;Chironomidae Gen. sp.;;111,9894598;;;113000001
+Saldur_1;;01.07.2017;Dictyogenus sp.;;4,940711462;;;113000001
+Saldur_1;;01.07.2017;Empididae Gen. sp.;;3,293807642;;;113000001
+Saldur_1;;01.07.2017;Limnephilidae Gen. sp.;;4,940711462;;;113000001
+Saldur_1;;01.07.2017;Limoniidae Gen. sp.;;4,940711462;;;113000001
+Saldur_1;;01.07.2017;Nemoura sp.;;3,293807642;;;113000001
+Saldur_1;;01.07.2017;Pediciidae Gen. sp.;;11,52832675;;;113000001
+Saldur_1;;01.07.2017;Protonemura sp.;;186,1001318;;;113000001
+Saldur_1;;01.07.2017;Psychodidae Gen. sp.;;1,646903821;;;113000001
+Saldur_1;;01.07.2017;Rhithrogena sp.;;1,646903821;;;113000001
+Saldur_1;;01.07.2017;Rhyacophila sp.;;4,940711462;;;113000001
+Saldur_1;;01.07.2017;Simuliidae Gen. sp.;;9,881422925;;;113000001
+Saldur_2;;01.07.2010;Baetis sp.;;131,9;;;113000002
+Saldur_2;;01.07.2010;Capnia sp.;;1,8;;;113000002
+Saldur_2;;01.07.2010;Chironomidae Gen. sp.;;152,6;;;113000002
+Saldur_2;;01.07.2010;Dictyogenus sp.;;4,2;;;113000002
+Saldur_2;;01.07.2010;Dixa sp.;;3,5;;;113000002
+Saldur_2;;01.07.2010;Ecdyonurus sp.;;20,1;;;113000002
+Saldur_2;;01.07.2010;Empididae Gen. sp.;;3,4;;;113000002
+Saldur_2;;01.07.2010;Epeorus sp.;;1,9;;;113000002
+Saldur_2;;01.07.2010;Isoperla sp.;;10,8;;;113000002
+Saldur_2;;01.07.2010;Leuctra sp.;;38,3;;;113000002
+Saldur_2;;01.07.2010;Limnephilidae Gen. sp.;;24,2;;;113000002
+Saldur_2;;01.07.2010;Limoniidae Gen. sp.;;12;;;113000002
+Saldur_2;;01.07.2010;Naididae Gen. sp.;;1,7;;;113000002
+Saldur_2;;01.07.2010;Nemoura sp.;;1,6;;;113000002
+Saldur_2;;01.07.2010;Protonemura sp.;;11,4;;;113000002
+Saldur_2;;01.07.2010;Psychodidae Gen. sp.;;3,7;;;113000002
+Saldur_2;;01.07.2010;Rhabdiopteryx sp.;;65;;;113000002
+Saldur_2;;01.07.2010;Rhithrogena sp.;;7,3;;;113000002
+Saldur_2;;01.07.2010;Rhyacophila sp.;;3,4;;;113000002
+Saldur_2;;01.07.2010;Sericostomatidae Gen. sp.;;1,5;;;113000002
+Saldur_2;;01.07.2010;Simuliidae Gen. sp.;;36,2;;;113000002
+Saldur_2;;01.07.2010;Tubificidae Gen. sp.;;1,5;;;113000002
+Saldur_2;;01.07.2011;Baetis sp.;;145,7;;;113000002
+Saldur_2;;01.07.2011;Blephariceridae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2011;Capnia sp.;;1,4;;;113000002
+Saldur_2;;01.07.2011;Chironomidae Gen. sp.;;136,2;;;113000002
+Saldur_2;;01.07.2011;Dictyogenus sp.;;6,2;;;113000002
+Saldur_2;;01.07.2011;Dixa sp.;;1,4;;;113000002
+Saldur_2;;01.07.2011;Ecdyonurus sp.;;1,3;;;113000002
+Saldur_2;;01.07.2011;Isoperla sp.;;12,9;;;113000002
+Saldur_2;;01.07.2011;Leuctra sp.;;32,6;;;113000002
+Saldur_2;;01.07.2011;Limnephilidae Gen. sp.;;43,6;;;113000002
+Saldur_2;;01.07.2011;Limoniidae Gen. sp.;;23,2;;;113000002
+Saldur_2;;01.07.2011;Lumbricidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2011;Nemoura sp.;;2,2;;;113000002
+Saldur_2;;01.07.2011;Perlodes sp.;;1,3;;;113000002
+Saldur_2;;01.07.2011;Polycentropodidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2011;Protonemura sp.;;59,2;;;113000002
+Saldur_2;;01.07.2011;Psychodidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2011;Rhabdiopteryx sp.;;88;;;113000002
+Saldur_2;;01.07.2011;Rhithrogena sp.;;2,2;;;113000002
+Saldur_2;;01.07.2011;Rhyacophila sp.;;24,8;;;113000002
+Saldur_2;;01.07.2011;Sericostomatidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2011;Simuliidae Gen. sp.;;82,9;;;113000002
+Saldur_2;;01.07.2011;Tipulidae Gen. sp.;;2,6;;;113000002
+Saldur_2;;01.07.2012;Baetis sp.;;138,2;;;113000002
+Saldur_2;;01.07.2012;Blephariceridae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2012;Capnia sp.;;3;;;113000002
+Saldur_2;;01.07.2012;Chironomidae Gen. sp.;;118,3;;;113000002
+Saldur_2;;01.07.2012;Crenobia alpina;;1,9;;;113000002
+Saldur_2;;01.07.2012;Dictyogenus sp.;;12,6;;;113000002
+Saldur_2;;01.07.2012;Ecdyonurus sp.;;2,6;;;113000002
+Saldur_2;;01.07.2012;Elmis sp.;;1,3;;;113000002
+Saldur_2;;01.07.2012;Empididae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2012;Isoperla sp.;;15,4;;;113000002
+Saldur_2;;01.07.2012;Leuctra sp.;;39;;;113000002
+Saldur_2;;01.07.2012;Limnephilidae Gen. sp.;;53,4;;;113000002
+Saldur_2;;01.07.2012;Limoniidae Gen. sp.;;38,6;;;113000002
+Saldur_2;;01.07.2012;Lumbricidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2012;Perlodes sp.;;2,2;;;113000002
+Saldur_2;;01.07.2012;Polycentropodidae Gen. sp.;;2,2;;;113000002
+Saldur_2;;01.07.2012;Protonemura sp.;;109,8;;;113000002
+Saldur_2;;01.07.2012;Psychodidae Gen. sp.;;2,6;;;113000002
+Saldur_2;;01.07.2012;Rhabdiopteryx sp.;;118,6;;;113000002
+Saldur_2;;01.07.2012;Rhithrogena sp.;;1,3;;;113000002
+Saldur_2;;01.07.2012;Rhyacophila sp.;;12,7;;;113000002
+Saldur_2;;01.07.2012;Sericostomatidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2012;Simuliidae Gen. sp.;;50,9;;;113000002
+Saldur_2;;01.07.2013;Baetis sp.;;62,8;;;113000002
+Saldur_2;;01.07.2013;Chironomidae Gen. sp.;;37,3;;;113000002
+Saldur_2;;01.07.2013;Crenobia alpina;;2,5;;;113000002
+Saldur_2;;01.07.2013;Dictyogenus sp.;;2,6;;;113000002
+Saldur_2;;01.07.2013;Ecdyonurus sp.;;1,3;;;113000002
+Saldur_2;;01.07.2013;Empididae Gen. sp.;;1,5;;;113000002
+Saldur_2;;01.07.2013;Isoperla sp.;;1,4;;;113000002
+Saldur_2;;01.07.2013;Leuctra sp.;;34;;;113000002
+Saldur_2;;01.07.2013;Limnephilidae Gen. sp.;;10,3;;;113000002
+Saldur_2;;01.07.2013;Limoniidae Gen. sp.;;12;;;113000002
+Saldur_2;;01.07.2013;Naididae Gen. sp.;;2,2;;;113000002
+Saldur_2;;01.07.2013;Nemoura sp.;;2,6;;;113000002
+Saldur_2;;01.07.2013;Pediciidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2013;Perlodes sp.;;1,9;;;113000002
+Saldur_2;;01.07.2013;Protonemura sp.;;60,8;;;113000002
+Saldur_2;;01.07.2013;Psychodidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2013;Rhabdiopteryx sp.;;17,6;;;113000002
+Saldur_2;;01.07.2013;Rhithrogena sp.;;1,3;;;113000002
+Saldur_2;;01.07.2013;Rhyacophila sp.;;16,2;;;113000002
+Saldur_2;;01.07.2013;Simuliidae Gen. sp.;;17,9;;;113000002
+Saldur_2;;01.07.2014;Baetis sp.;;42,8;;;113000002
+Saldur_2;;01.07.2014;Blephariceridae Gen. sp.;;1,8;;;113000002
+Saldur_2;;01.07.2014;Chironomidae Gen. sp.;;94;;;113000002
+Saldur_2;;01.07.2014;Dictyogenus sp.;;1,6;;;113000002
+Saldur_2;;01.07.2014;Leuctra sp.;;8,2;;;113000002
+Saldur_2;;01.07.2014;Limnephilidae Gen. sp.;;4,8;;;113000002
+Saldur_2;;01.07.2014;Limoniidae Gen. sp.;;7,8;;;113000002
+Saldur_2;;01.07.2014;Mermithidae Gen. sp.;;2,5;;;113000002
+Saldur_2;;01.07.2014;Naididae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2014;Nemoura sp.;;4,9;;;113000002
+Saldur_2;;01.07.2014;Pediciidae Gen. sp.;;1,3;;;113000002
+Saldur_2;;01.07.2014;Protonemura sp.;;109,5;;;113000002
+Saldur_2;;01.07.2014;Rhabdiopteryx sp.;;2;;;113000002
+Saldur_2;;01.07.2014;Rhyacophila sp.;;6,7;;;113000002
+Saldur_2;;01.07.2014;Simuliidae Gen. sp.;;3,2;;;113000002
+Saldur_2;;01.07.2015;Baetis sp.;;125,2;;;113000002
+Saldur_2;;01.07.2015;Blephariceridae Gen. sp.;;6,8;;;113000002
+Saldur_2;;01.07.2015;Chironomidae Gen. sp.;;335,6;;;113000002
+Saldur_2;;01.07.2015;Chloroperla sp.;;9,9;;;113000002
+Saldur_2;;01.07.2015;Dictyogenus sp.;;69,2;;;113000002
+Saldur_2;;01.07.2015;Dixa sp.;;1,6;;;113000002
+Saldur_2;;01.07.2015;Empididae Gen. sp.;;4,9;;;113000002
+Saldur_2;;01.07.2015;Epeorus sp.;;3,2;;;113000002
+Saldur_2;;01.07.2015;Leuctra sp.;;11,5;;;113000002
+Saldur_2;;01.07.2015;Limnephilidae Gen. sp.;;44,4;;;113000002
+Saldur_2;;01.07.2015;Limoniidae Gen. sp.;;29,6;;;113000002
+Saldur_2;;01.07.2015;Nemoura sp.;;11,5;;;113000002
+Saldur_2;;01.07.2015;Protonemura sp.;;668,8;;;113000002
+Saldur_2;;01.07.2015;Psychodidae Gen. sp.;;3,3;;;113000002
+Saldur_2;;01.07.2015;Rhabdiopteryx sp.;;4,9;;;113000002
+Saldur_2;;01.07.2015;Rhyacophila sp.;;6,6;;;113000002
+Saldur_2;;01.07.2015;Simuliidae Gen. sp.;;70,8;;;113000002
+Saldur_2;;01.07.2015;Tipulidae Gen. sp.;;3,3;;;113000002
+Saldur_2;;01.07.2016;Baetis sp.;;105,4;;;113000002
+Saldur_2;;01.07.2016;Blephariceridae Gen. sp.;;3,3;;;113000002
+Saldur_2;;01.07.2016;Chironomidae Gen. sp.;;222,3;;;113000002
+Saldur_2;;01.07.2016;Dictyogenus sp.;;1,6;;;113000002
+Saldur_2;;01.07.2016;Leuctra sp.;;8,2;;;113000002
+Saldur_2;;01.07.2016;Limnephilidae Gen. sp.;;4,8;;;113000002
+Saldur_2;;01.07.2016;Limoniidae Gen. sp.;;11,5;;;113000002
+Saldur_2;;01.07.2016;Mermithidae Gen. sp.;;1,6;;;113000002
+Saldur_2;;01.07.2016;Nemoura sp.;;4,9;;;113000002
+Saldur_2;;01.07.2016;Protonemura sp.;;446,4;;;113000002
+Saldur_2;;01.07.2016;Rhabdiopteryx sp.;;1,6;;;113000002
+Saldur_2;;01.07.2016;Rhyacophila sp.;;3,2;;;113000002
+Saldur_2;;01.07.2016;Simuliidae Gen. sp.;;3,2;;;113000002
+Saldur_2;;01.07.2017;Baetis sp.;;6,587615283;;;113000002
+Saldur_2;;01.07.2017;Blephariceridae Gen. sp.;;1,646903821;;;113000002
+Saldur_2;;01.07.2017;Chironomidae Gen. sp.;;67,52305665;;;113000002
+Saldur_2;;01.07.2017;Leuctra sp.;;1,646903821;;;113000002
+Saldur_2;;01.07.2017;Limnephilidae Gen. sp.;;1,646903821;;;113000002
+Saldur_2;;01.07.2017;Limoniidae Gen. sp.;;1,646903821;;;113000002
+Saldur_2;;01.07.2017;Pediciidae Gen. sp.;;6,587615283;;;113000002
+Saldur_2;;01.07.2017;Protonemura sp.;;57,64163373;;;113000002
+Saldur_2;;01.07.2017;Rhyacophila sp.;;1,646903821;;;113000002
+Saldur_2;;01.07.2017;Simuliidae Gen. sp.;;3,293807642;;;113000002
+Saldur_3;;01.07.2010;Baetis sp.;;113,6;;;113000003
+Saldur_3;;01.07.2010;Blephariceridae Gen. sp.;;1,4;;;113000003
+Saldur_3;;01.07.2010;Ceratopogonidae Gen. sp.;;4,2;;;113000003
+Saldur_3;;01.07.2010;Chironomidae Gen. sp.;;129,7;;;113000003
+Saldur_3;;01.07.2010;Dixa sp.;;1,5;;;113000003
+Saldur_3;;01.07.2010;Ecdyonurus sp.;;23,6;;;113000003
+Saldur_3;;01.07.2010;Empididae Gen. sp.;;4,3;;;113000003
+Saldur_3;;01.07.2010;Epeorus sp.;;45,3;;;113000003
+Saldur_3;;01.07.2010;Isoperla sp.;;12,8;;;113000003
+Saldur_3;;01.07.2010;Leuctra sp.;;48,9;;;113000003
+Saldur_3;;01.07.2010;Limnephilidae Gen. sp.;;24,5;;;113000003
+Saldur_3;;01.07.2010;Limoniidae Gen. sp.;;17,7;;;113000003
+Saldur_3;;01.07.2010;Lumbricidae Gen. sp.;;9,1;;;113000003
+Saldur_3;;01.07.2010;Naididae Gen. sp.;;5,7;;;113000003
+Saldur_3;;01.07.2010;Nemoura sp.;;3,8;;;113000003
+Saldur_3;;01.07.2010;Polycentropodidae Gen. sp.;;2,7;;;113000003
+Saldur_3;;01.07.2010;Protonemura sp.;;10,5;;;113000003
+Saldur_3;;01.07.2010;Psychodidae Gen. sp.;;5,9;;;113000003
+Saldur_3;;01.07.2010;Rhabdiopteryx sp.;;101;;;113000003
+Saldur_3;;01.07.2010;Rhithrogena sp.;;13,5;;;113000003
+Saldur_3;;01.07.2010;Rhyacophila sp.;;11,7;;;113000003
+Saldur_3;;01.07.2010;Sericostomatidae Gen. sp.;;3,5;;;113000003
+Saldur_3;;01.07.2010;Simuliidae Gen. sp.;;147,9;;;113000003
+Saldur_3;;01.07.2010;Tipulidae Gen. sp.;;2,7;;;113000003
+Saldur_3;;01.07.2010;Tubificidae Gen. sp.;;2,9;;;113000003
+Saldur_3;;01.07.2011;Baetis sp.;;202,8;;;113000003
+Saldur_3;;01.07.2011;Blephariceridae Gen. sp.;;2,2;;;113000003
+Saldur_3;;01.07.2011;Capnia sp.;;1,3;;;113000003
+Saldur_3;;01.07.2011;Ceratopogonidae Gen. sp.;;14;;;113000003
+Saldur_3;;01.07.2011;Chironomidae Gen. sp.;;178,9;;;113000003
+Saldur_3;;01.07.2011;Dictyogenus sp.;;7;;;113000003
+Saldur_3;;01.07.2011;Ecdyonurus sp.;;7,4;;;113000003
+Saldur_3;;01.07.2011;Empididae Gen. sp.;;4,2;;;113000003
+Saldur_3;;01.07.2011;Epeorus sp.;;35,5;;;113000003
+Saldur_3;;01.07.2011;Isoperla sp.;;6,6;;;113000003
+Saldur_3;;01.07.2011;Leuctra sp.;;47,3;;;113000003
+Saldur_3;;01.07.2011;Limnephilidae Gen. sp.;;37,4;;;113000003
+Saldur_3;;01.07.2011;Limoniidae Gen. sp.;;27,2;;;113000003
+Saldur_3;;01.07.2011;Lumbricidae Gen. sp.;;8,4;;;113000003
+Saldur_3;;01.07.2011;Naididae Gen. sp.;;9,2;;;113000003
+Saldur_3;;01.07.2011;Nemoura sp.;;11,3;;;113000003
+Saldur_3;;01.07.2011;Perlodes sp.;;1,3;;;113000003
+Saldur_3;;01.07.2011;Polycentropodidae Gen. sp.;;1,4;;;113000003
+Saldur_3;;01.07.2011;Protonemura sp.;;43,6;;;113000003
+Saldur_3;;01.07.2011;Psychodidae Gen. sp.;;6,8;;;113000003
+Saldur_3;;01.07.2011;Rhabdiopteryx sp.;;109,6;;;113000003
+Saldur_3;;01.07.2011;Rhithrogena sp.;;19,2;;;113000003
+Saldur_3;;01.07.2011;Rhyacophila sp.;;26,3;;;113000003
+Saldur_3;;01.07.2011;Sericostomatidae Gen. sp.;;3,9;;;113000003
+Saldur_3;;01.07.2011;Simuliidae Gen. sp.;;328,8;;;113000003
+Saldur_3;;01.07.2011;Tipulidae Gen. sp.;;7,8;;;113000003
+Saldur_3;;01.07.2011;Tubificidae Gen. sp.;;4,1;;;113000003
+Saldur_3;;01.07.2012;Baetis sp.;;225,2;;;113000003
+Saldur_3;;01.07.2012;Blephariceridae Gen. sp.;;1,3;;;113000003
+Saldur_3;;01.07.2012;Ceratopogonidae Gen. sp.;;21,3;;;113000003
+Saldur_3;;01.07.2012;Chironomidae Gen. sp.;;91;;;113000003
+Saldur_3;;01.07.2012;Dictyogenus sp.;;29,7;;;113000003
+Saldur_3;;01.07.2012;Ecdyonurus sp.;;17,6;;;113000003
+Saldur_3;;01.07.2012;Empididae Gen. sp.;;19;;;113000003
+Saldur_3;;01.07.2012;Epeorus sp.;;17,6;;;113000003
+Saldur_3;;01.07.2012;Isoperla sp.;;5,9;;;113000003
+Saldur_3;;01.07.2012;Leuctra sp.;;23,3;;;113000003
+Saldur_3;;01.07.2012;Limnephilidae Gen. sp.;;66,3;;;113000003
+Saldur_3;;01.07.2012;Limoniidae Gen. sp.;;79,8;;;113000003
+Saldur_3;;01.07.2012;Lumbricidae Gen. sp.;;14,1;;;113000003
+Saldur_3;;01.07.2012;Lumbriculidae Gen. sp.;;1,5;;;113000003
+Saldur_3;;01.07.2012;Naididae Gen. sp.;;1,4;;;113000003
+Saldur_3;;01.07.2012;Nemoura sp.;;7,6;;;113000003
+Saldur_3;;01.07.2012;Perlodes sp.;;1,3;;;113000003
+Saldur_3;;01.07.2012;Polycentropodidae Gen. sp.;;4,3;;;113000003
+Saldur_3;;01.07.2012;Protonemura sp.;;80,8;;;113000003
+Saldur_3;;01.07.2012;Psychodidae Gen. sp.;;11,4;;;113000003
+Saldur_3;;01.07.2012;Rhabdiopteryx sp.;;151,5;;;113000003
+Saldur_3;;01.07.2012;Rhithrogena sp.;;16,7;;;113000003
+Saldur_3;;01.07.2012;Rhyacophila sp.;;28,7;;;113000003
+Saldur_3;;01.07.2012;Sericostomatidae Gen. sp.;;5,7;;;113000003
+Saldur_3;;01.07.2012;Simuliidae Gen. sp.;;194,7;;;113000003
+Saldur_3;;01.07.2012;Tipulidae Gen. sp.;;2,2;;;113000003
+Saldur_3;;01.07.2012;Tubificidae Gen. sp.;;1,3;;;113000003
+Saldur_3;;01.07.2013;Baetis sp.;;154,2;;;113000003
+Saldur_3;;01.07.2013;Ceratopogonidae Gen. sp.;;9,2;;;113000003
+Saldur_3;;01.07.2013;Chironomidae Gen. sp.;;76,3;;;113000003
+Saldur_3;;01.07.2013;Crenobia alpina;;1,3;;;113000003
+Saldur_3;;01.07.2013;Dictyogenus sp.;;76,8;;;113000003
+Saldur_3;;01.07.2013;Ecdyonurus sp.;;10,4;;;113000003
+Saldur_3;;01.07.2013;Elmis sp.;;2,6;;;113000003
+Saldur_3;;01.07.2013;Empididae Gen. sp.;;3,7;;;113000003
+Saldur_3;;01.07.2013;Enchytraeidae Gen. sp.;;1,3;;;113000003
+Saldur_3;;01.07.2013;Epeorus sp.;;12,8;;;113000003
+Saldur_3;;01.07.2013;Leuctra sp.;;7,8;;;113000003
+Saldur_3;;01.07.2013;Limnephilidae Gen. sp.;;45,1;;;113000003
+Saldur_3;;01.07.2013;Limoniidae Gen. sp.;;23,4;;;113000003
+Saldur_3;;01.07.2013;Lumbricidae Gen. sp.;;8,4;;;113000003
+Saldur_3;;01.07.2013;Naididae Gen. sp.;;1,3;;;113000003
+Saldur_3;;01.07.2013;Nemoura sp.;;6,9;;;113000003
+Saldur_3;;01.07.2013;Perlodes sp.;;1,3;;;113000003
+Saldur_3;;01.07.2013;Polycentropodidae Gen. sp.;;1,5;;;113000003
+Saldur_3;;01.07.2013;Protonemura sp.;;80,8;;;113000003
+Saldur_3;;01.07.2013;Psychodidae Gen. sp.;;10,4;;;113000003
+Saldur_3;;01.07.2013;Rhabdiopteryx sp.;;6,1;;;113000003
+Saldur_3;;01.07.2013;Rhithrogena sp.;;35,2;;;113000003
+Saldur_3;;01.07.2013;Rhyacophila sp.;;50,1;;;113000003
+Saldur_3;;01.07.2013;Sericostoma sp.;;6,6;;;113000003
+Saldur_3;;01.07.2013;Sericostomatidae Gen. sp.;;8,6;;;113000003
+Saldur_3;;01.07.2013;Simuliidae Gen. sp.;;29,1;;;113000003
+Saldur_3;;01.07.2013;Tubificidae Gen. sp.;;4,1;;;113000003
+Saldur_3;;01.07.2014;Baetis sp.;;115,1;;;113000003
+Saldur_3;;01.07.2014;Ceratopogonidae Gen. sp.;;5,3;;;113000003
+Saldur_3;;01.07.2014;Chironomidae Gen. sp.;;113;;;113000003
+Saldur_3;;01.07.2014;Dictyogenus sp.;;18,6;;;113000003
+Saldur_3;;01.07.2014;Ecdyonurus sp.;;1,3;;;113000003
+Saldur_3;;01.07.2014;Empididae Gen. sp.;;1,6;;;113000003
+Saldur_3;;01.07.2014;Epeorus sp.;;17,3;;;113000003
+Saldur_3;;01.07.2014;Leuctra sp.;;14,4;;;113000003
+Saldur_3;;01.07.2014;Limnephilidae Gen. sp.;;40,1;;;113000003
+Saldur_3;;01.07.2014;Limoniidae Gen. sp.;;42,6;;;113000003
+Saldur_3;;01.07.2014;Lumbricidae Gen. sp.;;15,3;;;113000003
+Saldur_3;;01.07.2014;Lumbriculidae Gen. sp.;;2,9;;;113000003
+Saldur_3;;01.07.2014;Naididae Gen. sp.;;2,6;;;113000003
+Saldur_3;;01.07.2014;Nemoura sp.;;12,5;;;113000003
+Saldur_3;;01.07.2014;Planorbidae Gen. sp.;;3;;;113000003
+Saldur_3;;01.07.2014;Protonemura sp.;;79,5;;;113000003
+Saldur_3;;01.07.2014;Psychodidae Gen. sp.;;6,3;;;113000003
+Saldur_3;;01.07.2014;Rhabdiopteryx sp.;;1,6;;;113000003
+Saldur_3;;01.07.2014;Rhithrogena sp.;;20,2;;;113000003
+Saldur_3;;01.07.2014;Rhyacophila sp.;;25,8;;;113000003
+Saldur_3;;01.07.2014;Sericostomatidae Gen. sp.;;6,6;;;113000003
+Saldur_3;;01.07.2014;Simuliidae Gen. sp.;;15,9;;;113000003
+Saldur_3;;01.07.2014;Tubificidae Gen. sp.;;4,3;;;113000003
+Saldur_3;;01.07.2015;Baetis sp.;;130,1;;;113000003
+Saldur_3;;01.07.2015;Blephariceridae Gen. sp.;;85,5;;;113000003
+Saldur_3;;01.07.2015;Chironomidae Gen. sp.;;84,8;;;113000003
+Saldur_3;;01.07.2015;Dictyogenus sp.;;46,1;;;113000003
+Saldur_3;;01.07.2015;Elmis sp.;;4,9;;;113000003
+Saldur_3;;01.07.2015;Empididae Gen. sp.;;9,9;;;113000003
+Saldur_3;;01.07.2015;Epeorus sp.;;11;;;113000003
+Saldur_3;;01.07.2015;Leuctra sp.;;29,7;;;113000003
+Saldur_3;;01.07.2015;Limnephilidae Gen. sp.;;360,7;;;113000003
+Saldur_3;;01.07.2015;Limoniidae Gen. sp.;;57,6;;;113000003
+Saldur_3;;01.07.2015;Naididae Gen. sp.;;4,9;;;113000003
+Saldur_3;;01.07.2015;Nemoura sp.;;14,8;;;113000003
+Saldur_3;;01.07.2015;Protonemura sp.;;318,6;;;113000003
+Saldur_3;;01.07.2015;Psychodidae Gen. sp.;;11,4;;;113000003
+Saldur_3;;01.07.2015;Rhabdiopteryx sp.;;1,6;;;113000003
+Saldur_3;;01.07.2015;Rhithrogena sp.;;79,6;;;113000003
+Saldur_3;;01.07.2015;Rhyacophila sp.;;47,7;;;113000003
+Saldur_3;;01.07.2015;Sericostomatidae Gen. sp.;;1,6;;;113000003
+Saldur_3;;01.07.2015;Simuliidae Gen. sp.;;11,5;;;113000003
+Saldur_3;;01.07.2016;Anthomyiidae Gen. sp.;;1,6;;;113000003
+Saldur_3;;01.07.2016;Baetis sp.;;257;;;113000003
+Saldur_3;;01.07.2016;Blephariceridae Gen. sp.;;31,3;;;113000003
+Saldur_3;;01.07.2016;Chironomidae Gen. sp.;;168;;;113000003
+Saldur_3;;01.07.2016;Crenobia alpina;;1,6;;;113000003
+Saldur_3;;01.07.2016;Dictyogenus sp.;;28;;;113000003
+Saldur_3;;01.07.2016;Ecdyonurus sp.;;6,6;;;113000003
+Saldur_3;;01.07.2016;Empididae Gen. sp.;;1,6;;;113000003
+Saldur_3;;01.07.2016;Heptageniidae Gen. sp.;;42,8;;;113000003
+Saldur_3;;01.07.2016;Isoperla sp.;;14,8;;;113000003
+Saldur_3;;01.07.2016;Leuctra sp.;;27,9;;;113000003
+Saldur_3;;01.07.2016;Limnephilidae Gen. sp.;;92,2;;;113000003
+Saldur_3;;01.07.2016;Limoniidae Gen. sp.;;125,1;;;113000003
+Saldur_3;;01.07.2016;Lumbricidae Gen. sp.;;4,9;;;113000003
+Saldur_3;;01.07.2016;Lumbriculidae Gen. sp.;;3,2;;;113000003
+Saldur_3;;01.07.2016;Nemoura sp.;;31,3;;;113000003
+Saldur_3;;01.07.2016;Protonemura sp.;;392;;;113000003
+Saldur_3;;01.07.2016;Psychodidae Gen. sp.;;1,6;;;113000003
+Saldur_3;;01.07.2016;Rhabdiopteryx sp.;;1,6;;;113000003
+Saldur_3;;01.07.2016;Rhithrogena sp.;;31,3;;;113000003
+Saldur_3;;01.07.2016;Rhyacophila sp.;;59,3;;;113000003
+Saldur_3;;01.07.2016;Simuliidae Gen. sp.;;26,3;;;113000003
+Saldur_3;;01.07.2017;Baetis sp.;;79,0513834;;;113000003
+Saldur_3;;01.07.2017;Blephariceridae Gen. sp.;;14,82213439;;;113000003
+Saldur_3;;01.07.2017;Chironomidae Gen. sp.;;42,81949934;;;113000003
+Saldur_3;;01.07.2017;Chloroperla sp.;;1,646903821;;;113000003
+Saldur_3;;01.07.2017;Dictyogenus sp.;;14,82213439;;;113000003
+Saldur_3;;01.07.2017;Ecdyonurus sp.;;4,940711462;;;113000003
+Saldur_3;;01.07.2017;Elmis sp.;;1,646903821;;;113000003
+Saldur_3;;01.07.2017;Enchytraeidae Gen. sp.;;6,587615283;;;113000003
+Saldur_3;;01.07.2017;Isoperla sp.;;3,293807642;;;113000003
+Saldur_3;;01.07.2017;Leuctra sp.;;4,940711462;;;113000003
+Saldur_3;;01.07.2017;Limnephilidae Gen. sp.;;70,8168643;;;113000003
+Saldur_3;;01.07.2017;Limoniidae Gen. sp.;;27,99736495;;;113000003
+Saldur_3;;01.07.2017;Nemoura sp.;;4,940711462;;;113000003
+Saldur_3;;01.07.2017;Pediciidae Gen. sp.;;36,23188406;;;113000003
+Saldur_3;;01.07.2017;Protonemura sp.;;110,342556;;;113000003
+Saldur_3;;01.07.2017;Psychodidae Gen. sp.;;3,293807642;;;113000003
+Saldur_3;;01.07.2017;Rhithrogena sp.;;18,11594203;;;113000003
+Saldur_3;;01.07.2017;Rhyacophila sp.;;8,234519104;;;113000003
+Saldur_3;;01.07.2017;Simuliidae Gen. sp.;;19,76284585;;;113000003
