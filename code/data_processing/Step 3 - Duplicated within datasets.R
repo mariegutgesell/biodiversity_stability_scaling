@@ -6,6 +6,7 @@ library(sf)
 library(geosphere)
 library(Hmisc)
 library(readxlsb)
+library(readxl)
 library(units)
 library(purrr)
 library(tidyverse)
@@ -455,12 +456,15 @@ sites_sorted_final <- sites_sorted_tiebreaker %>%
 #######################################################################################################
 
 sites_to_remove_marie <- sites_sorted_final %>%
-  filter(final_state == "remove")
+  filter(final_state == "remove") %>%
+  mutate(members = as.character(members))
 
 
 num_sites_removed_marie <- sites_to_remove_marie %>%
   select(unique.id) %>%
   distinct()
+
+write.csv(sites_to_remove_marie, "data/processed/step3_overlap_within/Step3_within_datasets_sites_to_be_removed.csv", row.names = FALSE)
 
 #######################################################################################################
 #
@@ -473,6 +477,8 @@ num_sites_removed_marie <- sites_to_remove_marie %>%
 ##1) Read in df of sites of new ties that need to be manually checked 
 tied <- read.csv("data/processed/lookups/Step3_new_ties_needing_tiebreaker.csv")
 
+
+
 num_groups_tied <- tied %>%
   select(dataset.id, within_distance_type, group) %>%
   distinct()
@@ -482,6 +488,10 @@ num_groups_tied <- tied %>%
 ##LOOKUP TABLE: data/processed/lookups/Step3_lookup_tiebreaker_state.csv
 
 ##NOTE: If map is grey when first run function, just need to zoom out ####
+
+##Old tie breaker solving:
+##if want to l
+tied <- sites_sorted_final
 
 
 ## 	CHE_040_MZB_LO, group 1 ------
@@ -865,17 +875,21 @@ plot_conflict_map(sites_sorted_tiebreaker, "NOR_054_MZB_LO_45")
 ##when james has one marked to remove that i dont, i have usually selected the one with longer time series and/or more sampling years. not sure why he has selected the shorter one 
 ##some sites missing from james that really should be removed (e.g., GER 018, GER 047, GER 070)
 
+rm(list = ls()[!ls() %in% c("sites_to_remove_marie", "sites_mg", "sites_sorted_final")])
 ##look at dfs made:
-lo_sites_less_100m <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within less than 100m.csv")
-lo_sites_within_100m_1km <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within 101-1000m.csv")
+lo_sites_less_100m <- read_excel("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within less than 100m.xlsx", sheet = "Sites to be removed") %>%
+  mutate(within_distance_type = "within_100m")
+lo_sites_within_100m_1km <- read_excel("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Lotic macroinvert - within 101-1000m.xlsx", sheet= "Sites to be removed") %>%
+  mutate(within_distance_type = "within_100m_to_1000m")
 
-sites_to_be_removed_james <- read.csv("EU MZB LO Dataset processing/Step 3 - Duplicated within datasets/Step 3 - duplicated within removed.csv")
+
+sites_to_be_removed_james <- rbind(lo_sites_less_100m, lo_sites_within_100m_1km)
 
 
-unique.id_marie <- sites_to_be_removed_marie %>%
+unique.id_marie <- sites_to_remove_marie %>%
   select(unique.id) %>%
   distinct() 
-##I remove 322 sites 
+##I remove 319 sites 
 
 unique.id_james <- sites_to_be_removed_james %>%
   select(unique.id) %>%
@@ -885,13 +899,13 @@ unique.id_james <- sites_to_be_removed_james %>%
 
 ###Look into figure out where there is and is not overlap 
 ##create a master list of all unique ids that show up in both removal dfs
-all_ids <- union(sites_to_be_removed_marie$unique.id, sites_to_be_removed_james$unique.id) %>% 
+all_ids <- union(sites_to_remove_marie$unique.id, sites_to_be_removed_james$unique.id) %>% 
   tibble(unique.id = .) %>%
   left_join(sites_mg %>% select(Dataset.ID, Unique.ID) %>% rename(unique.id = "Unique.ID"), by = "unique.id")
 
 compare_df <- all_ids %>%
   mutate(
-    marie_remove = unique.id %in% sites_to_be_removed_marie$unique.id,
+    marie_remove = unique.id %in% sites_to_remove_marie$unique.id,
     james_remove = unique.id %in% sites_to_be_removed_james$unique.id
   ) %>%
   mutate(
@@ -906,10 +920,44 @@ compare_df <- all_ids %>%
 ##calculate # of differences
 table(compare_df$category)
 
-119-94
-322-297
+marie_groups <- sites_sorted_final %>%
+  select(unique.id, marie_group = group, marie_distance = within_distance_type) %>%
+  distinct()
 
-james_only_id <- compare_df %>% filter(category == "james_only") 
+james_groups <- sites_to_be_removed_james %>%
+  select(unique.id, james_group = group) %>%
+  mutate(james_distance = NA) %>%
+  distinct()
+
+##create diagnostic df to look and see what is driving differences in our site selections
+diagnostic_df <- compare_df %>%
+  left_join(
+    sites_mg %>%
+      select(
+        unique.id = Unique.ID,
+        dataset.id = Dataset.ID,
+        river = River.lake,
+        yr.ln = Year_count,
+        yr.num = Sampling_years,
+        st.yr = Starting_year,
+        ed.yr = Ending_year
+      ),
+    by = "unique.id"
+  ) %>%
+  arrange(category, dataset.id, river, desc(yr.ln), desc(yr.num)) %>%
+  left_join(marie_groups, by = "unique.id") %>%
+  left_join(james_groups, by = "unique.id")
+
+##so, of the 94 sites that only james removed, 66 are ones that are not in sites mg (potentially sites that were removed by the fulfills_requirements filter)
+##so then for those 28 
+
+james_only <- diagnostic_df %>% filter(category == "james_only") 
+
+
+
+
+
+
 
 james_remove_sites <- sites_sorted %>%
   filter(map_lgl(members, ~ any(.x %in% james_only_id$unique.id))) %>%
