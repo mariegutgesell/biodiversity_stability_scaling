@@ -9,21 +9,21 @@ library(tidyverse)
 
 ###---Load the overview, site list, and country codes from the master table
 #Site list
-sites<-read_xlsb("data/1_MASTERTABLE.xlsb", sheet = "samples1_MZB") %>%#load the list for your taxonomic group
+sites<-read_xlsb("data/raw/mastertable/1_MASTERTABLE.xlsb", sheet = "samples1_MZB") %>%#load the list for your taxonomic group
   filter(ecosystem == "lotic") #%>%
   #filter(fulfills.requirement == "yes") 
 #Overview
-over<-read_xlsb("data/1_MASTERTABLE.xlsb", sheet = "overview") %>%
+over<-read_xlsb("data/raw/mastertable/1_MASTERTABLE.xlsb", sheet = "overview") %>%
   filter(Taxa.group == "macroinvertebrates", ecosystem == "lotic") ##filter to desired taxonomic group and ecosystem
 
 #Country codes
-code<-read_xlsb("data/1_MASTERTABLE.xlsb", sheet = "Countrycodes") %>%
+code<-read_xlsb("data/raw/mastertable/1_MASTERTABLE.xlsb", sheet = "Countrycodes") %>%
   select(countrycode:X3.letter.Code) %>%
   rename(Country = "country")
 
 ##trying my own approach to data prep 
 ###---Load all taxa files, set working directory to the directory with the unprocessed data for your taxonomic group
-file.list <- list.files(path = paste0(getwd(), "/data/Unprocessed_datasets_MZB"), pattern='\\.csv$', full.names = TRUE)
+file.list <- list.files(path = paste0(getwd(), "/data/raw/unprocessed_mzb"), pattern='\\.csv$', full.names = TRUE)
 file.list <- file.list[!grepl("LE", basename(file.list))] ##filter out lentic files
 taxa.files <- sapply(file.list, read.csv, simplify = FALSE, sep = ";", fileEncoding="latin1")
 taxa.files <- setNames(taxa.files, basename(file.list))
@@ -81,9 +81,9 @@ sites_clean_3 <- make_ids(sites_clean_2) %>%
 str(sites_clean_3)
 
 ##save this to a processed data folder, so don't need to re-run this code 
-write.csv(sites_clean_3, "data/data_processing/Step2_MZB_sites_lotic.csv", row.names = FALSE)
+write.csv(sites_clean_3, "data/processed/step2_site_ids/Step2_MZB_sites_lotic.csv", row.names = FALSE)
 
-readLines("data/data_processing/Step2_MZB_sites_lotic.csv", n = 10)
+
 
 
 
@@ -187,7 +187,7 @@ compare <- my_na %>%
 ###Integrating checks to make sure joining/filtering etc. is all working correctly
 
 ##Check filter on LE files, only filtered out LE (no LO)
-file.list_le <- list.files(path = paste0(getwd(), "/data/Unprocessed_datasets_MZB"), pattern='\\.csv$', full.names = TRUE)
+file.list_le <- list.files(path = paste0(getwd(), "/data/raw/unprocessed_mzb"), pattern='\\.csv$', full.names = TRUE)
 file.list_le <- file.list_le[grepl("LE", basename(file.list_le))] 
 taxa.files_le <- sapply(file.list_le, read.csv, simplify = FALSE, sep = ";", fileEncoding="latin1")
 taxa.files_le <- setNames(taxa.files_le, basename(file.list_le)) ##set the name of each file to be the base name rather than the whole directory string 
