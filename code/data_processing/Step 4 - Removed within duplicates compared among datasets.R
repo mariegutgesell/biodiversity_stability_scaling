@@ -8,175 +8,165 @@ library(raster)
 
 #######################################################################################################
 #
-#                                       ASSIGN DATASET NAMES
+#                                       READ IN DATA
 #
 #######################################################################################################
 
-###---Load the overview, desired site list, and country codes from the master table, must be saved as separate CSVs
-#Site list
-sites<-read.csv(file.choose(), header=TRUE, fileEncoding = "latin1")
-sites<-subset(sites, sites$ecosystem=="lotic") #filter to desired ecosystem type
-sites<-subset(sites, sites$fulfills.requirement=="yes") #filter to sites that meet the long-term data call requirements
 
-#Overview
-over<-read.csv(file.choose(), header=TRUE, fileEncoding = "latin1")
-over<-subset(over, over$Taxa.group=="macroinvertebrates") #filter to desired taxonomic group
-over<-subset(over, over$ecosystem=="lotic") #filter to desired ecosystem type
+##Read in data that has been assigned datafile names, database IDs, unique IDs, country codes, 
+sites_mg <- read.csv("data/processed/step2_site_ids/Step2_MZB_sites_lotic.csv",   colClasses = c(Provider.Number = "character"))  %>%
+  mutate(Latitude_Y = as.numeric(Latitude_Y),  Longitude_X = as.numeric(Longitude_X)) %>% ##ensure lat and long are numeric
+  filter(fulfills.requirement == "yes") ##select sites that fulfill requirements - this is based on dataset criteria listed in data call 
 
-#Country codes
-code<-read.csv(file.choose(), header=TRUE)
+##Read in list of sites to be removed from step 3 
+rem <- read.csv("data/processed/step3_overlap_within/Step3_within_datasets_sites_to_be_removed.csv")
 
-###---Load the sites that were listed for removal in Step 3 ("Step 3 - duplicated within removed.csv")
-rem<-read.csv(file.choose(), header=TRUE, fileEncoding = "latin1")
-
-###---Add owner numbers to the site list
-options(warn=2)
-
-sites$Provider.Number<-NA
-prov<-unique(sites$Data_owner)
-for (i in 1:length(prov)) {
-  nums<-which(sites$Data_owner==prov[i])
-  num<-over$Provider.Number[which(over$Data_owner==prov[i])[1]]
-  
-  if (nchar(num)==1) {
-    num<-paste("00",num, sep="")
-  }
-  if (nchar(num)==2) {
-    num<-paste("0",num, sep="")
-  }
-  
-  sites$Provider.Number[nums]<-num
-}
-
-###---Add unique dataset and site IDs
-sites$Dataset.ID<-NA
-sites$Unique.ID<-NA
-for (i in 1:length(sites$SGN_Site_ID)) {
-  cty.num<-which(code$country==sites$Country[i])
-  sites$Dataset.ID[i]<-paste(code$X3.letter.Code[cty.num], sites$Provider.Number[i], "MZB_LO", sep="_")
-  sites$Unique.ID[i]<-paste(code$X3.letter.Code[cty.num], sites$Provider.Number[i], "MZB_LO", sites$SGN_Site_ID[i], sep="_")
-}
-
-###---Order sites
-sites2<-sites[order(sites$Country, sites$Dataset.ID, sites$origin, sites$SGN_Site_ID),]
 
 #######################################################################################################
 #
-#                 SITES LISTED FOR REMOVAL THAT ALSO OCCUR IN OTHER DATASETS
+#                                           FUNCTIONS
 #
 #######################################################################################################
-
-rem.100m<-data.frame(country=NA, prov=NA, origin=NA, dataset.id=NA, group=NA, org.site=NA, unique.id=NA, river=NA, latitude=NA, longitude=NA, st.yr=NA, ed.yr=NA, yr.ln=NA, yr.num=NA, distance=NA)
-
-loop.num<-0.1
-count<-2
-prov<-unique(rem$dataset.id)
-
-for (i in 1:length(prov)) {
-  sub<-rem[rem$dataset.id==prov[i],]
-  sub1<-subset(sites2, sites2$Country==sub$country[1] & sites2$Dataset.ID %nin% sub$dataset.id[1])
+##Function to find sites in different datasets from the same country, that are within 100m of sites to be removed
+find_overlap_across <- function(df, df_rem, min_dist = 0, max_dist = 100) {
+  # convert both to sf once
+  df_sf <- st_as_sf(
+    df,
+    coords = c("Longitude_X", "Latitude_Y"),
+    crs    = 4326,
+    remove = FALSE
+  ) %>%
+    st_transform(3034)
   
-  if (length(sub1[,1])>0) {
-    wgs84<-st_as_sf(sub, coords = c(12,11), crs = 4326)
-    wgs84.1<-st_as_sf(sub1, coords = c(12,11), crs = 4326)
-    etrs89<-st_transform(wgs84, 3034)
-    etrs89.1<-st_transform(wgs84.1, 3034)
-    coords<-as.data.frame(st_coordinates(etrs89))
-    coords.1<-as.data.frame(st_coordinates(etrs89.1))
+  rem_sf <- st_as_sf(
+    df_rem,
+    coords = c("longitude", "latitude"),
+    crs    = 4326,
+    remove = FALSE
+  ) %>%
+    st_transform(3034)
+  
+  out_list <- vector("list", nrow(df_rem))
+  group_id <- 1L
+  
+  for (i in seq_len(nrow(df_rem))) {
+    focal <- rem_sf[i, ]
     
-    group<-1
-    for (j in 1:length(sub$unique.id)) {
-      dists<-as.vector(pointDistance(p1=coords[j,], p2=coords.1, lonlat=FALSE))
-      nums<-which(dists<=100)
-      
-      if (length(nums)>0) {
-        nums2<-c(count:(count+(length(nums))))
-        
-        rem.100m<-rbind(rem.100m, rem.100m[rep(1, times=(length(nums2))),])
-        
-        rem.100m$country[nums2[1]]<-sub$country[j]
-        rem.100m$country[nums2[2:length(nums2)]]<-sub1$Country[nums]
-        rem.100m$prov[nums2[1]]<-sub$prov[j]
-        rem.100m$prov[nums2[2:length(nums2)]]<-sub1$Data_owner[nums]
-        rem.100m$origin[nums2[1]]<-sub$origin[j]
-        rem.100m$origin[nums2[2:length(nums2)]]<-sub1$origin[nums]
-        rem.100m$dataset.id[nums2[1]]<-sub$dataset.id[j]
-        rem.100m$dataset.id[nums2[2:length(nums2)]]<-sub1$Dataset.ID[nums]
-        rem.100m$group[nums2]<-group
-        rem.100m$org.site[nums2[1]]<-sub$org.site[j]
-        rem.100m$org.site[nums2[2:length(nums2)]]<-sub1$Site_ID_original[nums]
-        rem.100m$unique.id[nums2[1]]<-sub$unique.id[j]
-        rem.100m$unique.id[nums2[2:length(nums2)]]<-sub1$Unique.ID[nums]
-        rem.100m$river[nums2[1]]<-sub$river[j]
-        rem.100m$river[nums2[2:length(nums2)]]<-sub1$River.lake[nums]
-        rem.100m$latitude[nums2[1]]<-sub$latitude[j]
-        rem.100m$latitude[nums2[2:length(nums2)]]<-sub1$Latitude_Y[nums]
-        rem.100m$longitude[nums2[1]]<-sub$longitude[j]
-        rem.100m$longitude[nums2[2:length(nums2)]]<-sub1$Longitude_X[nums]
-        rem.100m$st.yr[nums2[1]]<-sub$st.yr[j]
-        rem.100m$st.yr[nums2[2:length(nums2)]]<-sub1$Starting_year[nums]
-        rem.100m$ed.yr[nums2[1]]<-sub$ed.yr[j]
-        rem.100m$ed.yr[nums2[2:length(nums2)]]<-sub1$Ending_year[nums]
-        rem.100m$yr.ln[nums2[1]]<-sub$yr.ln[j]
-        rem.100m$yr.ln[nums2[2:length(nums2)]]<-sub1$Year_count[nums]
-        rem.100m$yr.num[nums2[1]]<-sub$yr.num[j]
-        rem.100m$yr.num[nums2[2:length(nums2)]]<-sub1$Sampling_years[nums]
-        rem.100m$distance[nums2[1]]<-0
-        rem.100m$distance[nums2[2:length(nums2)]]<-dists[nums]
-        
-        group<-group+1
-        count<-count+length(nums2)
-      }
-    }
+    # filter candidate sites in full df:
+    # same country, different dataset.id
+    df_test <- df_sf %>%
+      filter(
+        Country    == focal$country,
+        Dataset.ID != focal$dataset.id
+      )
+    
+    if (nrow(df_test) == 0) next
+    
+    # distances from focal (1 row) to all df_test sites
+    dists <- st_distance(focal, df_test)
+    dists_num <- drop_units(dists[1, ])  # numeric vector
+    
+    # neighbors within distance band
+    neigh_idx <- which(dists_num >= min_dist & dists_num <= max_dist)
+    if (length(neigh_idx) == 0) next
+    
+    neigh <- df_test[neigh_idx, ]
+    neigh_dists <- dists_num[neigh_idx]
+    
+    # focal row
+    focal_tbl <- tibble(
+      group      = group_id,
+      unique.id  = focal$unique.id,
+      org.site   = focal$org.site,
+      river      = focal$river,
+      latitude   = focal$latitude,
+      longitude  = focal$longitude,
+      st.yr      = focal$st.yr,
+      ed.yr      = focal$ed.yr,
+      yr.ln      = focal$yr.ln,
+      yr.num     = focal$yr.num,
+      origin     = focal$origin,
+      country    = focal$country,
+      prov       = focal$prov,
+      dataset.id = focal$dataset.id,
+      distance_m = 0
+    )
+    
+    # neighbor rows
+    neigh_tbl <- tibble(
+      group      = group_id,
+      unique.id  = neigh$Unique.ID,
+      org.site   = neigh$Site_ID_original,
+      river      = neigh$Site_name,
+      latitude   = neigh$Latitude_Y,
+      longitude  = neigh$Longitude_X,
+      st.yr      = neigh$Starting_year,
+      ed.yr      = neigh$Ending_year,
+      yr.ln      = neigh$Year_count,
+      yr.num     = neigh$Sampling_years,
+      origin     = neigh$origin,
+      country    = neigh$Country,
+      prov       = neigh$Data_owner,
+      dataset.id = neigh$Dataset.ID,
+      distance_m = neigh_dists
+    )
+    
+    out_list[[group_id]] <- bind_rows(focal_tbl, neigh_tbl)
+    group_id <- group_id + 1L
   }
   
-  if (i/length(prov)>=loop.num) { #report progress
-    cat(paste(loop.num*100,"% ", sep=""))
-    loop.num<-loop.num+0.1
-  }
+  bind_rows(out_list)
 }
-rem.100m<-rem.100m[-1,]
 
-###---Remove mirrored groups
-rem.100m.2<-rem.100m[1,]
-ctys<-unique(rem.100m$country)
-
-for (i in 1:length(ctys)) {
-  sub<-subset(rem.100m, rem.100m$country %in% ctys[i])
-  groups<-1
-  nums<-1
-  for (m in 2:length(sub$unique.id)) {
-    if (sub$group[m]==sub$group[m-1] & m != length(sub$unique.id)) {
-      nums<-append(nums, m)
-    }
-    if (sub$group[m]!=sub$group[m-1] & m != length(sub$unique.id)) {
-      sub$group[nums]<-groups
-      groups<-groups+1
-      nums<-m
-    }
-    if (m == length(sub$unique.id)) {
-      nums<-append(nums, m)
-      sub$group[nums]<-groups
-    }
+##Function to plot tied sites to manually check tie breakers 
+plot_group <- function(overlap_df, group_id, within_distance_type = NULL,map_type = "OpenTopoMap") {
+  df <- overlap_df %>%
+    filter(
+      group == group_id
+    )
+  
+  if (!is.null(within_distance_type)) {
+    df <- df %>%
+      filter(within_distance_type == !!within_distance_type)
   }
   
-  groups<-0
-  for (j in 1:length(unique(sub$group))) {
-    sub1<-subset(sub, sub$group==unique(sub$group)[j])
-    if (all(groups %nin% unique(sub$group)[j])) {
-      rem.100m.2<-rbind(rem.100m.2, sub1)
-      groups<-append(groups, unique(sub$group)[j])
-    }
-    sub2<-subset(sub, sub$group!=unique(sub$group)[j])
-    for (k in 1:length(unique(sub2$group))) {
-      sub3<-subset(sub2, sub2$group==unique(sub2$group)[k])
-      if (all(sub3$unique.id %in% sub1$unique.id)) {
-        groups<-append(groups, unique(sub2$group)[k])
-      }
-    }
-  }
+  df_sf <- df %>%
+    st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+  
+  mapview(
+    df_sf,
+    map.types      = map_type,
+    legend         = TRUE,
+    zcol           = "unique.id",
+    alpha          = 1,
+    alpha.regions  = 1,
+    cex            = 4
+  )
 }
-rem.100m.2<-rem.100m.2[-1,]
+
+
+
+#######################################################################################################
+#
+#                                   CHECK OVERLAPPING SITES BETWEEN DATASETS
+#
+#######################################################################################################
+
+##Identify clusters within 100m and filter out redundant clusters ------------------
+##remove sites already 
+
+##Get clusters within 100m 
+across_100m_dist <- find_overlap_across(sites_mg, rem, min_dist = 0, max_dist = 100)
+ 
+
+#######################################################################################################
+#
+#                 PLOT GROUPS TO SORT OVERLAP
+#
+#######################################################################################################
+plot_group(across_100m_dist, 1)
+plot_group(across_100m_dist, 2) 
+
 
 #######################################################################################################
 #
